@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "home": "Home",
+    "experiences": "Experiences",
+    "schools": "For Schools",
+    "about": "About Us",
+    "register": "Register Your Interest",
+    "languageToggle": "العربية",
+    "languageToggleAria": "Switch to Arabic"
+  },
+  "home": {
+    "hero": {
+      "headline": "Be Your Own",
+      "headlineAccent": "Explorer",
+      "subheadline": "Learning begins where comfort ends",
+      "description": "We create experiences beyond the classroom — into the real world through adventure, culture, and hands-on learning.",
+      "ctaPrimary": "Explore Experiences",
+      "ctaSecondary": "Register Your Interest",
+      "scrollHint": "Scroll to explore"
+    },
+    "preview": {
+      "kicker": "OUR EXPERIENCES",
+      "title": "Every experience is designed to help you grow through doing",
+      "viewAll": "View all experiences",
+      "schoolsKicker": "FOR SCHOOLS",
+      "schoolsTitle": "Curriculum-aligned programs for student groups",
+      "schoolsDescription": "Custom local and international programs for primary through secondary schools — built around your learning objectives and group size.",
+      "schoolsCta": "Programs for schools"
+    },
+    "abdul": {
+      "kicker": "LED BY",
+      "name": "Abdul Explorer",
+      "credential": "First Saudi to ski to the North Pole",
+      "tagline": "If I can, You Can, We All Can.",
+      "description": "Camp Explorer carries the same mindset Abdul brought to standing on top of the world — that growth lives at the edge of comfort.",
+      "cta": "Get to know Abdul"
+    },
+    "closingCta": {
+      "title": "Ready to step out of your comfort zone?",
+      "description": "This is more than an experience. This is where growth begins.",
+      "button": "Register Your Interest"
+    }
+  },
+  "footer": {
+    "tagline": "Real experiences create real growth.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "follow": "Follow our journey",
+    "privacy": "Privacy Policy",
+    "terms": "Terms",
+    "crNumber": "",
+    "copyright": "© {year} Camp Explorer. All rights reserved."
+  },
+  "common": {
+    "exploreMore": "Explore more",
+    "registerInterest": "Register your interest",
+    "loading": "Loading…"
+  }
+}
