@@ -72,18 +72,21 @@ export const placeholderImages: Record<string, string> = {
     "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=1200&q=80",
   "/images/about/philosophy.jpg":
     "https://images.unsplash.com/photo-1551632811-561732d1e306?w=2400&q=80",
+  // Sri Lanka uses real local files (drop replacement at the same path to swap)
   "/images/experiences/sri-lanka/hero.jpg":
-    "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=2400&q=80",
+    "/images/experiences/sri-lanka/hero.jpg",
   "/images/experiences/sri-lanka/card.jpg":
-    "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=1200&q=80",
+    "/images/experiences/sri-lanka/card.jpg",
+  // Cambodia uses real local files (drop replacement at the same path to swap)
   "/images/experiences/cambodia/hero.jpg":
-    "https://images.unsplash.com/photo-1521651201144-634f700b36ef?w=2400&q=80",
+    "/images/experiences/cambodia/hero.jpg",
   "/images/experiences/cambodia/card.jpg":
-    "https://images.unsplash.com/photo-1521651201144-634f700b36ef?w=1200&q=80",
+    "/images/experiences/cambodia/card.jpg",
+  // Weekend Camp uses the real local files (drop replacement at the same path to swap)
   "/images/experiences/weekend-camp/hero.jpg":
-    "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=2400&q=80",
+    "/images/experiences/weekend-camp/hero.jpg",
   "/images/experiences/weekend-camp/card.jpg":
-    "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1200&q=80",
+    "/images/experiences/weekend-camp/card.jpg",
   "/images/schools/hero.jpg":
     "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=2400&q=80",
   "/images/schools/saudi/hero.jpg":

@@ -28,6 +28,10 @@ This is the **single source of truth** for every image the website needs. To swa
 
 ### Sri Lanka — Turtle Conservation (`/experiences/sri-lanka`)
 
+**Reference source for trip photos:**
+[planmygapyear.com — Sri Lanka Turtle Conservation Volunteers](https://www.planmygapyear.com/volunteer-in-sri-lanka/sri-lanka-turtle-conservation-volunteers)
+*(check before launch: licensing — may require permission for commercial use)*
+
 | Path | Status | Recommended | Subject |
 |---|---|---|---|
 | `public/images/experiences/sri-lanka/hero.jpg` | ❌ | 21:9, ≥1920×824, <250KB | Sea turtle on beach at golden hour. Sri Lankan coast feel. |
@@ -37,6 +41,10 @@ This is the **single source of truth** for every image the website needs. To swa
 | `public/images/experiences/sri-lanka/gallery-3.jpg` | ❌ | 4:3, ≥1200×900, <150KB | Safari / hill country landscape. |
 
 ### Cambodia — Elephant Conservation (`/experiences/cambodia`)
+
+**Reference source for trip photos:**
+[globalteer.org — Cambodia Elephant Sanctuary](https://www.globalteer.org/volunteer-programmes/cambodia-elephant-sanctuary/)
+*(check before launch: licensing — may require permission for commercial use)*
 
 | Path | Status | Recommended | Subject |
 |---|---|---|---|

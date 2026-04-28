@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, ArrowUpRight, Users } from "lucide-react";
+import { ArrowRight, ArrowUpRight, GraduationCap } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/lib/i18n/navigation";
@@ -29,7 +29,7 @@ export function HomePreview() {
         </h2>
       </motion.div>
 
-      {/* Equal-sized 3-column grid */}
+      {/* 3 equal experience cards */}
       <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
         {experiences.map((exp, i) => (
           <motion.div
@@ -55,7 +55,6 @@ export function HomePreview() {
                 className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/30 to-transparent"
               />
 
-              {/* Always-visible chevron — affordance for touch users */}
               <span
                 aria-hidden="true"
                 className="absolute end-4 top-4 inline-flex h-9 w-9 items-center justify-center rounded-full border border-cream/20 bg-navy-deep/60 text-cream/85 backdrop-blur-[2px] transition-all group-hover:border-gold group-hover:bg-gold group-hover:text-navy-deep"
@@ -86,7 +85,7 @@ export function HomePreview() {
         ))}
       </div>
 
-      {/* 4th band — Schools — visually distinct from the experience cards */}
+      {/* For Schools band — B2B path */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -99,7 +98,7 @@ export function HomePreview() {
           className="group flex flex-col items-start gap-6 rounded-sm border border-gold/20 bg-card/40 p-8 transition-colors hover:border-gold/50 hover:bg-card/60 sm:flex-row sm:items-center sm:p-10"
         >
           <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-gold/30 bg-gold/5 text-gold">
-            <Users className="h-6 w-6" />
+            <GraduationCap className="h-6 w-6" />
           </div>
           <div className="flex-1">
             <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.3em] text-gold">

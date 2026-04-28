@@ -1,11 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { Link } from "@/lib/i18n/navigation";
-import { placeholderImages } from "@/lib/content/experiences";
+
+const ABDUL_WEBSITE_URL = "https://abdulexplorer.com/";
 
 const proofPoints = [
   { year: "2017", label: "First Saudi expedition to the geographic North Pole, 90°N" },
@@ -28,9 +28,10 @@ export function HomeAbdul() {
           className="lg:col-span-5"
         >
           <div className="relative aspect-[3/4] overflow-hidden rounded-sm border border-gold/15">
+            {/* Drop a new file at /public/images/home/abdul-trust.jpg to swap */}
             <Image
-              src={placeholderImages["/images/home/abdul-trust.jpg"]}
-              alt="Abdul Explorer"
+              src="/images/home/abdul-trust.jpg"
+              alt="Abdul Explorer at the geographic North Pole, 2017"
               fill
               sizes="(min-width: 1024px) 40vw, 100vw"
               className="object-cover grayscale"
@@ -93,13 +94,19 @@ export function HomeAbdul() {
             ))}
           </ul>
 
-          <Link
-            href="/about#abdul"
+          <a
+            href={ABDUL_WEBSITE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="group mt-10 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-gold transition-colors hover:text-gold-light"
           >
             {t("cta")}
-            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
-          </Link>
+            <ArrowUpRight
+              className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 rtl:-scale-x-100 rtl:group-hover:-translate-x-0.5"
+              aria-hidden="true"
+            />
+            <span className="sr-only"> (opens in a new tab)</span>
+          </a>
         </motion.div>
       </div>
     </section>

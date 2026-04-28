@@ -5,16 +5,15 @@ import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/lib/i18n/navigation";
-import { placeholderImages } from "@/lib/content/experiences";
 
 export function HomeHero() {
   const t = useTranslations("home.hero");
 
   return (
     <section className="relative isolate flex min-h-[100dvh] items-end overflow-hidden">
-      {/* Background image */}
+      {/* Background image — drop a new file at /public/images/home/hero.jpg to swap */}
       <Image
-        src={placeholderImages["/images/home/hero.jpg"]}
+        src="/images/home/hero.jpg"
         alt=""
         fill
         priority

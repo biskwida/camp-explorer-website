@@ -25,7 +25,11 @@
       "schoolsKicker": "FOR SCHOOLS",
       "schoolsTitle": "Curriculum-aligned programs for student groups",
       "schoolsDescription": "Custom local and international programs for primary through secondary schools — built around your learning objectives and group size.",
-      "schoolsCta": "Programs for schools"
+      "schoolsCta": "Programs for schools",
+      "weekendKicker": "WEEKEND CAMP",
+      "weekendTitle": "Experiences for teens and families",
+      "weekendDescription": "Short, immersive weekend experiences in Saudi nature — built for connection, confidence, and lasting memories.",
+      "weekendCta": "Explore weekend camp"
     },
     "abdul": {
       "kicker": "LED BY",
