@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/lib/i18n/navigation";
@@ -12,18 +12,25 @@ export function HomeHero() {
   return (
     <section className="relative isolate flex min-h-[100dvh] items-end overflow-hidden">
       {/* Background image — drop a new file at /public/images/home/hero.jpg to swap */}
+      {/* Mobile: shift focal point right so the climber is visible. Desktop: center. */}
       <Image
         src="/images/home/hero.jpg"
         alt=""
         fill
         priority
         sizes="100vw"
-        className="-z-20 object-cover object-center"
+        className="-z-20 object-cover object-[75%_center] md:object-center"
       />
       {/* Single directional overlay — anchors text to bottom-left, leaves photo legible above */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-gradient-to-tr from-navy via-navy/85 via-40% to-transparent"
+        className="absolute inset-0 -z-10 bg-gradient-to-tr from-navy via-navy/70 via-40% to-transparent"
+      />
+      {/* Bottom-edge fade — bridges the warm desert image into the dark section below.
+          Fades to navy-deep (not navy) because the body bg is navy-deep at the top of the viewport. */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-b from-transparent to-navy-deep"
       />
 
       <div className="container-page relative z-10 flex w-full flex-col items-start pt-32 pb-20 sm:pb-24 lg:pb-32">
@@ -64,6 +71,16 @@ export function HomeHero() {
           </div>
         </motion.div>
       </div>
+
+      {/* Scroll cue — gently bouncing chevron at hero bottom signals "there's more below" */}
+      <motion.div
+        aria-hidden="true"
+        className="absolute inset-x-0 bottom-8 z-10 flex justify-center"
+        animate={{ y: [0, 6, 0] }}
+        transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
+      >
+        <ChevronDown className="h-5 w-5 text-cream/55" />
+      </motion.div>
     </section>
   );
 }

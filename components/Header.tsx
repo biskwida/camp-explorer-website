@@ -33,7 +33,7 @@ export function Header() {
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-200 ${
         scrolled || mobileOpen
           ? "border-b border-gold/20 bg-navy-deep"
-          : "border-b border-transparent bg-transparent"
+          : "border-b border-transparent bg-navy-deep/30 backdrop-blur-sm"
       }`}
     >
       <div className="container-page flex h-16 items-center justify-between gap-4 sm:h-20">
