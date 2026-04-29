@@ -26,7 +26,7 @@ export function Footer() {
           </p>
 
           <div className="mt-6">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-cream/45">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-cream/55">
               {t("footer.follow")}
             </p>
             <div className="flex items-center gap-2">
@@ -52,7 +52,7 @@ export function Footer() {
 
         {/* Quick links */}
         <div className="lg:col-span-3">
-          <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-cream/45">
+          <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-cream/55">
             {t("footer.quickLinks")}
           </p>
           <ul className="space-y-3 text-sm">
@@ -79,7 +79,7 @@ export function Footer() {
 
         {/* Contact */}
         <div className="lg:col-span-5">
-          <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-cream/45">
+          <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-cream/55">
             {t("footer.contact")}
           </p>
           <ul className="space-y-3 text-sm">

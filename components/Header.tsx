@@ -25,6 +25,18 @@ export function Header() {
     setMobileOpen(false);
   }, [pathname]);
 
+  // Reload on bfcache restore. Browsers cache the page in memory when you navigate away,
+  // and restore it instantly on Back. Framer Motion animations don't replay after restore,
+  // leaving sections frozen at opacity:0. Forcing a reload guarantees a clean mount where
+  // animations run from scratch. Scroll position is sacrificed for visual correctness.
+  useEffect(() => {
+    const onPageShow = (e: PageTransitionEvent) => {
+      if (e.persisted) window.location.reload();
+    };
+    window.addEventListener("pageshow", onPageShow);
+    return () => window.removeEventListener("pageshow", onPageShow);
+  }, []);
+
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
@@ -48,7 +60,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className={`relative px-4 py-2 text-sm font-medium transition-colors ${
+              className={`relative inline-flex min-h-11 items-center px-4 py-2 text-sm font-medium transition-colors ${
                 isActive(item.href)
                   ? "text-gold"
                   : "text-cream/75 hover:text-cream"
@@ -76,7 +88,7 @@ export function Header() {
             aria-expanded={mobileOpen}
             aria-controls="mobile-nav"
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-gold/20 text-cream lg:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-gold/20 text-cream lg:hidden"
           >
             {mobileOpen ? (
               <X className="h-5 w-5" />

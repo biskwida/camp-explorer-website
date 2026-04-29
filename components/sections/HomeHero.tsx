@@ -63,7 +63,7 @@ export function HomeHero() {
             </Link>
             <Link
               href="/register"
-              className="group inline-flex items-center gap-2 px-2 py-3 text-sm font-semibold uppercase tracking-wider text-cream/85 transition-colors hover:text-gold"
+              className="group inline-flex min-h-11 items-center gap-2 px-2 py-3 text-sm font-semibold uppercase tracking-wider text-cream transition-colors hover:text-gold"
             >
               {t("ctaSecondary")}
               <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
