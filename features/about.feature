@@ -7,9 +7,9 @@ Feature: About page tells the Camp Explorer story
     Then I see the headline contains "More than experiences"
     And the document direction is "ltr"
     And the document language is "en"
-    And I see a section titled "redefine how people learn"
-    And I see a section titled "Real experiences create real growth"
-    And I see a section titled "Abdul Explorer"
+    And I see a section titled "Who we are"
+    And I see a section titled "Our philosophy"
+    And I see a section titled "Meet the founder"
     And I see a link with text "Register Your Interest"
 
   Scenario: Arabic about page renders mirrored with translated content

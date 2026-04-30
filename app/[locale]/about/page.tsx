@@ -4,7 +4,7 @@ import { AboutHero } from "@/components/sections/AboutHero";
 import { AboutMission } from "@/components/sections/AboutMission";
 import { AboutPhilosophy } from "@/components/sections/AboutPhilosophy";
 import { AboutFounder } from "@/components/sections/AboutFounder";
-import { HomeClosingCta } from "@/components/sections/HomeClosingCta";
+import { AboutContact } from "@/components/sections/AboutContact";
 
 export async function generateMetadata({
   params,
@@ -33,7 +33,7 @@ export default async function AboutPage({
       <AboutMission />
       <AboutPhilosophy />
       <AboutFounder />
-      <HomeClosingCta />
+      <AboutContact />
     </main>
   );
 }

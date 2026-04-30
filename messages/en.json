@@ -92,6 +92,16 @@
       "closing": "This isn't about watching. It's about stepping in, taking action, and discovering what you're truly capable of.",
       "cta": "Visit Abdul Explorer",
       "imageAlt": "Portrait of Abdul Explorer"
+    },
+    "contact": {
+      "kicker": "GET IN TOUCH",
+      "title": "Talk to us before you go",
+      "description": "Questions about a program, a school booking, or whether your teen is ready? Reach out — we'll respond personally.",
+      "emailLabel": "Email us",
+      "phoneLabel": "Call us",
+      "whatsappLabel": "WhatsApp",
+      "locationLabel": "Riyadh, Saudi Arabia",
+      "registerCta": "Register Your Interest"
     }
   },
   "footer": {

@@ -44,13 +44,13 @@ export function AboutFounder() {
           transition={{ duration: 0.8, delay: 0.15 }}
           className="lg:col-span-7"
         >
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.4em] text-gold">
+          <h2 className="text-xs font-semibold uppercase tracking-[0.4em] text-gold sm:text-sm">
             {t("kicker")}
-          </p>
-
-          <h2 className="font-display text-4xl font-black leading-[1.05] text-cream sm:text-5xl md:text-6xl">
-            {t("name")}
           </h2>
+
+          <h3 className="mt-4 font-display text-4xl font-black leading-[1.05] text-cream sm:text-5xl md:text-6xl">
+            {t("name")}
+          </h3>
 
           <p className="mt-6 text-base leading-relaxed text-cream/80 sm:text-lg">
             {t("intro")}
