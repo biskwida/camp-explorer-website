@@ -45,6 +45,55 @@
       "button": "Register Your Interest"
     }
   },
+  "about": {
+    "metadata": {
+      "title": "About",
+      "description": "Camp Explorer is built to take learning beyond the classroom — led by Abdul Explorer, the first Saudi to ski to the North Pole."
+    },
+    "hero": {
+      "kicker": "ABOUT CAMP EXPLORER",
+      "headline": "More than experiences",
+      "headlineAccent": "A mindset",
+      "subhead": "Built to take learning beyond the classroom — into the real world.",
+      "cta": "Register Your Interest",
+      "imageAlt": "Abdul Explorer with local children in a yurt during a Central Asian expedition"
+    },
+    "mission": {
+      "kicker": "WHO WE ARE",
+      "title": "Camp Explorer was created to redefine how people learn",
+      "body": "We believe that learning should not be limited to classrooms. The most powerful growth happens when individuals step into real environments, face challenges, and experience the world first-hand.",
+      "pillars": {
+        "confidence": "This is where confidence is built",
+        "awareness": "This is where awareness grows",
+        "mindset": "This is where mindset changes"
+      }
+    },
+    "philosophy": {
+      "kicker": "OUR PHILOSOPHY",
+      "lead": "At Camp Explorer, everything we do is built on one belief:",
+      "headline": "Real experiences create real growth",
+      "transformation": "We don't focus on entertainment. We focus on transformation.",
+      "designedTo": "Every experience is designed to:",
+      "principles": {
+        "challenge": "Challenge individuals",
+        "build": "Build confidence",
+        "develop": "Develop independence",
+        "encourage": "Encourage responsibility",
+        "create": "Create awareness of the world"
+      }
+    },
+    "founder": {
+      "kicker": "MEET THE FOUNDER",
+      "name": "Abdul Explorer",
+      "intro": "Abdul Explorer is a Saudi adventurer who has pushed his limits across the world — becoming the first Saudi to ski to the North Pole and stand on top of the world (90°N).",
+      "tagline": "His journeys were never about records. They were about proving something simple:",
+      "quote": "If I can, you can. We all can.",
+      "bridge": "Through Camp Explorer, he brings that mindset to the next generation — creating experiences that challenge individuals, build confidence, and unlock potential. From extreme expeditions to youth-focused programs, his journey is built on pushing limits and inspiring others to do the same.",
+      "closing": "This isn't about watching. It's about stepping in, taking action, and discovering what you're truly capable of.",
+      "cta": "Visit Abdul Explorer",
+      "imageAlt": "Portrait of Abdul Explorer"
+    }
+  },
   "footer": {
     "tagline": "Real experiences create real growth.",
     "quickLinks": "Quick Links",

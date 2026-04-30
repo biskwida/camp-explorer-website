@@ -7,6 +7,10 @@ const testDir = defineBddConfig({
   outputDir: ".features-gen",
 });
 
+// Dedicated test port avoids collisions with other local dev servers on 3000.
+// Override via PLAYWRIGHT_PORT if needed.
+const PORT = process.env.PLAYWRIGHT_PORT ?? "3030";
+
 export default defineConfig({
   testDir,
   fullyParallel: true,
@@ -15,13 +19,13 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: [["list"], ["html", { open: "never" }]],
   use: {
-    baseURL: process.env.PLAYWRIGHT_BASE_URL ?? "http://localhost:3000",
+    baseURL: process.env.PLAYWRIGHT_BASE_URL ?? `http://localhost:${PORT}`,
     trace: "on-first-retry",
     video: "retain-on-failure",
   },
   webServer: {
-    command: "bun run dev",
-    url: "http://localhost:3000/en",
+    command: `PORT=${PORT} bun run dev`,
+    url: `http://localhost:${PORT}/en`,
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,
   },

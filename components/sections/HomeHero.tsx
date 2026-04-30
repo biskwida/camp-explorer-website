@@ -46,7 +46,7 @@ export function HomeHero() {
 
           <h1 className="font-display text-5xl font-black leading-[1.02] text-cream text-balance sm:text-6xl md:text-7xl lg:text-8xl">
             {t("headline")}{" "}
-            <span className="text-gold">{t("headlineAccent")}.</span>
+            <span className="text-gold">{t("headlineAccent")}</span>
           </h1>
 
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-cream/80 sm:text-xl">
