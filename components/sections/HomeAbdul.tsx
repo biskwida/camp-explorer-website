@@ -56,14 +56,12 @@ export function HomeAbdul() {
           </p>
 
           <h2>
-            <Image
-              src="/abdul-explorer-logo.png"
+            {/* SVG so it stays crisp at any size or zoom level — vector logo */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/abdul-explorer-logo.svg"
               alt={t("name")}
-              width={855}
-              height={392}
-              unoptimized
               className="h-auto w-44 sm:w-52 md:w-60"
-              priority
             />
           </h2>
 
