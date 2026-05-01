@@ -59,10 +59,6 @@ export function AboutPhilosophy() {
             {t("headline")}
           </h3>
 
-          <p className="mt-8 text-lg leading-relaxed text-cream/85 sm:text-xl">
-            {t("transformation")}
-          </p>
-
           <div className="mt-16">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold/80">
               {t("designedTo")}
