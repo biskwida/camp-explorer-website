@@ -65,9 +65,9 @@ export function HomeAbdul() {
             <Image
               src="/abdul-explorer-logo.png"
               alt={t("name")}
-              width={400}
-              height={400}
-              className="h-auto w-56 sm:w-64 md:w-72"
+              width={771}
+              height={308}
+              className="h-auto w-44 sm:w-52 md:w-60"
               priority
             />
           </h2>
