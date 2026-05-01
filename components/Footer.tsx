@@ -104,6 +104,17 @@ export function Footer() {
               </a>
             </li>
             <li>
+              <a
+                href="https://www.instagram.com/campexplorer.sa/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 text-cream/75 transition-colors hover:text-gold"
+              >
+                <InstagramIcon className="h-4 w-4 text-gold/70" />
+                @campexplorer.sa
+              </a>
+            </li>
+            <li>
               <span className="inline-flex items-center gap-3 text-cream/75">
                 <MapPin className="h-4 w-4 text-gold/70" />
                 Riyadh, Saudi Arabia
