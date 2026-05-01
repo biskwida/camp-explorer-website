@@ -61,8 +61,15 @@ export function HomeAbdul() {
             {t("kicker")}
           </p>
 
-          <h2 className="font-display text-4xl font-black leading-[1.05] text-cream sm:text-5xl md:text-6xl">
-            {t("name")}
+          <h2>
+            <Image
+              src="/abdul-explorer-logo.png"
+              alt={t("name")}
+              width={400}
+              height={400}
+              className="h-auto w-56 sm:w-64 md:w-72"
+              priority
+            />
           </h2>
 
           <p className="mt-3 text-base text-cream/65 sm:text-lg">
