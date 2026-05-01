@@ -52,8 +52,10 @@ export function AboutFounder() {
             <Image
               src="/abdul-explorer-logo.png"
               alt={t("name")}
-              width={771}
-              height={308}
+              width={755}
+              height={292}
+              quality={100}
+              sizes="(min-width: 768px) 240px, (min-width: 640px) 208px, 176px"
               className="h-auto w-44 sm:w-52 md:w-60"
             />
           </h3>

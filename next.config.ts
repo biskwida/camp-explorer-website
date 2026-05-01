@@ -15,6 +15,10 @@ const nextConfig: NextConfig = {
         hostname: "images.unsplash.com",
       },
     ],
+    // Next 16 requires non-default quality values to be explicitly allowed.
+    // 75 is the default; 100 is used for brand wordmarks where retina/zoom
+    // softness from lossy JPEG re-encoding would be visible.
+    qualities: [75, 100],
   },
 };
 
