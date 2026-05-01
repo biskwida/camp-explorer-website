@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import { Mail, MessageCircle } from "lucide-react";
 import { Link } from "@/lib/i18n/navigation";
 import { Logo } from "./Logo";
-import { InstagramIcon, FacebookIcon, YoutubeIcon } from "./SocialIcons";
+import { InstagramIcon } from "./SocialIcons";
 import { mainNav } from "@/lib/content/nav";
 
 export function Footer() {
@@ -24,30 +24,6 @@ export function Footer() {
           <p className="mt-5 max-w-sm text-sm text-cream/65">
             {t("footer.tagline")}
           </p>
-
-          <div className="mt-6">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-cream/55">
-              {t("footer.follow")}
-            </p>
-            <div className="flex items-center gap-2">
-              {[
-                { icon: InstagramIcon, href: "https://www.instagram.com/campexplorer.sa", label: "Instagram" },
-                { icon: FacebookIcon, href: "https://facebook.com/campexplorer", label: "Facebook" },
-                { icon: YoutubeIcon, href: "https://youtube.com/@campexplorer", label: "YouTube" },
-              ].map(({ icon: Icon, href, label }) => (
-                <a
-                  key={label}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={label}
-                  className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-gold/20 text-cream/70 transition-all hover:border-gold hover:text-gold"
-                >
-                  <Icon className="h-4 w-4" />
-                </a>
-              ))}
-            </div>
-          </div>
         </div>
 
         {/* Quick links */}
