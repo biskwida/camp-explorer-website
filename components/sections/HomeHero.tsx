@@ -40,10 +40,6 @@ export function HomeHero() {
           transition={{ duration: 0.7 }}
           className="max-w-3xl"
         >
-          <p className="mb-5 text-xs font-semibold uppercase tracking-[0.4em] text-gold sm:text-sm">
-            Camp Explorer
-          </p>
-
           <h1 className="font-display text-5xl font-black leading-[1.02] text-cream text-balance sm:text-6xl md:text-7xl lg:text-8xl">
             {t("headline")}{" "}
             <span className="text-gold">{t("headlineAccent")}</span>

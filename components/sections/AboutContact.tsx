@@ -1,21 +1,32 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { ArrowRight, Mail, MapPin, MessageCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/lib/i18n/navigation";
+import { InstagramIcon } from "@/components/SocialIcons";
 
-const PHONE_DISPLAY = "+966 56 407 7666";
-const PHONE_TEL = "+966564077666";
-const PHONE_WHATSAPP = "966564077666";
-const EMAIL = "info@campexplorer.sa";
+const EMAIL = "info@campexplorersa.com";
+const WHATSAPP_DISPLAY = "+966 54 414 2610";
+const WHATSAPP_DIGITS = "966544142610";
+const INSTAGRAM_HANDLE = "@campexplorer.sa";
+const INSTAGRAM_URL = "https://www.instagram.com/campexplorer.sa/";
+
+type Channel = {
+  key: string;
+  icon: React.ComponentType<{ className?: string; "aria-hidden"?: boolean | "true" | "false" }>;
+  label: string;
+  value: string;
+  href: string;
+  external: boolean;
+};
 
 export function AboutContact() {
   const t = useTranslations("about.contact");
 
-  const channels = [
+  const contactChannels: Channel[] = [
     {
-      key: "email" as const,
+      key: "email",
       icon: Mail,
       label: t("emailLabel"),
       value: EMAIL,
@@ -23,19 +34,22 @@ export function AboutContact() {
       external: false,
     },
     {
-      key: "phone" as const,
-      icon: Phone,
-      label: t("phoneLabel"),
-      value: PHONE_DISPLAY,
-      href: `tel:${PHONE_TEL}`,
-      external: false,
-    },
-    {
-      key: "whatsapp" as const,
+      key: "whatsapp",
       icon: MessageCircle,
       label: t("whatsappLabel"),
-      value: PHONE_DISPLAY,
-      href: `https://wa.me/${PHONE_WHATSAPP}`,
+      value: WHATSAPP_DISPLAY,
+      href: `https://wa.me/${WHATSAPP_DIGITS}`,
+      external: true,
+    },
+  ];
+
+  const socialChannels: Channel[] = [
+    {
+      key: "instagram",
+      icon: InstagramIcon,
+      label: t("instagramLabel"),
+      value: INSTAGRAM_HANDLE,
+      href: INSTAGRAM_URL,
       external: true,
     },
   ];
@@ -69,7 +83,42 @@ export function AboutContact() {
 
           <div className="lg:col-span-7">
             <ul className="grid gap-3 sm:grid-cols-1">
-              {channels.map(({ key, icon: Icon, label, value, href, external }) => (
+              {contactChannels.map(({ key, icon: Icon, label, value, href, external }) => (
+                <li key={key}>
+                  <a
+                    href={href}
+                    {...(external
+                      ? { target: "_blank", rel: "noopener noreferrer" }
+                      : {})}
+                    className="group flex items-center justify-between gap-6 rounded-sm border border-gold/15 bg-navy/40 px-6 py-5 transition-all hover:border-gold/45 hover:bg-navy/60"
+                  >
+                    <div className="flex items-center gap-4">
+                      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold/25 bg-gold/5 text-gold">
+                        <Icon className="h-4 w-4" aria-hidden="true" />
+                      </span>
+                      <div className="flex flex-col">
+                        <span className="text-[10px] font-semibold uppercase tracking-[0.25em] text-cream/55">
+                          {label}
+                        </span>
+                        <span className="font-display text-base font-bold text-cream sm:text-lg">
+                          {value}
+                        </span>
+                      </div>
+                    </div>
+                    <ArrowRight
+                      className="h-4 w-4 text-gold/60 transition-all group-hover:translate-x-1 group-hover:text-gold rtl:rotate-180 rtl:group-hover:-translate-x-1"
+                      aria-hidden="true"
+                    />
+                  </a>
+                </li>
+              ))}
+            </ul>
+
+            <h3 className="mt-8 mb-3 text-[10px] font-semibold uppercase tracking-[0.3em] text-gold/80">
+              {t("socialMediaLabel")}
+            </h3>
+            <ul className="grid gap-3 sm:grid-cols-1">
+              {socialChannels.map(({ key, icon: Icon, label, value, href, external }) => (
                 <li key={key}>
                   <a
                     href={href}

@@ -98,8 +98,9 @@
       "title": "Talk to us before you go",
       "description": "Questions about a program, a school booking, or whether your teen is ready? Reach out — we'll respond personally.",
       "emailLabel": "Email us",
-      "phoneLabel": "Call us",
-      "whatsappLabel": "WhatsApp",
+      "whatsappLabel": "WhatsApp us",
+      "socialMediaLabel": "Social Media",
+      "instagramLabel": "Instagram",
       "locationLabel": "Riyadh, Saudi Arabia",
       "registerCta": "Register Your Interest"
     }

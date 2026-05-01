@@ -8,7 +8,7 @@ import Image from "next/image";
 const ABDUL_WEBSITE_URL = "https://abdulexplorer.com/";
 
 const proofPoints = [
-  { year: "2017", label: "First Saudi expedition to the geographic North Pole, 90°N" },
+  { year: "2018", label: "First Saudi expedition to the geographic North Pole, 90°N" },
   { year: "2024", label: "Founded Camp Explorer to bring real-world learning to Saudi youth" },
   { year: "Ongoing", label: "Continues to lead expeditions in conservation, culture, and adventure" },
 ];
@@ -43,7 +43,7 @@ export function HomeAbdul() {
             {/* Caption strip — like a documentary still */}
             <div className="absolute inset-x-0 bottom-0 border-t border-gold/30 bg-navy-deep/90 px-5 py-3 backdrop-blur-sm">
               <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-gold/80">
-                {t("name")} · 90°N · 2017
+                {t("name")} · 90°N · 2018
               </p>
             </div>
           </div>

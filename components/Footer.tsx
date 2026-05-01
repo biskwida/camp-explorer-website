@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
+import { Mail, MapPin, MessageCircle } from "lucide-react";
 import { Link } from "@/lib/i18n/navigation";
 import { Logo } from "./Logo";
 import { InstagramIcon, FacebookIcon, YoutubeIcon } from "./SocialIcons";
@@ -85,31 +85,22 @@ export function Footer() {
           <ul className="space-y-3 text-sm">
             <li>
               <a
-                href="mailto:info@campexplorer.sa"
+                href="mailto:info@campexplorersa.com"
                 className="inline-flex items-center gap-3 text-cream/75 transition-colors hover:text-gold"
               >
                 <Mail className="h-4 w-4 text-gold/70" />
-                info@campexplorer.sa
+                info@campexplorersa.com
               </a>
             </li>
             <li>
               <a
-                href="tel:+966564077666"
-                className="inline-flex items-center gap-3 text-cream/75 transition-colors hover:text-gold"
-              >
-                <Phone className="h-4 w-4 text-gold/70" />
-                +966 56 407 7666
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://wa.me/966564077666"
+                href="https://wa.me/966544142610"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 text-cream/75 transition-colors hover:text-gold"
               >
                 <MessageCircle className="h-4 w-4 text-gold/70" />
-                WhatsApp
+                WhatsApp +966 54 414 2610
               </a>
             </li>
             <li>

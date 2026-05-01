@@ -63,13 +63,7 @@ export function HomePreview() {
               </span>
 
               <div className="absolute inset-x-0 bottom-0 p-6">
-                <p
-                  className={`mb-2 text-[10px] font-semibold uppercase tracking-[0.25em] ${
-                    exp.category === "international"
-                      ? "text-gold"
-                      : "text-cream/55"
-                  }`}
-                >
+                <p className="mb-2 text-[10px] font-semibold uppercase tracking-[0.25em] text-gold">
                   {exp.kicker[locale]}
                 </p>
                 <p className="mb-1 text-sm text-cream/70">
