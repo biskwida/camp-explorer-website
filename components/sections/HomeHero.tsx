@@ -2,12 +2,14 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/lib/i18n/navigation";
 
 export function HomeHero() {
   const t = useTranslations("home.hero");
+  const locale = useLocale();
+  const isEn = locale === "en";
 
   return (
     <section className="relative isolate flex min-h-[100dvh] items-end overflow-hidden">
@@ -42,7 +44,18 @@ export function HomeHero() {
         >
           <h1 className="font-display text-5xl font-black leading-[1.02] text-cream text-balance sm:text-6xl md:text-7xl lg:text-8xl">
             {t("headline")}{" "}
-            <span className="text-gold">{t("headlineAccent")}</span>
+            {isEn ? (
+              /* Brand wordmark replaces the gold accent on EN only.
+                 Vector SVG so it scales 1:1 with the surrounding h1 text. */
+              /* eslint-disable-next-line @next/next/no-img-element */
+              <img
+                src="/images/explorer-mark.svg"
+                alt={t("headlineAccent")}
+                className="inline-block h-[0.95em] w-auto align-baseline"
+              />
+            ) : (
+              <span className="text-gold">{t("headlineAccent")}</span>
+            )}
           </h1>
 
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-cream/80 sm:text-xl">
