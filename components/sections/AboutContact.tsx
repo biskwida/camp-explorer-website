@@ -24,7 +24,7 @@ type Channel = {
 export function AboutContact() {
   const t = useTranslations("about.contact");
 
-  const contactChannels: Channel[] = [
+  const channels: Channel[] = [
     {
       key: "email",
       icon: Mail,
@@ -41,9 +41,6 @@ export function AboutContact() {
       href: `https://wa.me/${WHATSAPP_DIGITS}`,
       external: true,
     },
-  ];
-
-  const socialChannels: Channel[] = [
     {
       key: "instagram",
       icon: InstagramIcon,
@@ -83,42 +80,7 @@ export function AboutContact() {
 
           <div className="lg:col-span-7">
             <ul className="grid gap-3 sm:grid-cols-1">
-              {contactChannels.map(({ key, icon: Icon, label, value, href, external }) => (
-                <li key={key}>
-                  <a
-                    href={href}
-                    {...(external
-                      ? { target: "_blank", rel: "noopener noreferrer" }
-                      : {})}
-                    className="group flex items-center justify-between gap-6 rounded-sm border border-gold/15 bg-navy/40 px-6 py-5 transition-all hover:border-gold/45 hover:bg-navy/60"
-                  >
-                    <div className="flex items-center gap-4">
-                      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold/25 bg-gold/5 text-gold">
-                        <Icon className="h-4 w-4" aria-hidden="true" />
-                      </span>
-                      <div className="flex flex-col">
-                        <span className="text-[10px] font-semibold uppercase tracking-[0.25em] text-cream/55">
-                          {label}
-                        </span>
-                        <span className="font-display text-base font-bold text-cream sm:text-lg">
-                          {value}
-                        </span>
-                      </div>
-                    </div>
-                    <ArrowRight
-                      className="h-4 w-4 text-gold/60 transition-all group-hover:translate-x-1 group-hover:text-gold rtl:rotate-180 rtl:group-hover:-translate-x-1"
-                      aria-hidden="true"
-                    />
-                  </a>
-                </li>
-              ))}
-            </ul>
-
-            <h3 className="mt-8 mb-3 text-[10px] font-semibold uppercase tracking-[0.3em] text-gold/80">
-              {t("socialMediaLabel")}
-            </h3>
-            <ul className="grid gap-3 sm:grid-cols-1">
-              {socialChannels.map(({ key, icon: Icon, label, value, href, external }) => (
+              {channels.map(({ key, icon: Icon, label, value, href, external }) => (
                 <li key={key}>
                   <a
                     href={href}
