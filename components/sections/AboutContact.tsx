@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Mail, MapPin, MessageCircle } from "lucide-react";
+import { ArrowRight, Mail, MessageCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/lib/i18n/navigation";
 import { InstagramIcon } from "@/components/SocialIcons";
@@ -72,10 +72,6 @@ export function AboutContact() {
               {t("description")}
             </p>
 
-            <p className="mt-8 inline-flex items-center gap-3 text-sm text-cream/70">
-              <MapPin className="h-4 w-4 text-gold/70" aria-hidden="true" />
-              {t("locationLabel")}
-            </p>
           </div>
 
           <div className="lg:col-span-7">

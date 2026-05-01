@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { Mail, MapPin, MessageCircle } from "lucide-react";
+import { Mail, MessageCircle } from "lucide-react";
 import { Link } from "@/lib/i18n/navigation";
 import { Logo } from "./Logo";
 import { InstagramIcon, FacebookIcon, YoutubeIcon } from "./SocialIcons";
@@ -113,12 +113,6 @@ export function Footer() {
                 <InstagramIcon className="h-4 w-4 text-gold/70" />
                 @campexplorer.sa
               </a>
-            </li>
-            <li>
-              <span className="inline-flex items-center gap-3 text-cream/75">
-                <MapPin className="h-4 w-4 text-gold/70" />
-                Riyadh, Saudi Arabia
-              </span>
             </li>
           </ul>
         </div>

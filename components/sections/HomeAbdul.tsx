@@ -7,12 +7,6 @@ import Image from "next/image";
 
 const ABDUL_WEBSITE_URL = "https://abdulexplorer.com/";
 
-const proofPoints = [
-  { year: "2018", label: "First Saudi expedition to the geographic North Pole, 90°N" },
-  { year: "2024", label: "Founded Camp Explorer to bring real-world learning to Saudi youth" },
-  { year: "Ongoing", label: "Continues to lead expeditions in conservation, culture, and adventure" },
-];
-
 export function HomeAbdul() {
   const t = useTranslations("home.abdul");
 
@@ -87,20 +81,6 @@ export function HomeAbdul() {
           <p className="text-base leading-relaxed text-cream/80 sm:text-lg">
             {t("description")}
           </p>
-
-          {/* Proof timeline */}
-          <ul className="mt-10 space-y-4 border-t border-gold/10 pt-8">
-            {proofPoints.map((point) => (
-              <li key={point.year} className="grid grid-cols-[5rem_1fr] items-baseline gap-4">
-                <span className="font-display text-sm font-black uppercase tracking-wider text-gold">
-                  {point.year}
-                </span>
-                <span className="text-sm text-cream/75 sm:text-base">
-                  {point.label}
-                </span>
-              </li>
-            ))}
-          </ul>
 
           <a
             href={ABDUL_WEBSITE_URL}

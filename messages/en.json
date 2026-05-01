@@ -37,7 +37,7 @@
       "credential": "First Saudi to ski to the North Pole",
       "tagline": "If I can, You Can, We All Can.",
       "description": "Camp Explorer carries the same mindset Abdul brought to standing on top of the world — that growth lives at the edge of comfort.",
-      "cta": "Get to know Abdul"
+      "cta": "Get to know Abdul Explorer"
     },
     "closingCta": {
       "title": "Ready to step out of your comfort zone?",
@@ -99,7 +99,6 @@
       "emailLabel": "Email us",
       "whatsappLabel": "WhatsApp us",
       "instagramLabel": "Instagram",
-      "locationLabel": "Riyadh, Saudi Arabia",
       "registerCta": "Register Your Interest"
     }
   },
