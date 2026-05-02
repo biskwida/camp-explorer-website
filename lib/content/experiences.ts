@@ -1,3 +1,5 @@
+import type { IconKey } from "./iconMap";
+
 export type ExperienceSlug =
   | "sri-lanka"
   | "cambodia"
@@ -13,6 +15,12 @@ export type Experience = {
   title: { en: string; ar: string };
   subtitle: { en: string; ar: string };
   duration?: { en: string; ar: string };
+  // New fields for detail pages:
+  meta?: { iconKey: IconKey }[];
+  activities?: { iconKey: IconKey; image: string }[];
+  timeline?: { iconKey: IconKey }[];
+  highlights?: { iconKey: IconKey }[];
+  safety?: { iconKey: IconKey }[];
 };
 
 export const experiences: Experience[] = [
@@ -29,6 +37,36 @@ export const experiences: Experience[] = [
     },
     subtitle: { en: "Sri Lanka", ar: "سريلانكا" },
     duration: { en: "11 days", ar: "11 يومًا" },
+    meta: [
+      { iconKey: "calendar" },
+      { iconKey: "leaf" },
+      { iconKey: "community" },
+      { iconKey: "compass" },
+    ],
+    activities: [
+      { iconKey: "leaf",       image: "/images/experiences/sri-lanka/conservation.jpg" },
+      { iconKey: "graduation", image: "/images/experiences/sri-lanka/teaching.jpg" },
+      { iconKey: "mountain",   image: "/images/experiences/sri-lanka/adventure.jpg" },
+    ],
+    timeline: [
+      { iconKey: "plane" },
+      { iconKey: "sun" },
+      { iconKey: "leaf" },
+      { iconKey: "mountain" },
+      { iconKey: "plane" },
+    ],
+    highlights: [
+      { iconKey: "leaf" },
+      { iconKey: "target" },
+      { iconKey: "heart" },
+      { iconKey: "star" },
+    ],
+    safety: [
+      { iconKey: "calendar" },
+      { iconKey: "users" },
+      { iconKey: "shield" },
+      { iconKey: "map" },
+    ],
   },
   {
     slug: "cambodia",
@@ -43,6 +81,36 @@ export const experiences: Experience[] = [
     },
     subtitle: { en: "Cambodia", ar: "كمبوديا" },
     duration: { en: "14 days", ar: "14 يومًا" },
+    meta: [
+      { iconKey: "calendar" },
+      { iconKey: "paw" },
+      { iconKey: "tree" },
+      { iconKey: "compass" },
+    ],
+    activities: [
+      { iconKey: "paw",  image: "/images/experiences/cambodia/conservation.jpg" },
+      { iconKey: "tree", image: "/images/experiences/cambodia/jungle.jpg" },
+      { iconKey: "book", image: "/images/experiences/cambodia/cultural.jpg" },
+    ],
+    timeline: [
+      { iconKey: "plane" },
+      { iconKey: "sun" },
+      { iconKey: "paw" },
+      { iconKey: "tree" },
+      { iconKey: "plane" },
+    ],
+    highlights: [
+      { iconKey: "paw" },
+      { iconKey: "tree" },
+      { iconKey: "heart" },
+      { iconKey: "star" },
+    ],
+    safety: [
+      { iconKey: "calendar" },
+      { iconKey: "users" },
+      { iconKey: "shield" },
+      { iconKey: "map" },
+    ],
   },
   {
     slug: "weekend-camp",
