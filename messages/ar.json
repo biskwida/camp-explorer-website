@@ -217,6 +217,106 @@
         "note": "Application required — participants are selected",
         "cta": "سجل اهتمامك"
       }
+    },
+    "cambodia": {
+      "hero": {
+        "kicker": "كمبوديا",
+        "title": "حماية الفيلة واستكشاف الأدغال",
+        "meta": [
+          "14-day experience",
+          "Elephant conservation",
+          "Jungle adventure",
+          "Cultural immersion"
+        ]
+      },
+      "overview": {
+        "kicker": "Program Overview",
+        "title": "Experience the wild, responsibly",
+        "body": "Spend the core of the program immersed in a protected elephant sanctuary in Mondulkiri, focusing on ethical conservation and environmental learning, then transition into a guided jungle expedition through Keo Seima Wildlife Sanctuary."
+      },
+      "activities": {
+        "kicker": "What Participants Will Do",
+        "items": [
+          {
+            "title": "Elephant Conservation",
+            "subtitle": "Mondulkiri",
+            "items": [
+              "Observe rescued elephants in their natural forest environment (no riding)",
+              "Daily conservation routines: food preparation, forest walks",
+              "Learn each elephant's history, rehabilitation, and behavior",
+              "Connect wildlife conservation with local communities"
+            ]
+          },
+          {
+            "title": "Jungle Expedition",
+            "subtitle": "Keo Seima",
+            "items": [
+              "Guided trekking through Keo Seima Wildlife Sanctuary",
+              "Track gibbons, macaques, and tropical bird species",
+              "Day and night jungle walks with expert local guides",
+              "Overnight stay in a remote forest bamboo camp"
+            ]
+          },
+          {
+            "title": "Cultural Immersion",
+            "subtitle": "",
+            "items": [
+              "Visit a local Bunong village",
+              "Traditional cooking experience",
+              "Group reflection and discussion sessions",
+              "Cultural introduction in Phnom Penh"
+            ]
+          }
+        ]
+      },
+      "timeline": {
+        "kicker": "Program Structure",
+        "title": "14 Days",
+        "items": [
+          { "range": "Day 1–2",  "label": "Arrival & cultural introduction" },
+          { "range": "Day 2",    "label": "Transfer to Mondulkiri" },
+          { "range": "Day 3–7",  "label": "Elephant conservation experience" },
+          { "range": "Day 8",    "label": "Rest & reflection" },
+          { "range": "Day 9–14", "label": "Jungle expedition + return" }
+        ]
+      },
+      "highlights": {
+        "kicker": "Key Highlights",
+        "items": [
+          "Ethical elephant conservation in a natural forest setting",
+          "Wild jungle trekking and wildlife tracking in protected reserves",
+          "Cultural immersion with Bunong communities and traditions",
+          "Balanced program combining impact, adventure, and education"
+        ]
+      },
+      "abdul": {
+        "kicker": "Abdul Explorer Experience",
+        "title": "A guided youth expedition",
+        "items": [
+          "Structured orientation and daily engagement sessions",
+          "Guided reflection and group discussions",
+          "Focus on leadership, teamwork, and personal development",
+          "Carefully curated balance of challenge, learning, and fun"
+        ]
+      },
+      "safety": {
+        "kicker": "Safety & Structure",
+        "items": [
+          "Structured daily program",
+          "1–2 adults per 10 participants",
+          "Risk assessments in place",
+          "On-ground support"
+        ]
+      },
+      "whoFor": {
+        "kicker": "Who It's For",
+        "cards": [
+          { "label": "Participants", "subtitle": "Ages 14–18" },
+          { "label": "Schools & groups", "subtitle": "Group bookings" }
+        ],
+        "note": "Application required — participants are selected",
+        "cta": "سجل اهتمامك"
+      }
     }
   }
 }
