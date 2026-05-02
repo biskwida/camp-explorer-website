@@ -51,7 +51,7 @@ export function HomeHero() {
               <img
                 src="/images/explorer-mark.svg"
                 alt={t("headlineAccent")}
-                className="inline-block h-[0.95em] w-auto align-baseline"
+                className="inline-block h-[1.2em] w-auto align-baseline"
               />
             ) : (
               <span className="text-gold">{t("headlineAccent")}</span>

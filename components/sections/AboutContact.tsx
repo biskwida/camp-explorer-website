@@ -58,7 +58,7 @@ export function AboutContact() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.7 }}
-        className="relative border-t border-gold bg-card px-8 py-16 sm:px-12 sm:py-20"
+        className="relative border-t border-gold bg-card px-5 py-14 sm:px-12 sm:py-20"
       >
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
           <div className="lg:col-span-5">
@@ -83,17 +83,17 @@ export function AboutContact() {
                     {...(external
                       ? { target: "_blank", rel: "noopener noreferrer" }
                       : {})}
-                    className="group flex items-center justify-between gap-6 rounded-sm border border-gold/15 bg-navy/40 px-6 py-5 transition-all hover:border-gold/45 hover:bg-navy/60"
+                    className="group flex items-center justify-between gap-3 rounded-sm border border-gold/15 bg-navy/40 px-4 py-5 transition-all hover:border-gold/45 hover:bg-navy/60 sm:gap-6 sm:px-6"
                   >
-                    <div className="flex items-center gap-4">
+                    <div className="flex min-w-0 items-center gap-3 sm:gap-4">
                       <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold/25 bg-gold/5 text-gold">
                         <Icon className="h-4 w-4" aria-hidden="true" />
                       </span>
-                      <div className="flex flex-col">
+                      <div className="flex min-w-0 flex-col">
                         <span className="text-[10px] font-semibold uppercase tracking-[0.25em] text-cream/55">
                           {label}
                         </span>
-                        <span className="font-display text-base font-bold text-cream sm:text-lg">
+                        <span className="truncate font-display text-base font-bold text-cream sm:text-lg">
                           {value}
                         </span>
                       </div>
