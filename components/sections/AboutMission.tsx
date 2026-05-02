@@ -13,7 +13,7 @@ export function AboutMission() {
   ];
 
   return (
-    <section className="relative border-y border-gold/10 bg-navy-deep py-24 sm:py-32">
+    <section className="relative bg-navy-deep py-24 sm:py-32">
       <div className="container-page">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

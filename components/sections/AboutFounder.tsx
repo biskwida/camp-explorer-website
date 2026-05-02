@@ -11,7 +11,7 @@ export function AboutFounder() {
   const t = useTranslations("about.founder");
 
   return (
-    <section className="relative overflow-hidden border-y border-gold/10 bg-navy-deep py-24 sm:py-32">
+    <section className="relative overflow-hidden bg-navy-deep py-24 sm:py-32">
       <div className="container-page relative grid gap-12 lg:grid-cols-12 lg:gap-16">
         {/* Photo column — drop a new file at /public/images/about/abdul.jpg to swap */}
         <motion.div

@@ -89,9 +89,23 @@ export function HomePreview() {
       >
         <Link
           href="/schools"
-          className="group flex flex-col items-start gap-6 rounded-sm border border-gold/20 bg-card/40 p-8 transition-colors hover:border-gold/50 hover:bg-card/60 sm:flex-row sm:items-center sm:p-10"
+          className="group relative isolate flex flex-col items-start gap-6 overflow-hidden rounded-sm border border-gold/20 p-8 transition-colors hover:border-gold/50 sm:flex-row sm:items-center sm:p-10"
         >
-          <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-gold/30 bg-gold/5 text-gold">
+          {/* Sunset background — drop a new file at /public/images/home/schools-sunset.jpg to swap */}
+          <Image
+            src="/images/home/schools-sunset.jpg"
+            alt=""
+            fill
+            sizes="(min-width: 1024px) 1100px, 100vw"
+            className="-z-20 object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+          />
+          {/* Left-weighted overlay keeps the sun warm on the right while text stays legible on the left */}
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 -z-10 bg-gradient-to-br from-navy-deep/90 via-navy-deep/65 to-navy-deep/25"
+          />
+
+          <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-gold/40 bg-navy-deep/60 text-gold backdrop-blur-[2px]">
             <GraduationCap className="h-6 w-6" />
           </div>
           <div className="flex-1">
@@ -101,7 +115,7 @@ export function HomePreview() {
             <h3 className="font-display text-xl font-bold text-cream sm:text-2xl">
               {t("schoolsTitle")}
             </h3>
-            <p className="mt-2 max-w-2xl text-sm text-cream/70 sm:text-base">
+            <p className="mt-2 max-w-2xl text-sm text-cream/80 sm:text-base">
               {t("schoolsDescription")}
             </p>
           </div>
