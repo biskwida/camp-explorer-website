@@ -1,0 +1,45 @@
+// lib/content/iconMap.ts
+import {
+  AlertCircle,
+  BookOpen,
+  CalendarDays,
+  Compass,
+  GraduationCap,
+  Heart,
+  Leaf,
+  MapPin,
+  Mountain,
+  PawPrint,
+  Plane,
+  Shield,
+  Star,
+  Sun,
+  Target,
+  Tent,
+  TreePine,
+  Users,
+} from "lucide-react";
+
+export const iconMap = {
+  alert: AlertCircle,
+  book: BookOpen,
+  calendar: CalendarDays,
+  community: Users,
+  compass: Compass,
+  graduation: GraduationCap,
+  heart: Heart,
+  leaf: Leaf,
+  map: MapPin,
+  mountain: Mountain,
+  paw: PawPrint,
+  plane: Plane,
+  shield: Shield,
+  star: Star,
+  sun: Sun,
+  target: Target,
+  tent: Tent,
+  tree: TreePine,
+  users: Users,
+} as const;
+
+export type IconKey = keyof typeof iconMap;
