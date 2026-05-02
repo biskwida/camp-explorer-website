@@ -115,5 +115,108 @@
     "exploreMore": "اكتشف المزيد",
     "registerInterest": "سجل اهتمامك",
     "loading": "جارٍ التحميل…"
+  },
+  "experiences": {
+    "sriLanka": {
+      "hero": {
+        "kicker": "سريلانكا",
+        "title": "حماية السلاحف والاستكشاف الساحلي",
+        "meta": [
+          "11-day experience",
+          "Wildlife conservation",
+          "Community engagement",
+          "Adventure & culture"
+        ]
+      },
+      "overview": {
+        "kicker": "Program Overview",
+        "title": "Protecting what matters",
+        "body": "Join an unforgettable 11-day youth experience in Sri Lanka, combining wildlife conservation, community engagement, and adventure travel. Participants work on a turtle conservation project while engaging with local communities through creative teaching sessions. Hands-on, meaningful, and culturally immersive."
+      },
+      "activities": {
+        "kicker": "What Participants Will Do",
+        "items": [
+          {
+            "title": "Turtle Conservation",
+            "subtitle": "Morning Activities",
+            "items": [
+              "Care for injured and rescued sea turtles",
+              "Support rehabilitation and release back into the ocean",
+              "Protect turtle eggs and hatcheries",
+              "Beach clean-ups to protect nesting areas",
+              "Learn about endangered species"
+            ]
+          },
+          {
+            "title": "Teaching & Community Engagement",
+            "subtitle": "Afternoons",
+            "items": [
+              "Conduct fun, creative sessions with local students",
+              "English conversation",
+              "Games & interactive learning",
+              "Team-building activities"
+            ]
+          },
+          {
+            "title": "Weekend Adventure",
+            "subtitle": "",
+            "items": [
+              "Wildlife safari — elephants, leopards in their natural habitat",
+              "Trek through hill country to panoramic viewpoints",
+              "Visit waterfalls and tea plantations",
+              "Explore historic towns with expert guides"
+            ]
+          }
+        ]
+      },
+      "timeline": {
+        "kicker": "Program Structure",
+        "title": "11 Days",
+        "items": [
+          { "range": "Day 1–2",  "label": "Travel" },
+          { "range": "Day 2",    "label": "Arrival + Orientation + Town Tour" },
+          { "range": "Day 3–7",  "label": "Conservation + Teaching" },
+          { "range": "Day 8–10", "label": "Weekend Adventure" },
+          { "range": "Day 10",   "label": "Departure" }
+        ]
+      },
+      "highlights": {
+        "kicker": "Key Highlights",
+        "items": [
+          "Work with 5 different turtle species in Sri Lanka",
+          "Make a real environmental impact through conservation",
+          "Combine volunteering, adventure, and cultural immersion",
+          "Develop confidence, teamwork, and global awareness"
+        ]
+      },
+      "abdul": {
+        "kicker": "Abdul Explorer Experience",
+        "title": "A guided youth expedition",
+        "items": [
+          "Daily evening activities and group challenges",
+          "Adventure-focused itinerary",
+          "Cultural immersion (local dress & cooking experience)",
+          "Full guidance and leadership throughout the trip"
+        ]
+      },
+      "safety": {
+        "kicker": "Safety & Structure",
+        "items": [
+          "Structured daily program",
+          "1–2 adults per 10 participants",
+          "Risk assessments in place",
+          "On-ground support"
+        ]
+      },
+      "whoFor": {
+        "kicker": "Who It's For",
+        "cards": [
+          { "label": "Participants", "subtitle": "Ages 14–18" },
+          { "label": "Schools & groups", "subtitle": "Group bookings" }
+        ],
+        "note": "Application required — participants are selected",
+        "cta": "سجل اهتمامك"
+      }
+    }
   }
 }
