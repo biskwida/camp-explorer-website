@@ -32,3 +32,13 @@ Then(
     ).toBeVisible();
   },
 );
+
+// Link href assertion — checks that at least one <a> element points to the given path.
+Then(
+  "I see a link to {string}",
+  async ({ page }, href: string) => {
+    await expect(
+      page.locator(`a[href="${href}"]`).first(),
+    ).toBeVisible();
+  },
+);
