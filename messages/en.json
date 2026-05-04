@@ -542,6 +542,39 @@
       "cta": "Get in touch to discuss"
     }
   },
+  "register": {
+    "metadata": {
+      "title": "Register Your Interest",
+      "description": "Tell us about yourself or your school group — we'll be in touch to plan your Camp Explorer experience."
+    },
+    "hero": {
+      "kicker": "Registration",
+      "headline": "Your next expedition",
+      "headlineAccent": "starts here.",
+      "subhead": "Fill in a short form and we'll be in touch to talk through the right program for you or your group.",
+      "cta": "Open registration form",
+      "note": "Takes 2–3 minutes · Spaces are limited"
+    },
+    "tracks": {
+      "kicker": "Who is this for",
+      "individual": {
+        "label": "Teens & Families",
+        "desc": "Weekend camps in Saudi Arabia, or immersive international expeditions to Sri Lanka and Cambodia. Open to teens aged 14–18 and family groups."
+      },
+      "school": {
+        "label": "Schools & Groups",
+        "desc": "Curriculum-aligned local programs or full international expeditions for student groups. We'll work around your academic calendar and learning objectives."
+      }
+    },
+    "next": {
+      "kicker": "What happens next",
+      "steps": [
+        { "n": "01", "title": "We review your form", "desc": "Our team reads every submission. We'll check availability and match you to the right program." },
+        { "n": "02", "title": "We get in touch", "desc": "Expect a call or WhatsApp message within 2 working days to talk through the details." },
+        { "n": "03", "title": "You start exploring", "desc": "Once confirmed, we handle the logistics. You focus on getting ready for the adventure." }
+      ]
+    }
+  },
   "experiencesOverview": {
     "metadata": {
       "title": "Our Experiences",
