@@ -2,13 +2,15 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { ExperienceCard } from "@/components/cards/ExperienceCard";
 import { experiences } from "@/lib/content/experiences";
 
 export function ExperiencesGrid() {
+  const t = useTranslations("experiencesOverview.grid");
   return (
     <section
-      aria-label="All experiences"
+      aria-label={t("label")}
       className="relative bg-navy py-20 sm:py-24 lg:py-28"
     >
       <div className="container-page">

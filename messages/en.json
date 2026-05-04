@@ -367,6 +367,7 @@
       "title": "Choose your expedition",
       "intro": "Immersive international and local experiences for young explorers aged 14–18 — designed to build confidence, awareness, and a lifelong sense of adventure."
     },
+    "grid": { "label": "All experiences" },
     "card": {
       "cta": "Explore experience"
     }
