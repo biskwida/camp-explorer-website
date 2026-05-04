@@ -360,5 +360,15 @@
         "cta": "Register your interest"
       }
     }
+  },
+  "experiencesOverview": {
+    "hero": {
+      "kicker": "Our Experiences",
+      "title": "Choose your expedition",
+      "intro": "Immersive international and local experiences for young explorers aged 14–18 — designed to build confidence, awareness, and a lifelong sense of adventure."
+    },
+    "card": {
+      "cta": "Explore experience"
+    }
   }
 }
