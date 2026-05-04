@@ -117,6 +117,127 @@
     "loading": "Loading…"
   },
   "experiences": {
+    "weekend-camp": {
+      "hero": {
+        "kicker": "Saudi Arabia",
+        "title": "Weekend Camp for Teens & Families",
+        "meta": [
+          "Weekend experience",
+          "Outdoor adventure",
+          "Teamwork & connection",
+          "Build confidence"
+        ]
+      },
+      "overview": {
+        "kicker": "Program Overview",
+        "title": "Built for connection, adventure, and real-world experiences",
+        "body": "Weekend camp designed to bring participants into nature through immersive, structured experiences. From outdoor challenges to shared moments around the fire — every experience is built to create connection, confidence, and lasting memories."
+      },
+      "activities": {
+        "kicker": "What Participants Will Do",
+        "items": [
+          {
+            "title": "Individual Experiences",
+            "subtitle": "For Teens",
+            "items": [
+              "Build independence through outdoor challenges",
+              "Team-based adventure activities",
+              "Structured group leadership exercises",
+              "Evening campfire reflection sessions"
+            ]
+          },
+          {
+            "title": "Family Experiences",
+            "subtitle": "For Parents & Kids",
+            "items": [
+              "Shared outdoor experiences in nature",
+              "Nature-based activities and exploration",
+              "Connection and bonding through challenge",
+              "Memories that last beyond the weekend"
+            ]
+          },
+          {
+            "title": "What to Expect",
+            "subtitle": "Both Programs",
+            "items": [
+              "Overnight and day experience options",
+              "Nature-based Saudi environments",
+              "Structured and supervised programs",
+              "Small group experiences for deeper connection"
+            ]
+          }
+        ]
+      },
+      "timeline": {
+        "kicker": "Program Structure",
+        "title": "Weekend Experience",
+        "items": [
+          {
+            "range": "Day 1 — Morning",
+            "label": "Arrival, welcome, and orientation"
+          },
+          {
+            "range": "Day 1 — Afternoon",
+            "label": "Outdoor challenges and team activities"
+          },
+          {
+            "range": "Day 1 — Evening",
+            "label": "Campfire, reflection, and stargazing"
+          },
+          {
+            "range": "Day 2 — Morning",
+            "label": "Nature exploration and adventure activity"
+          },
+          {
+            "range": "Day 2 — Afternoon",
+            "label": "Group debrief and departure"
+          }
+        ]
+      },
+      "highlights": {
+        "kicker": "Key Highlights",
+        "items": [
+          "Outdoor adventure in Saudi Arabia's natural landscapes",
+          "Teamwork and connection through shared challenges",
+          "Build confidence and independence in a safe, supervised setting",
+          "Memories that last long after the weekend ends"
+        ]
+      },
+      "abdul": {
+        "kicker": "Abdul Explorer Experience",
+        "title": "Guided by experience, built for growth",
+        "items": [
+          "Every activity designed around meaningful challenge",
+          "Guided reflection and group discussion sessions",
+          "Focus on confidence, teamwork, and personal growth",
+          "Abdul's mindset: every step outside comfort is a step forward"
+        ]
+      },
+      "safety": {
+        "kicker": "Safety & Structure",
+        "items": [
+          "Structured daily program",
+          "1–2 adults per 10 participants",
+          "Risk assessments in place",
+          "On-ground support"
+        ]
+      },
+      "whoFor": {
+        "kicker": "Who It's For",
+        "cards": [
+          {
+            "label": "Teens",
+            "subtitle": "Ages 12–18"
+          },
+          {
+            "label": "Families",
+            "subtitle": "Parents & kids"
+          }
+        ],
+        "note": "Register your interest — spaces are limited",
+        "cta": "Register your interest"
+      }
+    },
     "cambodia": {
       "hero": {
         "kicker": "Cambodia",

@@ -150,6 +150,37 @@ export const experiences: Experience[] = [
       ar: "مخيم نهاية الأسبوع للمراهقين والعائلات",
     },
     subtitle: { en: "Saudi Arabia", ar: "المملكة العربية السعودية" },
+    duration: { en: "Weekend", ar: "نهاية الأسبوع" },
+    meta: [
+      { iconKey: "calendar" },
+      { iconKey: "tent" },
+      { iconKey: "users" },
+      { iconKey: "star" },
+    ],
+    activities: [
+      { iconKey: "mountain", image: "/images/experiences/weekend-camp/individual.jpg" },
+      { iconKey: "heart",    image: "/images/experiences/weekend-camp/family.jpg" },
+      { iconKey: "tent",     image: "/images/experiences/weekend-camp/hero.jpg" },
+    ],
+    timeline: [
+      { iconKey: "sun" },
+      { iconKey: "mountain" },
+      { iconKey: "star" },
+      { iconKey: "sun" },
+      { iconKey: "heart" },
+    ],
+    highlights: [
+      { iconKey: "mountain" },
+      { iconKey: "users" },
+      { iconKey: "star" },
+      { iconKey: "heart" },
+    ],
+    safety: [
+      { iconKey: "calendar" },
+      { iconKey: "users" },
+      { iconKey: "shield" },
+      { iconKey: "map" },
+    ],
   },
 ];
 
@@ -180,6 +211,10 @@ export const placeholderImages: Record<string, string> = {
   "/images/experiences/weekend-camp/hero.jpg":
     "/images/experiences/weekend-camp/hero.jpg",
   "/images/experiences/weekend-camp/card.jpg":
+    "/images/experiences/weekend-camp/card.jpg",
+  "/images/experiences/weekend-camp/individual.jpg":
+    "/images/experiences/weekend-camp/hero.jpg",
+  "/images/experiences/weekend-camp/family.jpg":
     "/images/experiences/weekend-camp/card.jpg",
   "/images/schools/hero.jpg":
     "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=2400&q=80",
