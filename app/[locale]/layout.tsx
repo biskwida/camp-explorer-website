@@ -28,6 +28,9 @@ const display = Inter({
   display: "swap",
 });
 
+const BASE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ?? "https://campexplorer.sa";
+
 export const metadata: Metadata = {
   title: {
     default: "Camp Explorer — Be Your Own Explorer",
@@ -35,7 +38,38 @@ export const metadata: Metadata = {
   },
   description:
     "Real-world adventure, conservation, and learning experiences for youth, families, and schools. Led by Abdul Explorer — first Saudi to ski to the North Pole.",
-  metadataBase: new URL("https://campexplorer.sa"),
+  metadataBase: new URL(BASE_URL),
+  openGraph: {
+    type: "website",
+    siteName: "Camp Explorer",
+    title: "Camp Explorer — Be Your Own Explorer",
+    description:
+      "Real-world adventure, conservation, and learning experiences for youth, families, and schools.",
+    images: [
+      {
+        url: "/images/home/hero.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Camp Explorer — Be Your Own Explorer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Camp Explorer — Be Your Own Explorer",
+    description:
+      "Real-world adventure, conservation, and learning experiences for youth, families, and schools.",
+    images: ["/images/home/hero.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+    },
+  },
 };
 
 export function generateStaticParams() {
@@ -63,6 +97,27 @@ export default async function LocaleLayout({
       suppressHydrationWarning
     >
       <body suppressHydrationWarning>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Camp Explorer",
+              url: BASE_URL,
+              logo: `${BASE_URL}/logo.png`,
+              description:
+                "Real-world adventure, conservation, and learning experiences for youth, families, and schools in Saudi Arabia.",
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+966544142610",
+                contactType: "customer service",
+                availableLanguage: ["English", "Arabic"],
+              },
+              sameAs: ["https://www.instagram.com/campexplorersa"],
+            }),
+          }}
+        />
         <NextIntlClientProvider>
           <Header />
           {children}
