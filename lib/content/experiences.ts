@@ -163,7 +163,7 @@ export const placeholderImages: Record<string, string> = {
   "/images/about/hero.jpg":
     "https://images.unsplash.com/photo-1527824404775-dce343118ebc?w=2400&q=80",
   "/images/about/abdul.jpg":
-    "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=1200&q=80",
+    "/images/about/abdul.jpg",
   "/images/about/philosophy.jpg":
     "https://images.unsplash.com/photo-1551632811-561732d1e306?w=2400&q=80",
   // Sri Lanka uses real local files (drop replacement at the same path to swap)
