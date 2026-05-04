@@ -1,4 +1,5 @@
-// app/[locale]/experiences/sri-lanka/page.tsx
+import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { AbdulExperienceBlock } from "@/components/sections/AbdulExperienceBlock";
 import { ExperienceActivities } from "@/components/sections/ExperienceActivities";
 import { ExperienceHero } from "@/components/sections/ExperienceHero";
@@ -8,9 +9,29 @@ import { ExperienceSafety } from "@/components/sections/ExperienceSafety";
 import { ExperienceTimeline } from "@/components/sections/ExperienceTimeline";
 import { ExperienceWhoFor } from "@/components/sections/ExperienceWhoFor";
 
-export default function SriLankaPage() {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "experiences.sri-lanka.hero" });
+  return {
+    title: t("title"),
+    description: "An 11-day youth expedition combining turtle conservation, community teaching, and coastal adventure in Sri Lanka.",
+  };
+}
+
+export default async function SriLankaPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
-    <>
+    <main>
       <ExperienceHero slug="sri-lanka" />
       <ExperienceOverview slug="sri-lanka" />
       <ExperienceActivities slug="sri-lanka" />
@@ -19,6 +40,6 @@ export default function SriLankaPage() {
       <AbdulExperienceBlock slug="sri-lanka" />
       <ExperienceSafety slug="sri-lanka" />
       <ExperienceWhoFor slug="sri-lanka" />
-    </>
+    </main>
   );
 }

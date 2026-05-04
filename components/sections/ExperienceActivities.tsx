@@ -4,7 +4,7 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { experiences } from "@/lib/content/experiences";
+import { experiences, placeholderImages } from "@/lib/content/experiences";
 import { iconMap } from "@/lib/content/iconMap";
 import type { ExperienceSlug } from "@/lib/content/experiences";
 
@@ -46,7 +46,7 @@ export function ExperienceActivities({ slug }: Props) {
               >
                 <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-navy-deep via-navy to-gold/20">
                   <Image
-                    src={a.image}
+                    src={placeholderImages[a.image] ?? a.image}
                     alt=""
                     fill
                     sizes="(min-width: 768px) 33vw, 100vw"

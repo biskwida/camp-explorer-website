@@ -202,11 +202,25 @@ export const placeholderImages: Record<string, string> = {
     "/images/experiences/sri-lanka/hero.jpg",
   "/images/experiences/sri-lanka/card.jpg":
     "/images/experiences/sri-lanka/card.jpg",
+  // Sri Lanka activity images — fallback to hero until real photos are dropped in
+  "/images/experiences/sri-lanka/conservation.jpg":
+    "/images/experiences/sri-lanka/hero.jpg",
+  "/images/experiences/sri-lanka/teaching.jpg":
+    "/images/experiences/sri-lanka/card.jpg",
+  "/images/experiences/sri-lanka/adventure.jpg":
+    "/images/experiences/sri-lanka/hero.jpg",
   // Cambodia uses real local files (drop replacement at the same path to swap)
   "/images/experiences/cambodia/hero.jpg":
     "/images/experiences/cambodia/hero.jpg",
   "/images/experiences/cambodia/card.jpg":
     "/images/experiences/cambodia/card.jpg",
+  // Cambodia activity images — fallback to hero until real photos are dropped in
+  "/images/experiences/cambodia/conservation.jpg":
+    "/images/experiences/cambodia/hero.jpg",
+  "/images/experiences/cambodia/jungle.jpg":
+    "/images/experiences/cambodia/card.jpg",
+  "/images/experiences/cambodia/cultural.jpg":
+    "/images/experiences/cambodia/hero.jpg",
   // Weekend Camp uses the real local files (drop replacement at the same path to swap)
   "/images/experiences/weekend-camp/hero.jpg":
     "/images/experiences/weekend-camp/hero.jpg",
@@ -217,7 +231,7 @@ export const placeholderImages: Record<string, string> = {
   "/images/experiences/weekend-camp/family.jpg":
     "/images/experiences/weekend-camp/card.jpg",
   "/images/schools/hero.jpg":
-    "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=2400&q=80",
+    "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=2400&q=80",
   "/images/schools/saudi/hero.jpg":
     "https://images.unsplash.com/photo-1542401886-65d6c61db217?w=2400&q=80",
   "/images/schools/international/hero.jpg":
