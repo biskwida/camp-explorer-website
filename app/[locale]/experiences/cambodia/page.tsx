@@ -15,10 +15,11 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "experiences.cambodia.hero" });
+  const tHero = await getTranslations({ locale, namespace: "experiences.cambodia.hero" });
+  const tMeta = await getTranslations({ locale, namespace: "experiences.cambodia.metadata" });
   return {
-    title: t("title"),
-    description: "A 14-day youth expedition combining ethical elephant conservation and a guided jungle trek through Keo Seima Wildlife Sanctuary in Cambodia.",
+    title: tHero("title"),
+    description: tMeta("description"),
   };
 }
 

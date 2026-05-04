@@ -236,6 +236,9 @@
         ],
         "note": "Register your interest — spaces are limited",
         "cta": "Register your interest"
+      },
+      "metadata": {
+        "description": "Weekend outdoor camp for teens and families in Saudi Arabia — adventure, leadership, and memories that last."
       }
     },
     "cambodia": {
@@ -357,6 +360,9 @@
         ],
         "note": "Application required — participants are selected",
         "cta": "Register your interest"
+      },
+      "metadata": {
+        "description": "A 14-day youth expedition combining ethical elephant conservation and a guided jungle trek through Keo Seima Wildlife Sanctuary in Cambodia."
       }
     },
     "sri-lanka": {
@@ -479,6 +485,9 @@
         ],
         "note": "Application required — participants are selected",
         "cta": "Register your interest"
+      },
+      "metadata": {
+        "description": "An 11-day youth expedition combining turtle conservation, community teaching, and coastal adventure in Sri Lanka."
       }
     }
   },
@@ -513,6 +522,7 @@
       ],
       "whoKicker": "Who It's For",
       "whoItems": ["Primary schools", "Secondary schools", "Student groups & youth programs"],
+      "formatskicker": "Program Formats",
       "cta": "Register your interest"
     },
     "international": {
@@ -572,7 +582,8 @@
         { "n": "01", "title": "We review your form", "desc": "Our team reads every submission. We'll check availability and match you to the right program." },
         { "n": "02", "title": "We get in touch", "desc": "Expect a call or WhatsApp message within 2 working days to talk through the details." },
         { "n": "03", "title": "You start exploring", "desc": "Once confirmed, we handle the logistics. You focus on getting ready for the adventure." }
-      ]
+      ],
+      "closingNote": "Still have questions? We reply within 2 working days."
     }
   },
   "experiencesOverview": {

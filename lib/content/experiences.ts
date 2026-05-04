@@ -231,7 +231,7 @@ export const placeholderImages: Record<string, string> = {
   "/images/experiences/weekend-camp/family.jpg":
     "/images/experiences/weekend-camp/card.jpg",
   "/images/schools/hero.jpg":
-    "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=2400&q=80",
+    "/images/home/schools-sunset.jpg",
   "/images/schools/saudi/hero.jpg":
     "https://images.unsplash.com/photo-1542401886-65d6c61db217?w=2400&q=80",
   "/images/schools/international/hero.jpg":

@@ -15,10 +15,11 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "experiences.sri-lanka.hero" });
+  const tHero = await getTranslations({ locale, namespace: "experiences.sri-lanka.hero" });
+  const tMeta = await getTranslations({ locale, namespace: "experiences.sri-lanka.metadata" });
   return {
-    title: t("title"),
-    description: "An 11-day youth expedition combining turtle conservation, community teaching, and coastal adventure in Sri Lanka.",
+    title: tHero("title"),
+    description: tMeta("description"),
   };
 }
 
