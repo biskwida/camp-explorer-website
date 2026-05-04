@@ -14,9 +14,7 @@ export function ExperienceCard({ experience }: Props) {
   const t = useTranslations("experiencesOverview.card");
   const locale = useLocale() as Locale;
 
-  const categoryLabel =
-    experience.category === "international" ? "International" : "Local";
-  const kicker = `${experience.subtitle[locale]} · ${categoryLabel}`;
+  const kicker = `${experience.subtitle[locale]} · ${experience.kicker[locale]}`;
   const altText =
     experience.cardImageAlt?.[locale] ?? experience.title[locale];
   const description = experience.cardDescription?.[locale] ?? "";
@@ -56,7 +54,7 @@ export function ExperienceCard({ experience }: Props) {
             {kicker}
           </p>
           <h3 className="mt-3 font-display text-xl font-bold leading-snug text-cream sm:text-2xl">
-            <span className="bg-[linear-gradient(currentColor,currentColor)] bg-[length:0%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 motion-safe:group-hover:bg-[length:100%_1px]">
+            <span className="bg-[linear-gradient(currentColor,currentColor)] bg-[length:0%_1px] bg-left-bottom rtl:bg-right-bottom bg-no-repeat transition-[background-size] duration-500 motion-safe:group-hover:bg-[length:100%_1px]">
               {experience.title[locale]}
             </span>
           </h3>
