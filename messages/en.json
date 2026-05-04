@@ -482,6 +482,66 @@
       }
     }
   },
+  "schools": {
+    "metadata": {
+      "title": "For Schools",
+      "description": "Curriculum-aligned local and international programs for student groups — from primary through secondary, built around your learning objectives."
+    },
+    "hero": {
+      "kicker": "For Schools",
+      "headline": "Beyond the classroom.",
+      "headlineAccent": "Into the real world.",
+      "subhead": "We build experiences that move learning out of the classroom and into environments where students grow through doing — not just watching."
+    },
+    "local": {
+      "kicker": "Local School Programs",
+      "headline": "Saudi Arabia — discover your own backyard",
+      "body": "This is not a typical camp. Camp Explorer offers structured experiences where students engage with Saudi culture, nature, and practical life skills in a meaningful environment. They don't just attend. They experience.",
+      "highlights": [
+        "Bedouin cultural experiences",
+        "Animal care and interaction",
+        "Greenhouse & sustainability workshops",
+        "Traditional cooking experiences",
+        "Outdoor challenges and teamwork",
+        "Reflection and mindfulness sessions"
+      ],
+      "formats": [
+        { "label": "Day experience", "desc": "A full day of structured activities — no overnight required." },
+        { "label": "Overnight camp", "desc": "One or two nights to deepen the immersive experience." },
+        { "label": "Multi-day program", "desc": "3–5 day programs with a full arc of learning and adventure." },
+        { "label": "Custom program", "desc": "Built entirely around your school's objectives and group size." }
+      ],
+      "whoKicker": "Who It's For",
+      "whoItems": ["Primary schools", "Secondary schools", "Student groups & youth programs"],
+      "cta": "Register your interest"
+    },
+    "international": {
+      "kicker": "International School Programs",
+      "headline": "Global experiences. Real learning.",
+      "body": "Take your students beyond Saudi Arabia into immersive, real-world environments. Both international programs are available for school group bookings — with dedicated school coordination and curriculum alignment support.",
+      "cta": "View full program",
+      "programs": [
+        {
+          "location": "Sri Lanka",
+          "title": "Turtle Conservation & Coastal Expedition",
+          "duration": "11 days",
+          "href": "/experiences/sri-lanka"
+        },
+        {
+          "location": "Cambodia",
+          "title": "Elephant Conservation & Jungle Expedition",
+          "duration": "14 days",
+          "href": "/experiences/cambodia"
+        }
+      ]
+    },
+    "custom": {
+      "kicker": "Custom Expeditions",
+      "headline": "Need something different?",
+      "body": "We design bespoke expeditions built entirely around your curriculum, objectives, and group. Tell us what you want your students to experience — we'll build it.",
+      "cta": "Get in touch to discuss"
+    }
+  },
   "experiencesOverview": {
     "metadata": {
       "title": "Our Experiences",
