@@ -9,6 +9,8 @@ export type Experience = {
   slug: ExperienceSlug;
   href: string;
   cardImage: string;
+  cardImageAlt?: { en: string; ar: string };
+  cardDescription?: { en: string; ar: string };
   heroImage: string;
   category: "international" | "local";
   kicker: { en: string; ar: string };
@@ -28,6 +30,14 @@ export const experiences: Experience[] = [
     slug: "sri-lanka",
     href: "/experiences/sri-lanka",
     cardImage: "/images/experiences/sri-lanka/card.jpg",
+    cardImageAlt: {
+      en: "Sea turtle being released onto the sand at sunrise",
+      ar: "إطلاق سلحفاة بحرية على الرمال عند شروق الشمس",
+    },
+    cardDescription: {
+      en: "Wildlife conservation, community teaching, and coastal adventure across 11 unforgettable days.",
+      ar: "حماية الحياة البرية، والتدريس المجتمعي، ومغامرة ساحلية على مدى 11 يومًا لا تُنسى.",
+    },
     heroImage: "/images/experiences/sri-lanka/hero.jpg",
     category: "international",
     kicker: { en: "International Expedition", ar: "رحلة دولية" },
@@ -72,6 +82,14 @@ export const experiences: Experience[] = [
     slug: "cambodia",
     href: "/experiences/cambodia",
     cardImage: "/images/experiences/cambodia/card.jpg",
+    cardImageAlt: {
+      en: "Elephant walking through dense jungle in Mondulkiri",
+      ar: "فيل يسير عبر الأدغال الكثيفة في موندولكيري",
+    },
+    cardDescription: {
+      en: "Ethical elephant sanctuary days followed by a guided jungle expedition through Keo Seima.",
+      ar: "أيام في محمية الفيلة الأخلاقية تليها رحلة استكشافية في أدغال كيو سيما.",
+    },
     heroImage: "/images/experiences/cambodia/hero.jpg",
     category: "international",
     kicker: { en: "International Expedition", ar: "رحلة دولية" },
@@ -116,6 +134,14 @@ export const experiences: Experience[] = [
     slug: "weekend-camp",
     href: "/experiences/weekend-camp",
     cardImage: "/images/experiences/weekend-camp/card.jpg",
+    cardImageAlt: {
+      en: "Group of teens around a campfire under stars in the Saudi desert",
+      ar: "مجموعة من المراهقين حول نار المخيم تحت النجوم في الصحراء السعودية",
+    },
+    cardDescription: {
+      en: "Outdoor leadership and adventure for teens and families, close to home in Saudi Arabia.",
+      ar: "قيادة المغامرة في الهواء الطلق للمراهقين والعائلات، قريبًا من المنزل في المملكة العربية السعودية.",
+    },
     heroImage: "/images/experiences/weekend-camp/hero.jpg",
     category: "local",
     kicker: { en: "Local Experience", ar: "تجربة محلية" },
