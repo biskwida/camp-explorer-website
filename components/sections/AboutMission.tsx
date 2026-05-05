@@ -20,7 +20,7 @@ export function AboutMission() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7 }}
-          className="mx-auto max-w-3xl text-center"
+          className="max-w-3xl text-start"
         >
           <h2 className="text-xs font-semibold uppercase tracking-[0.4em] text-gold sm:text-sm">
             {t("kicker")}

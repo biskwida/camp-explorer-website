@@ -4,7 +4,6 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { experiences } from "@/lib/content/experiences";
-import { iconMap } from "@/lib/content/iconMap";
 import type { ExperienceSlug } from "@/lib/content/experiences";
 
 type Props = { slug: ExperienceSlug };
@@ -29,28 +28,28 @@ export function ExperienceHighlights({ slug }: Props) {
           {t("kicker")}
         </motion.h2>
 
-        <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
-          {exp.highlights.map((h, i) => {
-            const Icon = iconMap[h.iconKey];
-            return (
-              <motion.li
-                key={i}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-80px" }}
-                transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="rounded-sm border border-gold/15 bg-navy-deep/60 p-6"
+        <ol className="mt-10 grid gap-x-12 gap-y-6 sm:grid-cols-2">
+          {items.map((item, i) => (
+            <motion.li
+              key={i}
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.5, delay: i * 0.06 }}
+              className="flex items-baseline gap-5 border-b border-gold/10 pb-5"
+            >
+              <span
+                aria-hidden="true"
+                className="font-display text-sm font-semibold tabular-nums text-gold/70"
               >
-                <span className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-gold/30 bg-gold/5 text-gold">
-                  <Icon className="h-5 w-5" aria-hidden="true" />
-                </span>
-                <p className="mt-5 font-display text-base font-bold leading-snug text-cream sm:text-lg">
-                  {items[i]}
-                </p>
-              </motion.li>
-            );
-          })}
-        </ul>
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <p className="font-display text-base font-bold leading-snug text-cream sm:text-lg">
+                {item}
+              </p>
+            </motion.li>
+          ))}
+        </ol>
       </div>
     </section>
   );

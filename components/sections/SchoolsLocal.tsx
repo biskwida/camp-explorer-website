@@ -101,7 +101,7 @@ export function SchoolsLocal() {
           className="mt-20"
         >
           <p className="mb-8 text-xs font-semibold uppercase tracking-[0.4em] text-gold">
-            Program Formats
+            {t("formatskicker")}
           </p>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {formats.map((f, i) => {

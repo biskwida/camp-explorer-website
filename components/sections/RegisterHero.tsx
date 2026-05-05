@@ -119,7 +119,7 @@ export function RegisterHero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-16 border-t border-gold/10 pt-14"
           >
-            <p className="mb-6 text-base text-cream/60">{t("hero.subhead")}</p>
+            <p className="mb-6 text-base text-cream/60">{t("next.closingNote")}</p>
             {/* Replace TALLY_FORM_ID with your form's ID from tally.so */}
             <button
               data-tally-open="TALLY_FORM_ID"

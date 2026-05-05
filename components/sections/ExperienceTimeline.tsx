@@ -4,7 +4,6 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { experiences } from "@/lib/content/experiences";
-import { iconMap } from "@/lib/content/iconMap";
 import type { ExperienceSlug } from "@/lib/content/experiences";
 
 type Props = { slug: ExperienceSlug };
@@ -36,14 +35,8 @@ export function ExperienceTimeline({ slug }: Props) {
         </motion.div>
 
         <div className="relative mt-14">
-          {/* Dotted connector — desktop only */}
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute left-0 right-0 top-6 hidden h-px border-t border-dashed border-gold/30 md:block"
-          />
-          <ol className="relative grid gap-8 md:grid-cols-5 md:gap-4">
-            {exp.timeline.map((entry, i) => {
-              const Icon = iconMap[entry.iconKey];
+          <ol className="relative grid gap-10 md:grid-cols-5 md:gap-6">
+            {exp.timeline.map((_entry, i) => {
               const copy = items[i];
               return (
                 <motion.li
@@ -52,19 +45,14 @@ export function ExperienceTimeline({ slug }: Props) {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-80px" }}
                   transition={{ duration: 0.5, delay: i * 0.08 }}
-                  className="flex items-start gap-4 md:flex-col md:items-center md:text-center"
+                  className="border-t border-gold/25 pt-5 md:text-center"
                 >
-                  <span className="relative inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-gold/40 bg-navy text-gold">
-                    <Icon className="h-5 w-5" aria-hidden="true" />
-                  </span>
-                  <div className="md:mt-3">
-                    <p className="font-display text-base font-bold text-cream sm:text-lg">
-                      {copy.range}
-                    </p>
-                    <p className="mt-1 text-sm leading-relaxed text-cream/75">
-                      {copy.label}
-                    </p>
-                  </div>
+                  <p className="font-display text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+                    {copy.range}
+                  </p>
+                  <p className="mt-3 font-display text-base font-bold leading-snug text-cream sm:text-lg">
+                    {copy.label}
+                  </p>
                 </motion.li>
               );
             })}
