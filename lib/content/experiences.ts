@@ -158,9 +158,9 @@ export const experiences: Experience[] = [
       { iconKey: "star" },
     ],
     activities: [
-      { iconKey: "mountain", image: "/images/experiences/weekend-camp/individual.jpg" },
-      { iconKey: "heart",    image: "/images/experiences/weekend-camp/family.jpg" },
-      { iconKey: "tent",     image: "/images/experiences/weekend-camp/hero.jpg" },
+      { iconKey: "mountain", image: "/images/experiences/weekend-camp/family.jpg" },
+      { iconKey: "heart",    image: "/images/experiences/weekend-camp/individual.jpg" },
+      { iconKey: "tent",     image: "/images/experiences/weekend-camp/camp-sunset.jpg" },
     ],
     timeline: [
       { iconKey: "sun" },
@@ -230,6 +230,8 @@ export const placeholderImages: Record<string, string> = {
     "/images/experiences/weekend-camp/hero.jpg",
   "/images/experiences/weekend-camp/family.jpg":
     "/images/experiences/weekend-camp/family.jpg",
+  "/images/experiences/weekend-camp/camp-sunset.jpg":
+    "/images/experiences/weekend-camp/camp-sunset.jpg",
   "/images/schools/hero.jpg":
     "/images/home/schools-sunset.jpg",
   "/images/schools/saudi/hero.jpg":
