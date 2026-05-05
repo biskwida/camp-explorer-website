@@ -202,25 +202,25 @@ export const placeholderImages: Record<string, string> = {
     "/images/experiences/sri-lanka/hero.jpg",
   "/images/experiences/sri-lanka/card.jpg":
     "/images/experiences/sri-lanka/card.jpg",
-  // Sri Lanka activity images — fallback to hero until real photos are dropped in
+  // Sri Lanka activity images
   "/images/experiences/sri-lanka/conservation.jpg":
-    "/images/experiences/sri-lanka/hero.jpg",
+    "/images/experiences/sri-lanka/conservation.jpg",
   "/images/experiences/sri-lanka/teaching.jpg":
-    "/images/experiences/sri-lanka/card.jpg",
+    "/images/experiences/sri-lanka/teaching.jpg",
   "/images/experiences/sri-lanka/adventure.jpg":
-    "/images/experiences/sri-lanka/hero.jpg",
+    "/images/experiences/sri-lanka/adventure.jpg",
   // Cambodia uses real local files (drop replacement at the same path to swap)
   "/images/experiences/cambodia/hero.jpg":
     "/images/experiences/cambodia/hero.jpg",
   "/images/experiences/cambodia/card.jpg":
     "/images/experiences/cambodia/card.jpg",
-  // Cambodia activity images — fallback to hero until real photos are dropped in
+  // Cambodia activity images
   "/images/experiences/cambodia/conservation.jpg":
-    "/images/experiences/cambodia/hero.jpg",
+    "/images/experiences/cambodia/conservation.jpg",
   "/images/experiences/cambodia/jungle.jpg":
-    "/images/experiences/cambodia/card.jpg",
+    "/images/experiences/cambodia/jungle.jpg",
   "/images/experiences/cambodia/cultural.jpg":
-    "/images/experiences/cambodia/hero.jpg",
+    "/images/experiences/cambodia/cultural.jpg",
   // Weekend Camp uses the real local files (drop replacement at the same path to swap)
   "/images/experiences/weekend-camp/hero.jpg":
     "/images/experiences/weekend-camp/hero.jpg",
