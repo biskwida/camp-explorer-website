@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { ArrowRight } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 
 export function RegisterHero() {
   const t = useTranslations("register");
@@ -31,25 +31,21 @@ export function RegisterHero() {
               {t("hero.subhead")}
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-5">
-              {/* Replace lbVMr6 with your form's ID from tally.so */}
-              <button
-                data-tally-open="lbVMr6"
-                data-tally-overlay="1"
-                data-tally-emoji-text="👋"
-                data-tally-emoji-animation="wave"
-                className="inline-flex h-14 cursor-pointer items-center gap-2.5 rounded-sm bg-gold px-8 text-sm font-bold uppercase tracking-wider text-navy-deep transition-colors hover:bg-gold-light"
+              <a
+                href="#register-form"
+                className="inline-flex h-14 items-center gap-2.5 rounded-sm bg-gold px-8 text-sm font-bold uppercase tracking-wider text-navy-deep transition-colors hover:bg-gold-light"
               >
                 {t("hero.cta")}
-                <ArrowRight className="h-4 w-4 rtl:[transform:scaleX(-1)]" aria-hidden="true" />
-              </button>
+                <ArrowDown className="h-4 w-4" aria-hidden="true" />
+              </a>
               <p className="text-xs text-cream/40">{t("hero.note")}</p>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* ── Who is this for ───────────────────────────── */}
-      <section className="bg-navy py-24 sm:py-32">
+      {/* ── Inline Tally form ─────────────────────────── */}
+      <section id="register-form" className="bg-navy py-24 sm:py-32">
         <div className="container-page">
           <motion.p
             initial={{ opacity: 0, y: 16 }}
@@ -60,25 +56,21 @@ export function RegisterHero() {
           >
             {t("tracks.kicker")}
           </motion.p>
-          <div className="grid gap-6 sm:grid-cols-2">
-            {(["individual", "school"] as const).map((track, i) => (
-              <motion.div
-                key={track}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-80px" }}
-                transition={{ duration: 0.6, delay: i * 0.1 }}
-                className="rounded-sm border border-gold/15 bg-navy-deep p-8"
-              >
-                <p className="font-display text-xl font-bold text-cream">
-                  {t(`tracks.${track}.label`)}
-                </p>
-                <p className="mt-3 text-sm leading-relaxed text-cream/60">
-                  {t(`tracks.${track}.desc`)}
-                </p>
-              </motion.div>
-            ))}
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.6 }}
+          >
+            <iframe
+              data-tally-src="https://tally.so/embed/lbVMr6?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+              loading="lazy"
+              width="100%"
+              height="800"
+              frameBorder={0}
+              title="Camp Explorer — Register Your Interest"
+            />
+          </motion.div>
         </div>
       </section>
 
@@ -111,7 +103,6 @@ export function RegisterHero() {
             ))}
           </div>
 
-          {/* Bottom CTA */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -119,15 +110,7 @@ export function RegisterHero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-16 border-t border-gold/10 pt-14"
           >
-            <p className="mb-6 text-base text-cream/60">{t("next.closingNote")}</p>
-            {/* Replace lbVMr6 with your form's ID from tally.so */}
-            <button
-              data-tally-open="lbVMr6"
-              data-tally-overlay="1"
-              className="inline-flex h-12 cursor-pointer items-center gap-2 rounded-sm bg-gold px-7 text-sm font-bold uppercase tracking-wider text-navy-deep transition-colors hover:bg-gold-light"
-            >
-              {t("hero.cta")}
-            </button>
+            <p className="text-base text-cream/60">{t("next.closingNote")}</p>
           </motion.div>
         </div>
       </section>

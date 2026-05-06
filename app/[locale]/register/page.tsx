@@ -27,11 +27,7 @@ export default async function RegisterPage({
   return (
     <main>
       <RegisterHero />
-      {/*
-        Tally embed script — loads after page is interactive.
-        Replace TALLY_FORM_ID in RegisterHero.tsx with your form ID.
-        Find it in your Tally dashboard: Share → Popup → the code snippet.
-      */}
+      {/* Tally inline embed script — activates iframe[data-tally-src] elements */}
       <Script src="https://tally.so/widgets/embed.js" strategy="lazyOnload" />
     </main>
   );
