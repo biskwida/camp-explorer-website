@@ -1,18 +1,11 @@
 import { defineConfig, devices } from "@playwright/test";
-import { defineBddConfig } from "playwright-bdd";
-
-const testDir = defineBddConfig({
-  features: "features/**/*.feature",
-  steps: "features/steps/**/*.ts",
-  outputDir: ".features-gen",
-});
 
 // Dedicated test port avoids collisions with other local dev servers on 3000.
 // Override via PLAYWRIGHT_PORT if needed.
 const PORT = process.env.PLAYWRIGHT_PORT ?? "3030";
 
 export default defineConfig({
-  testDir,
+  testDir: "e2e",
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,

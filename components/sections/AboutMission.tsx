@@ -22,13 +22,13 @@ export function AboutMission() {
           transition={{ duration: 0.7 }}
           className="max-w-3xl text-start"
         >
-          <h2 className="text-xs font-semibold uppercase tracking-[0.4em] text-gold sm:text-sm">
+          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-gold sm:text-sm" aria-hidden="true">
             {t("kicker")}
-          </h2>
+          </p>
 
-          <h3 className="mt-6 font-display text-3xl font-black leading-[1.1] text-cream text-balance sm:text-4xl md:text-5xl">
+          <h2 className="mt-6 font-display text-3xl font-black leading-[1.1] text-cream text-balance sm:text-4xl md:text-5xl">
             {t("title")}
-          </h3>
+          </h2>
 
           <p className="mt-8 text-lg leading-relaxed text-cream/80 sm:text-xl">
             {t("body")}

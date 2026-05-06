@@ -11,9 +11,9 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "home.hero" });
+  const t = await getTranslations({ locale, namespace: "siteMetadata" });
   return {
-    title: "Camp Explorer — Be Your Own Explorer",
+    title: t("title"),
     description: t("description"),
   };
 }

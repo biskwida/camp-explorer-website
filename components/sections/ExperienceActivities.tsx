@@ -21,15 +21,17 @@ export function ExperienceActivities({ slug }: Props) {
   return (
     <section className="relative bg-navy py-24 sm:py-32">
       <div className="container-page">
-        <motion.h2
+        <motion.p
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
           className="text-xs font-semibold uppercase tracking-[0.4em] text-gold sm:text-sm"
+          aria-hidden="true"
         >
           {t("kicker")}
-        </motion.h2>
+        </motion.p>
+        <h2 className="sr-only">{t("kicker")}</h2>
 
         <ul className="mt-10 grid gap-6 md:grid-cols-3">
           {exp.activities.map((a, i) => {
@@ -54,7 +56,7 @@ export function ExperienceActivities({ slug }: Props) {
                   />
                   <span
                     aria-hidden="true"
-                    className="absolute bottom-3 left-3 inline-flex h-9 w-9 items-center justify-center rounded-full border border-gold/40 bg-navy-deep/80 text-gold backdrop-blur-[2px]"
+                    className="absolute bottom-3 start-3 inline-flex h-9 w-9 items-center justify-center rounded-full border border-gold/40 bg-navy-deep/80 text-gold backdrop-blur-[2px]"
                   >
                     <Icon className="h-4 w-4" />
                   </span>

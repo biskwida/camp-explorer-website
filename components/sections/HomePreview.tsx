@@ -99,10 +99,10 @@ export function HomePreview() {
             sizes="(min-width: 1024px) 1100px, 100vw"
             className="-z-20 object-cover transition-transform duration-700 group-hover:scale-[1.03]"
           />
-          {/* Left-weighted overlay keeps the sun warm on the right while text stays legible on the left */}
+          {/* Overlay — strong enough for text legibility at every breakpoint */}
           <div
             aria-hidden="true"
-            className="absolute inset-0 -z-10 bg-gradient-to-br from-navy-deep/90 via-navy-deep/65 to-navy-deep/25"
+            className="absolute inset-0 -z-10 bg-gradient-to-br from-navy-deep/90 via-navy-deep/75 to-navy-deep/55"
           />
 
           <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-gold/40 bg-navy-deep/60 text-gold backdrop-blur-[2px]">
@@ -119,7 +119,7 @@ export function HomePreview() {
               {t("schoolsDescription")}
             </p>
           </div>
-          <span className="inline-flex items-center gap-2 self-start text-xs font-semibold uppercase tracking-wider text-gold transition-colors group-hover:text-gold-light sm:self-center">
+          <span className="inline-flex items-center gap-2 self-start text-sm font-semibold uppercase tracking-wider text-gold transition-colors group-hover:text-gold-light sm:self-center">
             {t("schoolsCta")}
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
           </span>

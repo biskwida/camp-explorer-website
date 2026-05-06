@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { experiences } from "@/lib/content/experiences";
 import type { ExperienceSlug } from "@/lib/content/experiences";
+import { iconMap } from "@/lib/content/iconMap";
 
 type Props = { slug: ExperienceSlug };
 type Entry = { range: string; label: string };
@@ -36,8 +37,9 @@ export function ExperienceTimeline({ slug }: Props) {
 
         <div className="relative mt-14">
           <ol className="relative grid gap-10 md:grid-cols-5 md:gap-6">
-            {exp.timeline.map((_entry, i) => {
+            {exp.timeline.map((entry, i) => {
               const copy = items[i];
+              const Icon = entry.iconKey ? iconMap[entry.iconKey as keyof typeof iconMap] : null;
               return (
                 <motion.li
                   key={i}
@@ -47,6 +49,12 @@ export function ExperienceTimeline({ slug }: Props) {
                   transition={{ duration: 0.5, delay: i * 0.08 }}
                   className="border-t border-gold/25 pt-5 md:text-center"
                 >
+                  {Icon && (
+                    <Icon
+                      className="mb-3 h-6 w-6 text-gold md:mx-auto"
+                      aria-hidden="true"
+                    />
+                  )}
                   <p className="font-display text-xs font-semibold uppercase tracking-[0.3em] text-gold">
                     {copy.range}
                   </p>

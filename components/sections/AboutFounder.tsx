@@ -44,11 +44,11 @@ export function AboutFounder() {
           transition={{ duration: 0.8, delay: 0.15 }}
           className="lg:col-span-7"
         >
-          <h2 className="text-xs font-semibold uppercase tracking-[0.4em] text-gold sm:text-sm">
+          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-gold sm:text-sm" aria-hidden="true">
             {t("kicker")}
-          </h2>
+          </p>
 
-          <h3 className="mt-4">
+          <h2 className="mt-4">
             {/* SVG so it stays crisp at any size or zoom level — vector logo */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -56,7 +56,7 @@ export function AboutFounder() {
               alt={t("name")}
               className="h-auto w-44 sm:w-52 md:w-60"
             />
-          </h3>
+          </h2>
 
           <p className="mt-6 text-base leading-relaxed text-cream/80 sm:text-lg">
             {t("intro")}

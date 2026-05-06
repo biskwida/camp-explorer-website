@@ -111,7 +111,6 @@
         transparent
       ),
       linear-gradient(180deg, var(--navy-deep) 0%, var(--navy) 100%);
-    background-attachment: fixed;
     min-height: 100dvh;
   }
   h1, h2, h3, h4, h5, h6 {

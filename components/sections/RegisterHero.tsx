@@ -33,6 +33,8 @@ export function RegisterHero() {
             <div className="mt-10 flex flex-wrap items-center gap-5">
               <a
                 href="https://tally.so/r/lbVMr6"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex h-14 items-center gap-2.5 rounded-sm bg-gold px-8 text-sm font-bold uppercase tracking-wider text-navy-deep transition-colors hover:bg-gold-light"
               >
                 {t("hero.cta")}
@@ -80,7 +82,15 @@ export function RegisterHero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-16 border-t border-gold/10 pt-14"
           >
-            <p className="text-base text-cream/60">{t("next.closingNote")}</p>
+            <p className="text-base text-cream/60">
+              {t("next.closingNote")}{" "}
+              <a
+                href="mailto:info@campexplorersa.com"
+                className="text-gold underline-offset-2 hover:underline"
+              >
+                info@campexplorersa.com
+              </a>
+            </p>
           </motion.div>
         </div>
       </section>

@@ -18,15 +18,17 @@ export function ExperienceHighlights({ slug }: Props) {
   return (
     <section className="relative bg-navy py-24 sm:py-32">
       <div className="container-page">
-        <motion.h2
+        <h2 className="sr-only">{t("kicker")}</h2>
+        <motion.p
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
           className="text-xs font-semibold uppercase tracking-[0.4em] text-gold sm:text-sm"
+          aria-hidden="true"
         >
           {t("kicker")}
-        </motion.h2>
+        </motion.p>
 
         <ol className="mt-10 grid gap-x-12 gap-y-6 sm:grid-cols-2">
           {items.map((item, i) => (

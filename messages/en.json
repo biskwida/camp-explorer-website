@@ -1,4 +1,10 @@
 {
+  "notFound": {
+    "code": "404",
+    "headline": "Page not found",
+    "body": "The page you're looking for doesn't exist or has moved.",
+    "cta": "Back to home"
+  },
   "siteMetadata": {
     "title": "Camp Explorer — Be Your Own Explorer",
     "description": "Real-world adventure, conservation, and learning experiences for youth, families, and schools. Led by Abdul Explorer — first Saudi to ski to the North Pole.",
@@ -13,7 +19,13 @@
     "about": "About Us",
     "register": "Register Your Interest",
     "languageToggle": "العربية",
-    "languageToggleAria": "Switch to Arabic"
+    "languageToggleAria": "Switch to Arabic",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mobileMenuLabel": "Mobile",
+    "exp_sri-lanka": "Sri Lanka",
+    "exp_cambodia": "Cambodia",
+    "exp_weekend-camp": "Local Experience"
   },
   "home": {
     "hero": {
@@ -505,8 +517,8 @@
     },
     "hero": {
       "kicker": "For Schools",
-      "headline": "Beyond the classroom.",
-      "headlineAccent": "Into the real world.",
+      "headline": "Beyond the classroom",
+      "headlineAccent": "Into the real world",
       "subhead": "We build experiences that move learning out of the classroom and into environments where students grow through doing — not just watching."
     },
     "local": {
@@ -556,7 +568,8 @@
       "kicker": "Custom Expeditions",
       "headline": "Need something different?",
       "body": "We design bespoke expeditions built entirely around your curriculum, objectives, and group. Tell us what you want your students to experience — we'll build it.",
-      "cta": "Get in touch to discuss"
+      "cta": "Get in touch to discuss",
+      "emailCta": "Email us"
     }
   },
   "register": {
@@ -570,7 +583,9 @@
       "headlineAccent": "starts here",
       "subhead": "Fill in a short form and we'll be in touch to talk through the right program for you or your group.",
       "cta": "Open registration form",
-      "note": "Takes 2–3 minutes · Spaces are limited"
+      "note": "Takes 2–3 minutes · Spaces are limited",
+      "programContext": "Registering for",
+      "backToProgram": "Back to program"
     },
     "tracks": {
       "kicker": "Who is this for",
@@ -587,10 +602,23 @@
       "kicker": "What happens next",
       "steps": [
         { "n": "01", "title": "We review your form", "desc": "Our team reads every submission. We'll check availability and match you to the right program." },
-        { "n": "02", "title": "We get in touch", "desc": "Expect a call or WhatsApp message within 2 working days to talk through the details." },
+        { "n": "02", "title": "We get in touch", "desc": "Expect a call or WhatsApp message from us to talk through the details." },
         { "n": "03", "title": "You start exploring", "desc": "Once confirmed, we handle the logistics. You focus on getting ready for the adventure." }
       ],
-      "closingNote": "Still have questions? We reply within 2 working days."
+      "closingNote": "Still have questions? Contact us at"
+    },
+    "thankYou": {
+      "metadata": {
+        "title": "You're registered — Camp Explorer",
+        "description": "Thanks for registering your interest with Camp Explorer. Our team will be in touch soon."
+      },
+      "kicker": "All done",
+      "headline": "Your form is in.",
+      "headlineAccent": "We'll be in touch.",
+      "body": "Thanks for your interest in Camp Explorer. Our team personally reviews every submission — you'll hear from us on WhatsApp or by phone soon.",
+      "programLabel": "You registered for",
+      "exploreBtn": "Browse experiences",
+      "homeBtn": "Back to home"
     }
   },
   "experiencesOverview": {

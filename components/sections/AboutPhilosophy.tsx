@@ -47,17 +47,17 @@ export function AboutPhilosophy() {
           transition={{ duration: 0.7 }}
           className="mx-auto max-w-4xl"
         >
-          <h2 className="text-xs font-semibold uppercase tracking-[0.4em] text-gold sm:text-sm">
+          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-gold sm:text-sm" aria-hidden="true">
             {t("kicker")}
-          </h2>
+          </p>
 
           <p className="mt-6 text-base text-cream/65 sm:text-lg">
             {t("lead")}
           </p>
 
-          <h3 className="mt-3 font-display text-4xl font-black leading-[1.05] text-cream text-balance sm:text-5xl md:text-6xl">
+          <h2 className="mt-3 font-display text-4xl font-black leading-[1.05] text-cream text-balance sm:text-5xl md:text-6xl">
             {t("headline")}
-          </h3>
+          </h2>
 
           <div className="mt-16">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold/80">

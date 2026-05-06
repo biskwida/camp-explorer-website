@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/lib/i18n/navigation";
@@ -95,8 +95,9 @@ export function SchoolsInternational() {
                   <h3 className="font-display text-xl font-bold leading-tight text-cream">
                     {exp.title[locale]}
                   </h3>
-                  <p className="mt-3 text-xs font-semibold uppercase tracking-wider text-gold/80 transition-colors group-hover:text-gold">
-                    {t("cta")} →
+                  <p className="mt-3 inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-gold/80 transition-colors group-hover:text-gold">
+                    {t("cta")}
+                    <ArrowRight className="h-3 w-3 rtl:[transform:scaleX(-1)]" aria-hidden="true" />
                   </p>
                 </div>
               </Link>

@@ -52,7 +52,7 @@ export function SchoolsCustom() {
                 className="inline-flex h-12 items-center gap-2.5 rounded-sm border border-gold/40 px-6 text-sm font-semibold uppercase tracking-wider text-gold transition-colors hover:border-gold hover:text-gold-light"
               >
                 <Mail className="h-4 w-4" aria-hidden="true" />
-                Email us
+                {t("emailCta")}
               </a>
             </div>
           </div>
