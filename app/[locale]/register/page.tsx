@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import Script from "next/script";
 import { RegisterHero } from "@/components/sections/RegisterHero";
 
 export async function generateMetadata({
@@ -27,8 +26,6 @@ export default async function RegisterPage({
   return (
     <main>
       <RegisterHero />
-      {/* Tally inline embed script — activates iframe[data-tally-src] elements */}
-      <Script src="https://tally.so/widgets/embed.js" strategy="lazyOnload" />
     </main>
   );
 }
