@@ -31,9 +31,9 @@ export function RegisterHero() {
               {t("hero.subhead")}
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-5">
-              {/* Replace TALLY_FORM_ID with your form's ID from tally.so */}
+              {/* Replace lbVMr6 with your form's ID from tally.so */}
               <button
-                data-tally-open="TALLY_FORM_ID"
+                data-tally-open="lbVMr6"
                 data-tally-overlay="1"
                 data-tally-emoji-text="👋"
                 data-tally-emoji-animation="wave"
@@ -120,9 +120,9 @@ export function RegisterHero() {
             className="mt-16 border-t border-gold/10 pt-14"
           >
             <p className="mb-6 text-base text-cream/60">{t("next.closingNote")}</p>
-            {/* Replace TALLY_FORM_ID with your form's ID from tally.so */}
+            {/* Replace lbVMr6 with your form's ID from tally.so */}
             <button
-              data-tally-open="TALLY_FORM_ID"
+              data-tally-open="lbVMr6"
               data-tally-overlay="1"
               className="inline-flex h-12 cursor-pointer items-center gap-2 rounded-sm bg-gold px-7 text-sm font-bold uppercase tracking-wider text-navy-deep transition-colors hover:bg-gold-light"
             >
