@@ -88,7 +88,7 @@ export function HomeAbdul() {
           >
             {t("cta")}
             <ArrowUpRight
-              className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 rtl:-scale-x-100 rtl:group-hover:-translate-x-0.5"
+              className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 rtl:[transform:scaleX(-1)] rtl:group-hover:-translate-x-0.5"
               aria-hidden="true"
             />
             <span className="sr-only"> (opens in a new tab)</span>

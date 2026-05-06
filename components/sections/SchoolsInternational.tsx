@@ -84,7 +84,7 @@ export function SchoolsInternational() {
                   aria-hidden="true"
                   className="absolute end-4 top-4 inline-flex h-9 w-9 items-center justify-center rounded-full border border-cream/20 bg-navy-deep/60 text-cream/85 backdrop-blur-[2px] transition-all group-hover:border-gold group-hover:bg-gold group-hover:text-navy-deep"
                 >
-                  <ArrowUpRight className="h-4 w-4 rtl:-scale-x-100" />
+                  <ArrowUpRight className="h-4 w-4 rtl:[transform:scaleX(-1)]" />
                 </span>
 
                 <div className="absolute inset-x-0 bottom-0 p-6">

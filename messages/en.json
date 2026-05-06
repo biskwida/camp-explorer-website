@@ -1,4 +1,11 @@
 {
+  "siteMetadata": {
+    "title": "Camp Explorer — Be Your Own Explorer",
+    "description": "Real-world adventure, conservation, and learning experiences for youth, families, and schools. Led by Abdul Explorer — first Saudi to ski to the North Pole.",
+    "ogTitle": "Camp Explorer — Be Your Own Explorer",
+    "ogDescription": "Real-world adventure, conservation, and learning experiences for youth, families, and schools.",
+    "jsonLdDescription": "Real-world adventure, conservation, and learning experiences for youth, families, and schools in Saudi Arabia."
+  },
   "nav": {
     "home": "Home",
     "experiences": "Experiences",

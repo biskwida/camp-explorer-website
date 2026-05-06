@@ -1,4 +1,11 @@
 {
+  "siteMetadata": {
+    "title": "كامب إكسبلورر — كن مستكشفك الخاص",
+    "description": "تجارب مغامرة وحفظ بيئة وتعلّم حقيقية للشباب والعائلات والمدارس. بقيادة عبدالله إكسبلورر — أول سعودي يصل بالتزلج إلى القطب الشمالي.",
+    "ogTitle": "كامب إكسبلورر — كن مستكشفك الخاص",
+    "ogDescription": "تجارب مغامرة وحفظ بيئة وتعلّم حقيقية للشباب والعائلات والمدارس.",
+    "jsonLdDescription": "تجارب مغامرة وحفظ بيئة وتعلّم حقيقية للشباب والعائلات والمدارس في المملكة العربية السعودية."
+  },
   "nav": {
     "home": "الرئيسية",
     "experiences": "التجارب",
@@ -246,119 +253,119 @@
         "kicker": "كمبوديا",
         "title": "حماية الفيلة واستكشاف الأدغال",
         "meta": [
-          "14-day experience",
-          "Elephant conservation",
-          "Jungle adventure",
-          "Cultural immersion"
+          "تجربة 14 يومًا",
+          "حماية الفيلة",
+          "مغامرة الأدغال",
+          "الانغماس الثقافي"
         ]
       },
       "overview": {
-        "kicker": "Program Overview",
-        "title": "Experience the wild, responsibly",
-        "body": "Spend the core of the program immersed in a protected elephant sanctuary in Mondulkiri, focusing on ethical conservation and environmental learning, then transition into a guided jungle expedition through Keo Seima Wildlife Sanctuary."
+        "kicker": "نظرة عامة على البرنامج",
+        "title": "اكتشف البرية بمسؤولية",
+        "body": "قضِ الجزء الأساسي من البرنامج منغمسًا في محمية للفيلة في موندولكيري، مع التركيز على الحفاظ الأخلاقي على الحياة البرية والتعلم البيئي، ثم انتقل إلى رحلة استكشافية في الأدغال بصحبة مرشدين خبراء في محمية كيو سيما للحياة البرية."
       },
       "activities": {
-        "kicker": "What Participants Will Do",
+        "kicker": "ما سيفعله المشاركون",
         "items": [
           {
-            "title": "Elephant Conservation",
-            "subtitle": "Mondulkiri",
+            "title": "حماية الفيلة",
+            "subtitle": "موندولكيري",
             "items": [
-              "Observe rescued elephants in their natural forest environment (no riding)",
-              "Daily conservation routines: food preparation, forest walks",
-              "Learn each elephant's history, rehabilitation, and behavior",
-              "Connect wildlife conservation with local communities"
+              "مراقبة الفيلة المنقذة في بيئتها الطبيعية الغابية (دون ركوب)",
+              "روتين الحفاظ اليومي: تحضير الغذاء والمشي في الغابة",
+              "التعرّف على تاريخ كل فيل وإعادة تأهيله وسلوكه",
+              "ربط حفظ الحياة البرية بالمجتمعات المحلية"
             ]
           },
           {
-            "title": "Jungle Expedition",
-            "subtitle": "Keo Seima",
+            "title": "رحلة استكشاف الأدغال",
+            "subtitle": "كيو سيما",
             "items": [
-              "Guided trekking through Keo Seima Wildlife Sanctuary",
-              "Track gibbons, macaques, and tropical bird species",
-              "Day and night jungle walks with expert local guides",
-              "Overnight stay in a remote forest bamboo camp"
+              "تسلّق موجَّه عبر محمية كيو سيما للحياة البرية",
+              "تتبّع الغيبون والمكاك وأنواع الطيور الاستوائية",
+              "مشي في الأدغال نهارًا وليلًا مع مرشدين محليين خبراء",
+              "إقامة ليلية في مخيم بامبو بعيد في الغابة"
             ]
           },
           {
-            "title": "Cultural Immersion",
+            "title": "الانغماس الثقافي",
             "subtitle": "",
             "items": [
-              "Visit a local Bunong village",
-              "Traditional cooking experience",
-              "Group reflection and discussion sessions",
-              "Cultural introduction in Phnom Penh"
+              "زيارة قرية بونونج المحلية",
+              "تجربة الطبخ التقليدي",
+              "جلسات تأمل جماعية ونقاش",
+              "مقدمة ثقافية في بنوم بنه"
             ]
           }
         ]
       },
       "timeline": {
-        "kicker": "Program Structure",
-        "title": "14 Days",
+        "kicker": "هيكل البرنامج",
+        "title": "14 يومًا",
         "items": [
           {
-            "range": "Day 1–2",
-            "label": "Arrival & cultural introduction"
+            "range": "اليوم 1–2",
+            "label": "الوصول والمقدمة الثقافية"
           },
           {
-            "range": "Day 2",
-            "label": "Transfer to Mondulkiri"
+            "range": "اليوم 2",
+            "label": "التنقل إلى موندولكيري"
           },
           {
-            "range": "Day 3–7",
-            "label": "Elephant conservation experience"
+            "range": "اليوم 3–7",
+            "label": "تجربة حماية الفيلة"
           },
           {
-            "range": "Day 8",
-            "label": "Rest & reflection"
+            "range": "اليوم 8",
+            "label": "الراحة والتأمل"
           },
           {
-            "range": "Day 9–14",
-            "label": "Jungle expedition + return"
+            "range": "اليوم 9–14",
+            "label": "رحلة الأدغال والعودة"
           }
         ]
       },
       "highlights": {
-        "kicker": "Key Highlights",
+        "kicker": "أبرز النقاط",
         "items": [
-          "Ethical elephant conservation in a natural forest setting",
-          "Wild jungle trekking and wildlife tracking in protected reserves",
-          "Cultural immersion with Bunong communities and traditions",
-          "Balanced program combining impact, adventure, and education"
+          "حماية الفيلة أخلاقيًا في بيئتها الطبيعية الغابية",
+          "مشي في الأدغال البرية وتتبّع الحياة البرية في محميات محمية",
+          "الانغماس الثقافي مع مجتمعات وتقاليد البونونج",
+          "برنامج متوازن يجمع بين الأثر والمغامرة والتعليم"
         ]
       },
       "abdul": {
-        "kicker": "Abdul Explorer Experience",
-        "title": "A guided youth expedition",
+        "kicker": "تجربة عبدالله إكسبلورر",
+        "title": "رحلة استكشافية شبابية موجَّهة",
         "items": [
-          "Structured orientation and daily engagement sessions",
-          "Guided reflection and group discussions",
-          "Focus on leadership, teamwork, and personal development",
-          "Carefully curated balance of challenge, learning, and fun"
+          "توجيه منظّم وجلسات مشاركة يومية",
+          "تأمل موجَّه ونقاشات جماعية",
+          "التركيز على القيادة والعمل الجماعي والنمو الشخصي",
+          "توازن مدروس بين التحدي والتعلم والمتعة"
         ]
       },
       "safety": {
-        "kicker": "Safety & Structure",
+        "kicker": "السلامة والهيكل",
         "items": [
-          "Structured daily program",
-          "1–2 adults per 10 participants",
-          "Risk assessments in place",
-          "On-ground support"
+          "برنامج يومي منظّم",
+          "1–2 بالغ لكل 10 مشاركين",
+          "تقييمات المخاطر موضوعة",
+          "دعم ميداني"
         ]
       },
       "whoFor": {
-        "kicker": "Who It's For",
+        "kicker": "لمن هذا البرنامج؟",
         "cards": [
           {
-            "label": "Participants",
-            "subtitle": "Ages 14–18"
+            "label": "المشاركون",
+            "subtitle": "من 14–18 سنة"
           },
           {
-            "label": "Schools & groups",
-            "subtitle": "Group bookings"
+            "label": "المدارس والمجموعات",
+            "subtitle": "حجز المجموعات"
           }
         ],
-        "note": "Application required — participants are selected",
+        "note": "التسجيل مطلوب — يُختار المشاركون",
         "cta": "سجل اهتمامك"
       },
       "metadata": {
@@ -370,120 +377,120 @@
         "kicker": "سريلانكا",
         "title": "حماية السلاحف والاستكشاف الساحلي",
         "meta": [
-          "11-day experience",
-          "Wildlife conservation",
-          "Community engagement",
-          "Adventure & culture"
+          "تجربة 11 يومًا",
+          "حماية الحياة البرية",
+          "التفاعل المجتمعي",
+          "المغامرة والثقافة"
         ]
       },
       "overview": {
-        "kicker": "Program Overview",
-        "title": "Protecting what matters",
-        "body": "Join an unforgettable 11-day youth experience in Sri Lanka, combining wildlife conservation, community engagement, and adventure travel. Participants work on a turtle conservation project while engaging with local communities through creative teaching sessions. Hands-on, meaningful, and culturally immersive."
+        "kicker": "نظرة عامة على البرنامج",
+        "title": "حماية ما يهم",
+        "body": "انضم إلى تجربة شبابية لا تُنسى لمدة 11 يومًا في سريلانكا، تجمع بين حماية الحياة البرية والتفاعل المجتمعي والسياحة المغامرة. يعمل المشاركون على مشروع لحماية السلاحف بينما يتفاعلون مع المجتمعات المحلية من خلال جلسات تعليمية إبداعية. عملي وذو معنى وغني ثقافيًا."
       },
       "activities": {
-        "kicker": "What Participants Will Do",
+        "kicker": "ما سيفعله المشاركون",
         "items": [
           {
-            "title": "Turtle Conservation",
-            "subtitle": "Morning Activities",
+            "title": "حماية السلاحف",
+            "subtitle": "الأنشطة الصباحية",
             "items": [
-              "Care for injured and rescued sea turtles",
-              "Support rehabilitation and release back into the ocean",
-              "Protect turtle eggs and hatcheries",
-              "Beach clean-ups to protect nesting areas",
-              "Learn about endangered species"
+              "الاعتناء بالسلاحف البحرية المصابة والمنقذة",
+              "دعم إعادة التأهيل والإطلاق في المحيط",
+              "حماية بيض السلاحف والمفاقس",
+              "تنظيف الشواطئ لحماية مناطق التعشيش",
+              "التعرّف على الأنواع المهددة بالانقراض"
             ]
           },
           {
-            "title": "Teaching & Community Engagement",
-            "subtitle": "Afternoons",
+            "title": "التعليم والتفاعل المجتمعي",
+            "subtitle": "بعد الظهر",
             "items": [
-              "Conduct fun, creative sessions with local students",
-              "English conversation",
-              "Games & interactive learning",
-              "Team-building activities"
+              "إجراء جلسات ممتعة وإبداعية مع الطلاب المحليين",
+              "محادثة باللغة الإنجليزية",
+              "ألعاب وتعلّم تفاعلي",
+              "أنشطة بناء الفريق"
             ]
           },
           {
-            "title": "Weekend Adventure",
+            "title": "مغامرة عطلة نهاية الأسبوع",
             "subtitle": "",
             "items": [
-              "Wildlife safari — elephants, leopards in their natural habitat",
-              "Trek through hill country to panoramic viewpoints",
-              "Visit waterfalls and tea plantations",
-              "Explore historic towns with expert guides"
+              "سفاري للحياة البرية — الفيلة والفهود في موطنها الطبيعي",
+              "المشي عبر المرتفعات إلى نقاط مشهدية بانورامية",
+              "زيارة الشلالات ومزارع الشاي",
+              "استكشاف المدن التاريخية مع مرشدين خبراء"
             ]
           }
         ]
       },
       "timeline": {
-        "kicker": "Program Structure",
-        "title": "11 Days",
+        "kicker": "هيكل البرنامج",
+        "title": "11 يومًا",
         "items": [
           {
-            "range": "Day 1–2",
-            "label": "Travel"
+            "range": "اليوم 1–2",
+            "label": "السفر"
           },
           {
-            "range": "Day 2",
-            "label": "Arrival + Orientation + Town Tour"
+            "range": "اليوم 2",
+            "label": "الوصول والتوجيه وجولة المدينة"
           },
           {
-            "range": "Day 3–7",
-            "label": "Conservation + Teaching"
+            "range": "اليوم 3–7",
+            "label": "الحفاظ على البيئة والتعليم"
           },
           {
-            "range": "Day 8–10",
-            "label": "Weekend Adventure"
+            "range": "اليوم 8–10",
+            "label": "مغامرة عطلة نهاية الأسبوع"
           },
           {
-            "range": "Day 10",
-            "label": "Departure"
+            "range": "اليوم 10",
+            "label": "المغادرة"
           }
         ]
       },
       "highlights": {
-        "kicker": "Key Highlights",
+        "kicker": "أبرز النقاط",
         "items": [
-          "Work with 5 different turtle species in Sri Lanka",
-          "Make a real environmental impact through conservation",
-          "Combine volunteering, adventure, and cultural immersion",
-          "Develop confidence, teamwork, and global awareness"
+          "العمل مع 5 أنواع مختلفة من السلاحف في سريلانكا",
+          "إحداث أثر بيئي حقيقي من خلال الحفاظ على البيئة",
+          "الجمع بين التطوع والمغامرة والانغماس الثقافي",
+          "تطوير الثقة والعمل الجماعي والوعي العالمي"
         ]
       },
       "abdul": {
-        "kicker": "Abdul Explorer Experience",
-        "title": "A guided youth expedition",
+        "kicker": "تجربة عبدالله إكسبلورر",
+        "title": "رحلة استكشافية شبابية موجَّهة",
         "items": [
-          "Daily evening activities and group challenges",
-          "Adventure-focused itinerary",
-          "Cultural immersion (local dress & cooking experience)",
-          "Full guidance and leadership throughout the trip"
+          "أنشطة مسائية يومية وتحديات جماعية",
+          "برنامج رحلات يركّز على المغامرة",
+          "الانغماس الثقافي (ملابس محلية وتجربة الطبخ)",
+          "توجيه وقيادة كاملة طوال الرحلة"
         ]
       },
       "safety": {
-        "kicker": "Safety & Structure",
+        "kicker": "السلامة والهيكل",
         "items": [
-          "Structured daily program",
-          "1–2 adults per 10 participants",
-          "Risk assessments in place",
-          "On-ground support"
+          "برنامج يومي منظّم",
+          "1–2 بالغ لكل 10 مشاركين",
+          "تقييمات المخاطر موضوعة",
+          "دعم ميداني"
         ]
       },
       "whoFor": {
-        "kicker": "Who It's For",
+        "kicker": "لمن هذا البرنامج؟",
         "cards": [
           {
-            "label": "Participants",
-            "subtitle": "Ages 14–18"
+            "label": "المشاركون",
+            "subtitle": "من 14–18 سنة"
           },
           {
-            "label": "Schools & groups",
-            "subtitle": "Group bookings"
+            "label": "المدارس والمجموعات",
+            "subtitle": "حجز المجموعات"
           }
         ],
-        "note": "Application required — participants are selected",
+        "note": "التسجيل مطلوب — يُختار المشاركون",
         "cta": "سجل اهتمامك"
       },
       "metadata": {
