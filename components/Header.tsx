@@ -199,24 +199,35 @@ export function Header() {
             if (isExperiences) {
               return (
                 <div key={item.href}>
-                  <button
-                    type="button"
-                    onClick={() => setMobileExpExpanded((v) => !v)}
-                    aria-expanded={mobileExpExpanded}
-                    className={`flex w-full items-center justify-between rounded-lg px-4 py-3 text-base font-medium transition-colors ${
-                      isActive(item.href)
-                        ? "bg-gold/10 text-gold"
-                        : "text-cream/85 hover:bg-white/5"
-                    }`}
-                  >
-                    {t(`nav.${item.labelKey}`)}
-                    <ChevronDown
-                      className={`h-4 w-4 transition-transform duration-200 ${
-                        mobileExpExpanded ? "rotate-180" : ""
+                  {/* Split: label navigates, chevron toggles sub-items */}
+                  <div className={`flex items-center rounded-lg transition-colors ${
+                    isActive(item.href) ? "bg-gold/10" : "hover:bg-white/5"
+                  }`}>
+                    <Link
+                      href={item.href}
+                      className={`flex-1 px-4 py-3 text-base font-medium transition-colors ${
+                        isActive(item.href) ? "text-gold" : "text-cream/85"
                       }`}
-                      aria-hidden="true"
-                    />
-                  </button>
+                    >
+                      {t(`nav.${item.labelKey}`)}
+                    </Link>
+                    <button
+                      type="button"
+                      onClick={() => setMobileExpExpanded((v) => !v)}
+                      aria-expanded={mobileExpExpanded}
+                      aria-label={mobileExpExpanded ? t("nav.closeMenu") : t("nav.openMenu")}
+                      className={`px-3 py-3 transition-colors ${
+                        isActive(item.href) ? "text-gold" : "text-cream/85"
+                      }`}
+                    >
+                      <ChevronDown
+                        className={`h-4 w-4 transition-transform duration-200 ${
+                          mobileExpExpanded ? "rotate-180" : ""
+                        }`}
+                        aria-hidden="true"
+                      />
+                    </button>
+                  </div>
 
                   {/* Sub-items */}
                   <div

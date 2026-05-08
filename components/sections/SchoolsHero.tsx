@@ -34,7 +34,7 @@ export function SchoolsHero() {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="max-w-3xl"
         >
-          <p className="mb-5 text-xs font-semibold uppercase tracking-[0.4em] text-gold">
+          <p className="mb-5 text-sm font-bold uppercase tracking-[0.25em] text-gold">
             {t("kicker")}
           </p>
           <h1 className="font-display text-4xl font-black leading-[1.05] text-cream sm:text-5xl md:text-6xl lg:text-7xl">

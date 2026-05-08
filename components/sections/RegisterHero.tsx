@@ -11,7 +11,7 @@ export function RegisterHero() {
   return (
     <>
       {/* ── Hero ──────────────────────────────────────── */}
-      <section className="bg-navy-deep py-32 sm:py-44">
+      <section className="bg-navy-deep py-20 sm:py-28">
         <div className="container-page">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -27,7 +27,7 @@ export function RegisterHero() {
               <br />
               <span className="text-gold">{t("hero.headlineAccent")}</span>
             </h1>
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-cream/75 sm:text-lg">
+            <p className="mt-6 max-w-xl text-base font-semibold leading-relaxed text-cream sm:text-lg">
               {t("hero.subhead")}
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-5">
@@ -47,7 +47,7 @@ export function RegisterHero() {
       </section>
 
       {/* ── What happens next ─────────────────────────── */}
-      <section className="bg-navy-deep py-24 sm:py-32">
+      <section className="bg-navy-deep py-16 sm:py-20">
         <div className="container-page">
           <motion.p
             initial={{ opacity: 0, y: 16 }}
@@ -68,7 +68,7 @@ export function RegisterHero() {
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ duration: 0.6, delay: i * 0.12 }}
               >
-                <p className="font-display text-5xl font-black text-gold/15">{step.n}</p>
+                <p className="font-display text-5xl font-black text-gold/40">{step.n}</p>
                 <p className="mt-4 font-display text-lg font-bold text-cream">{step.title}</p>
                 <p className="mt-2 text-sm leading-relaxed text-cream/60">{step.desc}</p>
               </motion.div>
@@ -83,7 +83,8 @@ export function RegisterHero() {
             className="mt-16 border-t border-gold/10 pt-14"
           >
             <p className="text-base text-cream/60">
-              {t("next.closingNote")}{" "}
+              {t("next.closingNote")}
+              <br />
               <a
                 href="mailto:info@campexplorersa.com"
                 className="text-gold underline-offset-2 hover:underline"

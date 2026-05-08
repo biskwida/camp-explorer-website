@@ -35,8 +35,8 @@ export const experiences: Experience[] = [
       ar: "إطلاق سلحفاة بحرية على الرمال عند شروق الشمس",
     },
     cardDescription: {
-      en: "Wildlife conservation, community teaching, and coastal adventure across 11 unforgettable days.",
-      ar: "حماية الحياة البرية، والتدريس المجتمعي، ومغامرة ساحلية على مدى 11 يومًا لا تُنسى.",
+      en: "Wildlife conservation, community teaching, and coastal adventure across 10 unforgettable days.",
+      ar: "حماية الحياة البرية، والتدريس المجتمعي، ومغامرة ساحلية على مدى 10 أيام لا تُنسى.",
     },
     heroImage: "/images/experiences/sri-lanka/hero.jpg",
     category: "international",
@@ -46,7 +46,7 @@ export const experiences: Experience[] = [
       ar: "حماية السلاحف والاستكشاف الساحلي",
     },
     subtitle: { en: "Sri Lanka", ar: "سريلانكا" },
-    duration: { en: "11 days", ar: "11 يومًا" },
+    duration: { en: "10 days", ar: "10 يومًا" },
     meta: [
       { iconKey: "calendar" },
       { iconKey: "leaf" },
@@ -144,7 +144,7 @@ export const experiences: Experience[] = [
     },
     heroImage: "/images/experiences/weekend-camp/hero.jpg",
     category: "local",
-    kicker: { en: "Local Experience", ar: "تجربة محلية" },
+    kicker: { en: "Local Adventure", ar: "مغامرة محلية" },
     title: {
       en: "Weekend Camp for Teens & Families",
       ar: "مخيم نهاية الأسبوع للمراهقين والعائلات",

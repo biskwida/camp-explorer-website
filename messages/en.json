@@ -25,7 +25,7 @@
     "mobileMenuLabel": "Mobile",
     "exp_sri-lanka": "Sri Lanka",
     "exp_cambodia": "Cambodia",
-    "exp_weekend-camp": "Local Experience"
+    "exp_weekend-camp": "Local Adventure"
   },
   "home": {
     "hero": {
@@ -114,7 +114,7 @@
     "contact": {
       "kicker": "GET IN TOUCH",
       "title": "Talk to us before you go",
-      "description": "Questions about a program, a school booking, or whether your child is ready?",
+      "description": "Questions about a program, an experience, school booking, or whether your child is ready?",
       "emailLabel": "Email us",
       "whatsappLabel": "WhatsApp us",
       "instagramLabel": "Instagram",
@@ -122,7 +122,7 @@
     }
   },
   "footer": {
-    "tagline": "Real experiences create real growth.",
+    "tagline": "Learning begins where comfort ends.",
     "quickLinks": "Quick Links",
     "contact": "Contact",
     "privacy": "Privacy Policy",
@@ -389,7 +389,7 @@
         "kicker": "Sri Lanka",
         "title": "Turtle Conservation & Coastal Expedition",
         "meta": [
-          "11-day experience",
+          "10-day experience",
           "Wildlife conservation",
           "Community engagement",
           "Adventure & culture"
@@ -398,7 +398,7 @@
       "overview": {
         "kicker": "Program Overview",
         "title": "Protecting what matters",
-        "body": "Join an unforgettable 11-day youth experience in Sri Lanka, combining wildlife conservation, community engagement, and adventure travel. Participants work on a turtle conservation project while engaging with local communities through creative teaching sessions. Hands-on, meaningful, and culturally immersive."
+        "body": "Join an unforgettable 10-day youth experience in Sri Lanka, combining wildlife conservation, community engagement, and adventure travel. Participants work on a turtle conservation project while engaging with local communities through creative teaching sessions. Hands-on, meaningful, and culturally immersive."
       },
       "activities": {
         "kicker": "What Participants Will Do",
@@ -438,7 +438,7 @@
       },
       "timeline": {
         "kicker": "Program Structure",
-        "title": "11 Days",
+        "title": "10 Days",
         "items": [
           {
             "range": "Day 1–2",
@@ -506,7 +506,7 @@
         "cta": "Register your interest"
       },
       "metadata": {
-        "description": "An 11-day youth expedition combining turtle conservation, community teaching, and coastal adventure in Sri Lanka."
+        "description": "A 10-day youth expedition combining turtle conservation, community teaching, and coastal adventure in Sri Lanka."
       }
     }
   },
@@ -553,7 +553,7 @@
         {
           "location": "Sri Lanka",
           "title": "Turtle Conservation & Coastal Expedition",
-          "duration": "11 days",
+          "duration": "10 days",
           "href": "/experiences/sri-lanka"
         },
         {
@@ -579,9 +579,9 @@
     },
     "hero": {
       "kicker": "Registration",
-      "headline": "Your next expedition",
+      "headline": "Your next adventure",
       "headlineAccent": "starts here",
-      "subhead": "Fill in a short form and we'll be in touch to talk through the right program for you or your group.",
+      "subhead": "CAUTION ⚠️: you're about to take the first step toward real world learning and an impactful experience.",
       "cta": "Open registration form",
       "note": "Takes 2–3 minutes · Spaces are limited",
       "programContext": "Registering for",
@@ -605,7 +605,7 @@
         { "n": "02", "title": "We get in touch", "desc": "Expect a call or WhatsApp message from us to talk through the details." },
         { "n": "03", "title": "You start exploring", "desc": "Once confirmed, we handle the logistics. You focus on getting ready for the adventure." }
       ],
-      "closingNote": "Still have questions? Contact us at"
+      "closingNote": "Still have questions? Reach out to us and we will be there for you"
     },
     "thankYou": {
       "metadata": {
@@ -628,8 +628,8 @@
     },
     "hero": {
       "kicker": "Our Experiences",
-      "title": "Choose your expedition",
-      "intro": "Immersive international and local experiences for young explorers aged 14–18 — designed to build confidence, awareness, and a lifelong sense of adventure."
+      "title": "Choose your adventure",
+      "intro": "Immersive international and local experiences for explorers to build confidence, awareness, and a lifelong sense of adventure."
     },
     "grid": { "label": "All experiences" },
     "card": {

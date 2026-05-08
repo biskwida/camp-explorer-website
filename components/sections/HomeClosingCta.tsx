@@ -9,13 +9,13 @@ export function HomeClosingCta() {
   const t = useTranslations("home.closingCta");
 
   return (
-    <section className="container-page py-24 sm:py-32">
+    <section className="container-page py-14 sm:py-20">
       <motion.div
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.7 }}
-        className="relative border-t border-gold bg-card px-8 py-16 text-start sm:px-12 sm:py-20"
+        className="relative border-t border-gold bg-card px-8 py-10 text-start sm:px-12 sm:py-14"
       >
         <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
           <div className="lg:col-span-8">

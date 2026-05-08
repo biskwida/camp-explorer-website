@@ -11,7 +11,7 @@ export function HomeAbdul() {
   const t = useTranslations("home.abdul");
 
   return (
-    <section className="relative overflow-hidden border-y border-gold/10 bg-navy-deep py-24 sm:py-32">
+    <section className="relative overflow-hidden border-y border-gold/10 bg-navy-deep py-14 sm:py-20">
       <div className="container-page relative grid gap-12 lg:grid-cols-12 lg:gap-16">
         {/* Photo column — taller, more documentary */}
         <motion.div

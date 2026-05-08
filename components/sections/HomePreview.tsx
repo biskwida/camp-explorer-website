@@ -89,7 +89,7 @@ export function HomePreview() {
       >
         <Link
           href="/schools"
-          className="group relative isolate flex flex-col items-start gap-6 overflow-hidden rounded-sm border border-gold/20 p-8 transition-colors hover:border-gold/50 sm:flex-row sm:items-center sm:p-10"
+          className="group relative isolate flex min-h-[420px] flex-col items-start gap-6 overflow-hidden rounded-sm border border-gold/20 p-8 transition-colors hover:border-gold/50 sm:min-h-[340px] sm:flex-row sm:items-center sm:p-10"
         >
           {/* Sunset background — drop a new file at /public/images/home/schools-sunset.jpg to swap */}
           <Image
