@@ -26,9 +26,14 @@ export function ExperienceOverview({ slug }: Props) {
           <h2 className="mt-6 font-display text-3xl font-black leading-[1.1] text-cream sm:text-4xl md:text-5xl">
             {t("title")}
           </h2>
-          <p className="mt-8 max-w-xl text-base leading-relaxed text-cream/80 sm:text-lg">
-            {t("body")}
-          </p>
+          {t("body").split("\n\n").map((para, i) => (
+            <p
+              key={i}
+              className={`max-w-xl text-base leading-relaxed text-cream/80 sm:text-lg ${i === 0 ? "mt-8" : "mt-5"}`}
+            >
+              {para}
+            </p>
+          ))}
         </motion.div>
       </div>
     </section>
