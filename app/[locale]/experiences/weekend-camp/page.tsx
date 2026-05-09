@@ -6,7 +6,7 @@ import { ExperienceHighlights } from "@/components/sections/ExperienceHighlights
 import { ExperienceLocalHighlights } from "@/components/sections/ExperienceLocalHighlights";
 import { ExperienceOverview } from "@/components/sections/ExperienceOverview";
 import { ExperienceSafety } from "@/components/sections/ExperienceSafety";
-import { ExperienceTimeline } from "@/components/sections/ExperienceTimeline";
+import { ExperienceWhatToExpect } from "@/components/sections/ExperienceWhatToExpect";
 import { ExperienceWhoFor } from "@/components/sections/ExperienceWhoFor";
 
 export async function generateMetadata({
@@ -37,7 +37,7 @@ export default async function WeekendCampPage({
       <ExperienceOverview slug="weekend-camp" />
       <ExperienceLocalHighlights slug="weekend-camp" />
       <ExperienceActivities slug="weekend-camp" />
-      <ExperienceTimeline slug="weekend-camp" />
+      <ExperienceWhatToExpect slug="weekend-camp" />
       <ExperienceHighlights slug="weekend-camp" />
       <ExperienceSafety slug="weekend-camp" />
       <ExperienceWhoFor slug="weekend-camp" />

@@ -175,17 +175,17 @@
               "Connection and bonding through challenge",
               "Memories that last beyond the weekend"
             ]
-          },
-          {
-            "title": "What to Expect",
-            "subtitle": "Both Programs",
-            "items": [
-              "Overnight and day experience options",
-              "Nature-based Saudi environments",
-              "Structured and supervised programs",
-              "Small group experiences for deeper connection"
-            ]
           }
+        ]
+      },
+      "whatToExpect": {
+        "kicker": "What to Expect",
+        "subtitle": "Both Programs",
+        "items": [
+          "Overnight and day experience options",
+          "Nature-based Saudi environments",
+          "Structured and supervised programs",
+          "Small group experiences for deeper connection"
         ]
       },
       "timeline": {

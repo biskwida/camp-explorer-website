@@ -24,6 +24,8 @@ export type Experience = {
   highlights?: { iconKey: IconKey }[];
   safety?: { iconKey: IconKey }[];
   localHighlights?: boolean;
+  programDelivery?: boolean;
+  whatToExpect?: boolean;
 };
 
 export const experiences: Experience[] = [
@@ -78,6 +80,7 @@ export const experiences: Experience[] = [
       { iconKey: "shield" },
       { iconKey: "map" },
     ],
+    programDelivery: true,
   },
   {
     slug: "cambodia",
@@ -130,6 +133,7 @@ export const experiences: Experience[] = [
       { iconKey: "shield" },
       { iconKey: "map" },
     ],
+    programDelivery: true,
   },
   {
     slug: "weekend-camp",
@@ -161,7 +165,6 @@ export const experiences: Experience[] = [
     activities: [
       { iconKey: "mountain", image: "/images/experiences/weekend-camp/family.jpg" },
       { iconKey: "heart",    image: "/images/experiences/weekend-camp/individual.jpg" },
-      { iconKey: "tent",     image: "/images/experiences/weekend-camp/camp-sunset.jpg" },
     ],
     timeline: [
       { iconKey: "sun" },
@@ -183,6 +186,7 @@ export const experiences: Experience[] = [
       { iconKey: "map" },
     ],
     localHighlights: true,
+    whatToExpect: true,
   },
 ];
 
