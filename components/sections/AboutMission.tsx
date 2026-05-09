@@ -33,7 +33,7 @@ export function AboutMission() {
             <img
               src="/logo.png"
               alt="Camp Explorer"
-              className="inline-block h-[0.85em] w-auto align-text-bottom"
+              className="inline-block h-[1.2em] w-auto align-text-bottom"
             />
             {" "}{t("titleAfter")}
           </h2>
