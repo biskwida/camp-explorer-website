@@ -19,7 +19,7 @@ export function SchoolsHero() {
         fill
         priority
         sizes="100vw"
-        className="-z-20 object-cover object-center"
+        className="-z-20 object-cover object-[center_18%]"
       />
       {/* Gradient overlay — heavier at bottom so text stays legible */}
       <div
