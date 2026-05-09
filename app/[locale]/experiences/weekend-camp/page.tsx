@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { AbdulExperienceBlock } from "@/components/sections/AbdulExperienceBlock";
 import { ExperienceActivities } from "@/components/sections/ExperienceActivities";
 import { ExperienceHero } from "@/components/sections/ExperienceHero";
 import { ExperienceHighlights } from "@/components/sections/ExperienceHighlights";
@@ -40,7 +39,6 @@ export default async function WeekendCampPage({
       <ExperienceActivities slug="weekend-camp" />
       <ExperienceTimeline slug="weekend-camp" />
       <ExperienceHighlights slug="weekend-camp" />
-      <AbdulExperienceBlock slug="weekend-camp" />
       <ExperienceSafety slug="weekend-camp" />
       <ExperienceWhoFor slug="weekend-camp" />
     </main>

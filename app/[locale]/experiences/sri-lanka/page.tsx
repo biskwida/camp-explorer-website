@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { AbdulExperienceBlock } from "@/components/sections/AbdulExperienceBlock";
 import { ExperienceActivities } from "@/components/sections/ExperienceActivities";
 import { ExperienceHero } from "@/components/sections/ExperienceHero";
 import { ExperienceHighlights } from "@/components/sections/ExperienceHighlights";
@@ -39,7 +38,6 @@ export default async function SriLankaPage({
       <ExperienceActivities slug="sri-lanka" />
       <ExperienceTimeline slug="sri-lanka" />
       <ExperienceHighlights slug="sri-lanka" />
-      <AbdulExperienceBlock slug="sri-lanka" />
       <ExperienceProgramDelivery slug="sri-lanka" />
       <ExperienceSafety slug="sri-lanka" />
       <ExperienceWhoFor slug="sri-lanka" />
