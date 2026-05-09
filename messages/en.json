@@ -79,7 +79,8 @@
     },
     "mission": {
       "kicker": "WHO WE ARE",
-      "title": "Camp Explorer was created to redefine how people learn",
+      "titleBefore": "",
+      "titleAfter": "was created to redefine how people learn",
       "body": "We believe that learning should not be limited to classrooms. The most powerful growth happens when individuals step into real environments, face challenges, and experience the world first-hand.",
       "pillars": {
         "confidence": "This is where confidence is built",

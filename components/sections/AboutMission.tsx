@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 
 export function AboutMission() {
   const t = useTranslations("about.mission");
+  const titleBefore = t("titleBefore");
 
   const pillars = [
     { key: "confidence", text: t("pillars.confidence") },
@@ -26,8 +27,15 @@ export function AboutMission() {
             {t("kicker")}
           </p>
 
-          <h2 className="mt-6 font-display text-3xl font-black leading-[1.1] text-cream text-balance sm:text-4xl md:text-5xl">
-            {t("title")}
+          <h2 className="mt-6 font-display text-3xl font-black leading-[1.1] text-cream sm:text-4xl md:text-5xl">
+            {titleBefore && <>{titleBefore}{" "}</>}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logo.png"
+              alt="Camp Explorer"
+              className="inline-block h-[0.85em] w-auto align-text-bottom"
+            />
+            {" "}{t("titleAfter")}
           </h2>
 
           <p className="mt-8 text-lg leading-relaxed text-cream/80 sm:text-xl">
