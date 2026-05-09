@@ -7,6 +7,7 @@ import { ExperienceHighlights } from "@/components/sections/ExperienceHighlights
 import { ExperienceOverview } from "@/components/sections/ExperienceOverview";
 import { ExperienceSafety } from "@/components/sections/ExperienceSafety";
 import { ExperienceTimeline } from "@/components/sections/ExperienceTimeline";
+import { ExperienceProgramDelivery } from "@/components/sections/ExperienceProgramDelivery";
 import { ExperienceWhoFor } from "@/components/sections/ExperienceWhoFor";
 
 export async function generateMetadata({
@@ -39,6 +40,7 @@ export default async function CambodiaPage({
       <ExperienceTimeline slug="cambodia" />
       <ExperienceHighlights slug="cambodia" />
       <AbdulExperienceBlock slug="cambodia" />
+      <ExperienceProgramDelivery slug="cambodia" />
       <ExperienceSafety slug="cambodia" />
       <ExperienceWhoFor slug="cambodia" />
     </main>

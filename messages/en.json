@@ -392,6 +392,10 @@
         "note": "Application required — participants are selected",
         "cta": "Register your interest"
       },
+      "programDelivery": {
+        "kicker": "Program Delivery",
+        "body": "Delivered in collaboration with experienced on-ground partners with over a decade of experience in conservation and youth development programs."
+      },
       "metadata": {
         "description": "A 14-day youth expedition combining ethical elephant conservation and a guided jungle trek through Keo Seima Wildlife Sanctuary in Cambodia."
       }
@@ -516,6 +520,10 @@
         ],
         "note": "Application required — participants are selected",
         "cta": "Register your interest"
+      },
+      "programDelivery": {
+        "kicker": "Program Delivery",
+        "body": "Delivered in collaboration with experienced on-ground partners with over a decade of experience in conservation and youth development programs."
       },
       "metadata": {
         "description": "A 10-day youth expedition combining turtle conservation, community teaching, and coastal adventure in Sri Lanka."
