@@ -633,9 +633,9 @@
         "description": "Thanks for registering your interest with Camp Explorer. Our team will be in touch soon."
       },
       "kicker": "All done",
-      "headline": "Your form is in.",
-      "headlineAccent": "We'll be in touch.",
-      "body": "Thanks for your interest in Camp Explorer. Our team personally reviews every submission — you'll hear from us on WhatsApp or by phone soon.",
+      "headline": "Thank you!",
+      "headlineAccent": "Your interest has been received.",
+      "body": "Our team will review your submission and contact you shortly via WhatsApp or phone.",
       "programLabel": "You registered for",
       "exploreBtn": "Browse experiences",
       "homeBtn": "Back to home"
