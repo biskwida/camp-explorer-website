@@ -23,6 +23,7 @@ export type Experience = {
   timeline?: { iconKey: IconKey }[];
   highlights?: { iconKey: IconKey }[];
   safety?: { iconKey: IconKey }[];
+  localHighlights?: boolean;
 };
 
 export const experiences: Experience[] = [
@@ -181,6 +182,7 @@ export const experiences: Experience[] = [
       { iconKey: "shield" },
       { iconKey: "map" },
     ],
+    localHighlights: true,
   },
 ];
 

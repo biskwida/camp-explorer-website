@@ -4,6 +4,7 @@ import { AbdulExperienceBlock } from "@/components/sections/AbdulExperienceBlock
 import { ExperienceActivities } from "@/components/sections/ExperienceActivities";
 import { ExperienceHero } from "@/components/sections/ExperienceHero";
 import { ExperienceHighlights } from "@/components/sections/ExperienceHighlights";
+import { ExperienceLocalHighlights } from "@/components/sections/ExperienceLocalHighlights";
 import { ExperienceOverview } from "@/components/sections/ExperienceOverview";
 import { ExperienceSafety } from "@/components/sections/ExperienceSafety";
 import { ExperienceTimeline } from "@/components/sections/ExperienceTimeline";
@@ -35,6 +36,7 @@ export default async function WeekendCampPage({
     <main>
       <ExperienceHero slug="weekend-camp" />
       <ExperienceOverview slug="weekend-camp" />
+      <ExperienceLocalHighlights slug="weekend-camp" />
       <ExperienceActivities slug="weekend-camp" />
       <ExperienceTimeline slug="weekend-camp" />
       <ExperienceHighlights slug="weekend-camp" />
