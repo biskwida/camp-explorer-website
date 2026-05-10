@@ -33,7 +33,11 @@ export function ExperienceActivities({ slug }: Props) {
         </motion.p>
         <h2 className="sr-only">{t("kicker")}</h2>
 
-        <ul className="mt-10 grid gap-6 md:grid-cols-3">
+        <ul
+          className={`mt-10 grid gap-6 ${
+            exp.activities.length === 2 ? "md:grid-cols-2" : "md:grid-cols-3"
+          }`}
+        >
           {exp.activities.map((a, i) => {
             const Icon = iconMap[a.iconKey];
             const copy = items[i];

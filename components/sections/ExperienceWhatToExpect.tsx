@@ -18,45 +18,40 @@ export function ExperienceWhatToExpect({ slug }: Props) {
   return (
     <section className="relative bg-navy-deep py-24 sm:py-32">
       <div className="container-page">
-        {/* Header */}
-        <motion.div
+        <h2 className="sr-only">{t("kicker")}</h2>
+        <motion.p
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="mb-14"
+          className="text-xs font-semibold uppercase tracking-[0.4em] text-gold sm:text-sm"
+          aria-hidden="true"
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-gold sm:text-sm">
-            {t("kicker")}
-          </p>
-          <p className="mt-2 text-xs font-semibold uppercase tracking-[0.3em] text-cream/40">
-            {t("subtitle")}
-          </p>
-        </motion.div>
+          {t("kicker")}
+        </motion.p>
 
-        {/* 2×2 item grid */}
-        <ul className="grid gap-0 sm:grid-cols-2">
+        <ol className="mt-10 grid gap-x-12 gap-y-6 sm:grid-cols-2">
           {items.map((item, i) => (
             <motion.li
               key={i}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.55, delay: i * 0.08 }}
-              className="flex items-start gap-6 border-t border-gold/15 py-8 pe-8"
+              transition={{ duration: 0.5, delay: i * 0.06 }}
+              className="flex items-baseline gap-5 border-b border-gold/10 pb-5"
             >
               <span
                 aria-hidden="true"
-                className="font-display text-4xl font-black leading-none text-gold/10 sm:text-5xl"
+                className="font-display text-sm font-semibold tabular-nums text-gold/70"
               >
                 {String(i + 1).padStart(2, "0")}
               </span>
-              <p className="font-display text-lg font-bold leading-snug text-cream sm:text-xl">
+              <p className="font-display text-base font-bold leading-snug text-cream sm:text-lg">
                 {item}
               </p>
             </motion.li>
           ))}
-        </ul>
+        </ol>
       </div>
     </section>
   );
