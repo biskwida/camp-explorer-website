@@ -7,7 +7,8 @@ const ROUTES = [
   { path: "",                          priority: 1.0, changeFrequency: "weekly"  as const, lastModified: "2025-04-01" },
   { path: "/experiences",              priority: 0.9, changeFrequency: "weekly"  as const, lastModified: "2025-04-01" },
   { path: "/experiences/sri-lanka",    priority: 0.9, changeFrequency: "monthly" as const, lastModified: "2025-04-01" },
-  { path: "/experiences/cambodia",     priority: 0.9, changeFrequency: "monthly" as const, lastModified: "2025-04-01" },
+  // Hidden: Cambodia destination — re-add when destination is confirmed
+  // { path: "/experiences/cambodia",     priority: 0.9, changeFrequency: "monthly" as const, lastModified: "2025-04-01" },
   { path: "/experiences/weekend-camp", priority: 0.9, changeFrequency: "monthly" as const, lastModified: "2025-04-01" },
   { path: "/schools",                  priority: 0.8, changeFrequency: "monthly" as const, lastModified: "2025-04-01" },
   { path: "/about",                    priority: 0.7, changeFrequency: "monthly" as const, lastModified: "2025-04-01" },

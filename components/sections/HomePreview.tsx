@@ -29,8 +29,14 @@ export function HomePreview() {
         </h2>
       </motion.div>
 
-      {/* 3 equal experience cards */}
-      <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+      {/* Experience cards — grid columns adapt to the number of visible experiences */}
+      <div
+        className={`mt-14 grid gap-5 lg:gap-6 ${
+          experiences.length >= 3
+            ? "md:grid-cols-2 lg:grid-cols-3"
+            : "mx-auto max-w-4xl md:grid-cols-2"
+        }`}
+      >
         {experiences.map((exp, i) => (
           <motion.div
             key={exp.slug}

@@ -16,10 +16,16 @@ export function ExperiencesGrid() {
       <div className="container-page">
         <ul
           role="list"
-          className="grid gap-6 sm:gap-7 lg:gap-8"
-          style={{
-            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-          }}
+          // With 3+ experiences, auto-fit creates a fluid grid. With 2 we
+          // constrain the width so cards don't stretch into oversized blocks.
+          className={`grid gap-6 sm:gap-7 lg:gap-8 ${
+            experiences.length <= 2 ? "mx-auto max-w-4xl md:grid-cols-2" : ""
+          }`}
+          style={
+            experiences.length <= 2
+              ? undefined
+              : { gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))" }
+          }
         >
           {experiences.map((exp, i) => (
             <motion.li

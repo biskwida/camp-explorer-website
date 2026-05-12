@@ -82,59 +82,66 @@ export const experiences: Experience[] = [
     ],
     programDelivery: true,
   },
-  {
-    slug: "cambodia",
-    href: "/experiences/cambodia",
-    cardImage: "/images/experiences/cambodia/card.jpg",
-    cardImageAlt: {
-      en: "Elephant walking through dense jungle in Mondulkiri",
-      ar: "فيل يسير عبر الأدغال الكثيفة في موندولكيري",
-    },
-    cardDescription: {
-      en: "Ethical elephant sanctuary days followed by a guided jungle expedition through Keo Seima.",
-      ar: "أيام في محمية الفيلة الأخلاقية تليها رحلة استكشافية في أدغال كيو سيما.",
-    },
-    heroImage: "/images/experiences/cambodia/hero.jpg",
-    category: "international",
-    kicker: { en: "International Expedition", ar: "رحلة دولية" },
-    title: {
-      en: "Elephant Conservation & Jungle Expedition",
-      ar: "حماية الفيلة واستكشاف الأدغال",
-    },
-    subtitle: { en: "Cambodia", ar: "كمبوديا" },
-    duration: { en: "14 days", ar: "14 يومًا" },
-    meta: [
-      { iconKey: "calendar" },
-      { iconKey: "paw" },
-      { iconKey: "tree" },
-      { iconKey: "compass" },
-    ],
-    activities: [
-      { iconKey: "paw",  image: "/images/experiences/cambodia/conservation.jpg" },
-      { iconKey: "tree", image: "/images/experiences/cambodia/jungle.jpg" },
-      { iconKey: "book", image: "/images/experiences/cambodia/cultural.jpg" },
-    ],
-    timeline: [
-      { iconKey: "plane" },
-      { iconKey: "sun" },
-      { iconKey: "paw" },
-      { iconKey: "tree" },
-      { iconKey: "plane" },
-    ],
-    highlights: [
-      { iconKey: "paw" },
-      { iconKey: "tree" },
-      { iconKey: "heart" },
-      { iconKey: "star" },
-    ],
-    safety: [
-      { iconKey: "calendar" },
-      { iconKey: "users" },
-      { iconKey: "shield" },
-      { iconKey: "map" },
-    ],
-    programDelivery: true,
-  },
+  // ────────────────────────────────────────────────────────────────────────
+  // TEMPORARILY HIDDEN: Cambodia destination
+  // The destination may be replaced with a different international program.
+  // The cambodia/page.tsx route still resolves directly via URL for review,
+  // but Cambodia no longer appears in the homepage preview, schools page,
+  // experiences index, or header dropdown. To re-enable: uncomment this block.
+  // ────────────────────────────────────────────────────────────────────────
+  // {
+  //   slug: "cambodia",
+  //   href: "/experiences/cambodia",
+  //   cardImage: "/images/experiences/cambodia/card.jpg",
+  //   cardImageAlt: {
+  //     en: "Elephant walking through dense jungle in Mondulkiri",
+  //     ar: "فيل يسير عبر الأدغال الكثيفة في موندولكيري",
+  //   },
+  //   cardDescription: {
+  //     en: "Ethical elephant sanctuary days followed by a guided jungle expedition through Keo Seima.",
+  //     ar: "أيام في محمية الفيلة الأخلاقية تليها رحلة استكشافية في أدغال كيو سيما.",
+  //   },
+  //   heroImage: "/images/experiences/cambodia/hero.jpg",
+  //   category: "international",
+  //   kicker: { en: "International Expedition", ar: "رحلة دولية" },
+  //   title: {
+  //     en: "Elephant Conservation & Jungle Expedition",
+  //     ar: "حماية الفيلة واستكشاف الأدغال",
+  //   },
+  //   subtitle: { en: "Cambodia", ar: "كمبوديا" },
+  //   duration: { en: "14 days", ar: "14 يومًا" },
+  //   meta: [
+  //     { iconKey: "calendar" },
+  //     { iconKey: "paw" },
+  //     { iconKey: "tree" },
+  //     { iconKey: "compass" },
+  //   ],
+  //   activities: [
+  //     { iconKey: "paw",  image: "/images/experiences/cambodia/conservation.jpg" },
+  //     { iconKey: "tree", image: "/images/experiences/cambodia/jungle.jpg" },
+  //     { iconKey: "book", image: "/images/experiences/cambodia/cultural.jpg" },
+  //   ],
+  //   timeline: [
+  //     { iconKey: "plane" },
+  //     { iconKey: "sun" },
+  //     { iconKey: "paw" },
+  //     { iconKey: "tree" },
+  //     { iconKey: "plane" },
+  //   ],
+  //   highlights: [
+  //     { iconKey: "paw" },
+  //     { iconKey: "tree" },
+  //     { iconKey: "heart" },
+  //     { iconKey: "star" },
+  //   ],
+  //   safety: [
+  //     { iconKey: "calendar" },
+  //     { iconKey: "users" },
+  //     { iconKey: "shield" },
+  //     { iconKey: "map" },
+  //   ],
+  //   programDelivery: true,
+  // },
   {
     slug: "weekend-camp",
     href: "/experiences/weekend-camp",

@@ -8,7 +8,11 @@ import { Link } from "@/lib/i18n/navigation";
 import { experiences, placeholderImages } from "@/lib/content/experiences";
 import type { Locale } from "@/lib/i18n/routing";
 
-const INTERNATIONAL_SLUGS = ["sri-lanka", "cambodia"] as const;
+// Hidden: "cambodia" — destination may change in the future
+const INTERNATIONAL_SLUGS = [
+  "sri-lanka",
+  // "cambodia",
+] as const;
 
 export function SchoolsInternational() {
   const t = useTranslations("schools.international");
@@ -52,8 +56,14 @@ export function SchoolsInternational() {
           </motion.p>
         </div>
 
-        {/* Program cards */}
-        <div className="mt-12 grid gap-6 sm:grid-cols-2">
+        {/* Program cards — grid expands to 2 columns when more international programs are visible */}
+        <div
+          className={`mt-12 grid gap-6 ${
+            programs.length === 1
+              ? "mx-auto max-w-2xl"
+              : "sm:grid-cols-2"
+          }`}
+        >
           {programs.map((exp, i) => (
             <motion.div
               key={exp.slug}
