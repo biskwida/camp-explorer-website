@@ -5,7 +5,8 @@ import { useTranslations, useLocale } from "next-intl";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Link, usePathname } from "@/lib/i18n/navigation";
 import { Logo } from "./Logo";
-import { LanguageToggle } from "./LanguageToggle";
+// TODO: Re-enable when Arabic translation goes live
+// import { LanguageToggle } from "./LanguageToggle";
 import { mainNav } from "@/lib/content/nav";
 import { experiences } from "@/lib/content/experiences";
 import type { Locale } from "@/lib/i18n/routing";
@@ -165,7 +166,8 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-3">
-          <LanguageToggle className="hidden sm:inline-flex" />
+          {/* TODO: Re-enable Arabic translation when copy is finalized */}
+          {/* <LanguageToggle className="hidden sm:inline-flex" /> */}
           <Link
             href="/register"
             className="hidden rounded-full bg-gold px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-navy-deep transition-all hover:bg-gold-light hover:shadow-[0_0_24px_rgba(184,149,77,0.35)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy lg:inline-flex"
@@ -275,7 +277,8 @@ export function Header() {
             >
               {t("nav.register")}
             </Link>
-            <LanguageToggle className="self-start" />
+            {/* TODO: Re-enable Arabic translation when copy is finalized */}
+            {/* <LanguageToggle className="self-start" /> */}
           </div>
         </nav>
       </div>
