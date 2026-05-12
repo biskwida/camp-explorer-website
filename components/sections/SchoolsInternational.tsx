@@ -22,7 +22,7 @@ export function SchoolsInternational() {
     <section className="bg-navy py-24 sm:py-32">
       <div className="container-page">
 
-        <div className="max-w-2xl">
+        <div className="mx-auto max-w-3xl text-center">
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}

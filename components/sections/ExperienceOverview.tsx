@@ -18,18 +18,18 @@ export function ExperienceOverview({ slug }: Props) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7 }}
-          className="max-w-2xl"
+          className="mx-auto max-w-3xl text-center"
         >
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-gold sm:text-sm">
             {t("kicker")}
           </p>
-          <h2 className="mt-6 font-display text-3xl font-black leading-[1.1] text-cream sm:text-4xl md:text-5xl">
+          <h2 className="mt-6 font-display text-3xl font-black leading-[1.1] text-cream text-balance sm:text-4xl md:text-5xl">
             {t("title")}
           </h2>
           {t("body").split("\n\n").map((para, i) => (
             <p
               key={i}
-              className={`max-w-xl text-base leading-relaxed text-cream/80 sm:text-lg ${i === 0 ? "mt-8" : "mt-5"}`}
+              className={`mx-auto max-w-2xl text-base leading-relaxed text-cream/80 sm:text-lg ${i === 0 ? "mt-8" : "mt-5"}`}
             >
               {para}
             </p>

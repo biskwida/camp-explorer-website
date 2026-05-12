@@ -21,7 +21,7 @@ export function AboutMission() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7 }}
-          className="max-w-3xl text-start"
+          className="mx-auto max-w-3xl text-center"
         >
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-gold sm:text-sm" aria-hidden="true">
             {t("kicker")}
@@ -42,7 +42,7 @@ export function AboutMission() {
             {t("body")}
           </p>
 
-          <div className="mt-12 grid gap-3 text-start sm:grid-cols-3 sm:gap-6">
+          <div className="mt-12 grid gap-3 sm:grid-cols-3 sm:gap-6">
             {pillars.map((pillar) => (
               <div
                 key={pillar.key}

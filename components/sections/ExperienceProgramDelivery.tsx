@@ -16,7 +16,7 @@ export function ExperienceProgramDelivery({ slug }: Props) {
 
   return (
     <section className="relative bg-navy-deep py-16 sm:py-20">
-      <div className="container-page max-w-3xl">
+      <div className="container-page max-w-3xl text-center">
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}

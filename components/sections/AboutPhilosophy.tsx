@@ -45,7 +45,7 @@ export function AboutPhilosophy() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7 }}
-          className="mx-auto max-w-4xl"
+          className="mx-auto max-w-4xl text-center"
         >
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-gold sm:text-sm" aria-hidden="true">
             {t("kicker")}
@@ -63,7 +63,7 @@ export function AboutPhilosophy() {
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold/80">
               {t("designedTo")}
             </p>
-            <ul className="mt-6 grid gap-3 sm:grid-cols-2 sm:gap-x-10">
+            <ul className="mx-auto mt-6 grid max-w-2xl gap-3 text-start sm:grid-cols-2 sm:gap-x-10">
               {principles.map((principle) => (
                 <li
                   key={principle}
