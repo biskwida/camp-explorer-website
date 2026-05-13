@@ -10,5 +10,15 @@
   },
   "observability": {
     "enabled": true
-  }
+  },
+  // Keep the workers.dev URL alive as a permanent staging/preview URL
+  // (camp-explorer-website.tanya-topacharova.workers.dev)
+  "workers_dev": true,
+  // Production custom domains. Apex + www point to the same Worker; the
+  // test subdomain is retained as a permanent staging URL.
+  "routes": [
+    { "pattern": "campexplorersa.com", "custom_domain": true },
+    { "pattern": "www.campexplorersa.com", "custom_domain": true },
+    { "pattern": "test.campexplorersa.com", "custom_domain": true }
+  ]
 }
