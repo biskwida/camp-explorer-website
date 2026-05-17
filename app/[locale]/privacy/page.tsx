@@ -76,12 +76,12 @@ const policy: Record<Lang, PolicyContent> = {
       {
         id: "storage-retention",
         heading: "5. Storage & Retention",
-        body: `Your data is collected through Tally (tally.so), a secure online forms platform. Submitted data is stored in our secure records and is accessible only to authorised staff.\n\nWe retain personal data for the duration of your programme and for up to 3 years thereafter to address follow-up queries, legal claims, or compliance requirements. Health and medical information is retained only as long as needed for participant safety and is deleted once all obligations for a given programme are met.`,
+        body: `Your data is collected through Visme (forms.visme.co), a secure online forms platform. Submitted data is stored in our secure records and is accessible only to authorised staff.\n\nWe retain personal data for the duration of your programme and for up to 3 years thereafter to address follow-up queries, legal claims, or compliance requirements. Health and medical information is retained only as long as needed for participant safety and is deleted once all obligations for a given programme are met.`,
       },
       {
         id: "third-parties",
         heading: "6. Sharing with Third Parties",
-        body: `We share your personal data only in limited circumstances:\n\n• **Trip leaders and programme partners** – vetted personnel and local partners receive relevant health and contact information solely to deliver the programme safely\n• **Tally.so** – our form platform, acting as a data processor under its own privacy policy\n• **Legal authorities** – only where required by law or to protect participant safety\n\nWe do not sell, rent, or transfer your personal data to any third party for commercial purposes.`,
+        body: `We share your personal data only in limited circumstances:\n\n• **Trip leaders and programme partners** – vetted personnel and local partners receive relevant health and contact information solely to deliver the programme safely\n• **Visme (forms.visme.co)** – our form platform, acting as a data processor under its own privacy policy\n• **Legal authorities** – only where required by law or to protect participant safety\n\nWe do not sell, rent, or transfer your personal data to any third party for commercial purposes.`,
       },
       {
         id: "children",
@@ -138,12 +138,12 @@ const policy: Record<Lang, PolicyContent> = {
       {
         id: "storage-retention",
         heading: "٥. التخزين والاحتفاظ",
-        body: `تُجمَع بياناتك عبر Tally (tally.so)، وهي منصة نماذج إلكترونية آمنة. تُخزَّن البيانات في سجلاتنا الآمنة ولا يطّلع عليها سوى الموظفين المخوَّلين.\n\nنحتفظ بالبيانات الشخصية طوال مدة البرنامج وحتى 3 سنوات بعده للتعامل مع الاستفسارات أو المطالبات القانونية. تُحذف المعلومات الصحية فور انتهاء البرنامج والوفاء بجميع التزامات السلامة.`,
+        body: `تُجمَع بياناتك عبر Visme (forms.visme.co)، وهي منصة نماذج إلكترونية آمنة. تُخزَّن البيانات في سجلاتنا الآمنة ولا يطّلع عليها سوى الموظفين المخوَّلين.\n\nنحتفظ بالبيانات الشخصية طوال مدة البرنامج وحتى 3 سنوات بعده للتعامل مع الاستفسارات أو المطالبات القانونية. تُحذف المعلومات الصحية فور انتهاء البرنامج والوفاء بجميع التزامات السلامة.`,
       },
       {
         id: "third-parties",
         heading: "٦. المشاركة مع أطراف ثالثة",
-        body: `نشارك بياناتك في الحالات المحدودة التالية فحسب:\n\n• **قادة الرحلات وشركاء البرنامج** – يحصل الأفراد المعتمدون والشركاء المحليون على المعلومات الصحية وبيانات التواصل حصرًا لتقديم البرنامج بأمان\n• **Tally.so** – معالج نماذج الطلبات، يعمل وفق سياسة الخصوصية الخاصة به\n• **الجهات القانونية** – عند الاقتضاء وفق القانون أو لحماية سلامة المشتركين\n\nلا نبيع بياناتك الشخصية أو نؤجرها أو ننقلها لأي طرف ثالث لأغراض تجارية.`,
+        body: `نشارك بياناتك في الحالات المحدودة التالية فحسب:\n\n• **قادة الرحلات وشركاء البرنامج** – يحصل الأفراد المعتمدون والشركاء المحليون على المعلومات الصحية وبيانات التواصل حصرًا لتقديم البرنامج بأمان\n• **Visme (forms.visme.co)** – معالج نماذج الطلبات، يعمل وفق سياسة الخصوصية الخاصة به\n• **الجهات القانونية** – عند الاقتضاء وفق القانون أو لحماية سلامة المشتركين\n\nلا نبيع بياناتك الشخصية أو نؤجرها أو ننقلها لأي طرف ثالث لأغراض تجارية.`,
       },
       {
         id: "children",

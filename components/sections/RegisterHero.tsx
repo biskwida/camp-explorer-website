@@ -32,7 +32,7 @@ export function RegisterHero() {
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-5">
               <a
-                href="https://tally.so/r/lbVMr6"
+                href="https://forms.visme.co/fv/6vz3wd66-jx87nq"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex h-14 items-center gap-2.5 rounded-sm bg-gold px-8 text-sm font-bold uppercase tracking-wider text-navy-deep transition-colors hover:bg-gold-light"
