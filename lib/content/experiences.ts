@@ -34,8 +34,8 @@ export const experiences: Experience[] = [
     href: "/experiences/sri-lanka",
     cardImage: "/images/experiences/sri-lanka/card.jpg",
     cardImageAlt: {
-      en: "Sea turtle being released onto the sand at sunrise",
-      ar: "إطلاق سلحفاة بحرية على الرمال عند شروق الشمس",
+      en: "Two rescued sea turtles swimming in a rehabilitation pool",
+      ar: "سلحفاتان بحريتان مُنقَذتان تسبحان في حوض إعادة التأهيل",
     },
     cardDescription: {
       en: "Wildlife conservation, community teaching, and coastal adventure across 10 unforgettable days.",
