@@ -109,14 +109,16 @@ export function HomePreview() {
           // Desktop (sm+): horizontal flex band with icon + text + CTA inline.
           className="group relative isolate block aspect-[4/5] overflow-hidden rounded-sm border border-gold/20 transition-colors hover:border-gold/50 sm:flex sm:aspect-auto sm:min-h-[340px] sm:flex-row sm:items-center sm:gap-6 sm:p-10 [-webkit-tap-highlight-color:transparent]"
         >
-          {/* Mobile background — kids-on-horseback (from schools hero),
-              cropped at 70%/40% to focus on the girl + horse. */}
+          {/* Mobile background — portrait horse + EtonHouse photo. Already
+              shot in portrait orientation, so it fills the 4:5 tile naturally.
+              Replaces the kids-on-horseback crop for stronger brand resonance
+              between this CTA and the Schools page hero. */}
           <Image
-            src="/images/schools/hero.jpg"
+            src="/images/home/schools-mobile.jpg"
             alt=""
             fill
             sizes="100vw"
-            className="-z-20 object-cover object-[70%_40%] transition-transform duration-700 group-hover:scale-[1.03] sm:hidden"
+            className="-z-20 object-cover transition-transform duration-700 group-hover:scale-[1.03] sm:hidden"
           />
           {/* Desktop background — EtonHouse-horse photo for the horizontal band. */}
           <Image
