@@ -245,14 +245,10 @@ export const placeholderImages: Record<string, string> = {
     "/images/experiences/weekend-camp/family.jpg",
   "/images/experiences/weekend-camp/camp-sunset.jpg":
     "/images/experiences/weekend-camp/camp-sunset.jpg",
-  // Schools hero — desktop: kids-on-horseback at sunset (landscape orientation
-  // fits the wide hero on desktop). Mobile: closer horse + EtonHouse sign
-  // photo, framed to keep both the horse and the school visible in a
-  // portrait viewport.
+  // Schools hero (kids-on-horseback at sunset). Same image at every
+  // breakpoint; the SchoolsHero component reframes via object-position.
   "/images/schools/hero.jpg":
     "/images/schools/hero.jpg",
-  "/images/schools/hero-mobile.jpg":
-    "/images/schools/hero-mobile.jpg",
   "/images/schools/saudi/hero.jpg":
     "https://images.unsplash.com/photo-1542401886-65d6c61db217?w=2400&q=80",
   "/images/schools/international/hero.jpg":
