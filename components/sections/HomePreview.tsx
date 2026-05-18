@@ -49,12 +49,15 @@ export function HomePreview() {
               href={exp.href}
               // isolate          → new stacking context fixes iOS Safari edge
               //                    compositing bug during momentum scroll
+              // transform-gpu    → forces GPU layer (translateZ(0)) so the card
+              //                    composes onto its own buffer, preventing the
+              //                    "white edge during scroll up" iOS bug
               // transition-colors → only animate border-color (was transition-all,
               //                    which could ripple unintended properties)
               // tap-highlight     → kill iOS Safari's default tap overlay that
               //                    flashed a lighter band along the bottom edge
               //                    when fingers touched-then-scrolled
-              className="group relative isolate block aspect-[4/5] overflow-hidden rounded-sm border border-gold/15 bg-card transition-colors duration-300 hover:border-gold/40 [-webkit-tap-highlight-color:transparent]"
+              className="group relative isolate block aspect-[4/5] transform-gpu overflow-hidden rounded-sm border border-gold/15 bg-card transition-colors duration-300 hover:border-gold/40 [-webkit-tap-highlight-color:transparent]"
             >
               <Image
                 src={placeholderImages[exp.cardImage]}

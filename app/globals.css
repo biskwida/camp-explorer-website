@@ -99,6 +99,9 @@
   html {
     @apply bg-navy-deep font-sans;
     scroll-behavior: smooth;
+    /* Prevent iOS Safari rubber-band at top/bottom, which can expose
+       the browser canvas and produce a brief flash at element edges. */
+    overscroll-behavior-y: none;
   }
   html[lang="ar"] {
     font-family: var(--font-arabic), system-ui, sans-serif;
@@ -111,7 +114,11 @@
         transparent
       ),
       linear-gradient(180deg, var(--navy-deep) 0%, var(--navy) 100%);
-    min-height: 100dvh;
+    /* 100svh (small viewport height) instead of 100dvh so the body height
+       doesn't change when iOS Safari's address bar expands on scroll up —
+       eliminating the layout-reflow frame that causes a white sliver to
+       flash along the bottom of overflow-hidden cards. */
+    min-height: 100svh;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display), var(--font-sans), sans-serif;
