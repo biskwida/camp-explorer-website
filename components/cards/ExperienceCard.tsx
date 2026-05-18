@@ -25,7 +25,11 @@ export function ExperienceCard({ experience }: Props) {
     <article className="group h-full">
       <Link
         href={experience.href}
-        className="block h-full overflow-hidden rounded-sm border border-gold/15 bg-navy-deep/40 transition-colors duration-300 hover:border-gold/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy"
+        // `isolate` and the WebKit tap-highlight reset prevent an iOS Safari
+        // rendering bug where the lower border of overflow-hidden + rounded
+        // cards with transformed children briefly flashes a lighter band
+        // during momentum scroll.
+        className="isolate block h-full overflow-hidden rounded-sm border border-gold/15 bg-navy-deep/40 transition-colors duration-300 hover:border-gold/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy [-webkit-tap-highlight-color:transparent]"
       >
         {/* Photo — 4:5 portrait */}
         <div className="relative aspect-[4/5] overflow-hidden bg-gradient-to-br from-navy-deep via-navy to-gold/20">

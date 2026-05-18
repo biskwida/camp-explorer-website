@@ -47,7 +47,14 @@ export function HomePreview() {
           >
             <Link
               href={exp.href}
-              className="group relative block aspect-[4/5] overflow-hidden rounded-sm border border-gold/15 bg-card transition-all duration-300 hover:border-gold/40"
+              // isolate          → new stacking context fixes iOS Safari edge
+              //                    compositing bug during momentum scroll
+              // transition-colors → only animate border-color (was transition-all,
+              //                    which could ripple unintended properties)
+              // tap-highlight     → kill iOS Safari's default tap overlay that
+              //                    flashed a lighter band along the bottom edge
+              //                    when fingers touched-then-scrolled
+              className="group relative isolate block aspect-[4/5] overflow-hidden rounded-sm border border-gold/15 bg-card transition-colors duration-300 hover:border-gold/40 [-webkit-tap-highlight-color:transparent]"
             >
               <Image
                 src={placeholderImages[exp.cardImage]}
@@ -95,7 +102,7 @@ export function HomePreview() {
       >
         <Link
           href="/schools"
-          className="group relative isolate flex min-h-[420px] flex-col items-start gap-6 overflow-hidden rounded-sm border border-gold/20 p-8 transition-colors hover:border-gold/50 sm:min-h-[340px] sm:flex-row sm:items-center sm:p-10"
+          className="group relative isolate flex min-h-[420px] flex-col items-start gap-6 overflow-hidden rounded-sm border border-gold/20 p-8 transition-colors hover:border-gold/50 sm:min-h-[340px] sm:flex-row sm:items-center sm:p-10 [-webkit-tap-highlight-color:transparent]"
         >
           {/* Mobile-only background — kids-on-horseback (vertical orientation
               from the schools hero), cropped at 70%/40% to focus on the girl
