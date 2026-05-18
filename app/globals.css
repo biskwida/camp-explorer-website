@@ -97,7 +97,7 @@
     @apply border-border outline-ring/50;
   }
   html {
-    @apply font-sans;
+    @apply bg-navy-deep font-sans;
     scroll-behavior: smooth;
   }
   html[lang="ar"] {
