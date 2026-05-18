@@ -245,11 +245,14 @@ export const placeholderImages: Record<string, string> = {
     "/images/experiences/weekend-camp/family.jpg",
   "/images/experiences/weekend-camp/camp-sunset.jpg":
     "/images/experiences/weekend-camp/camp-sunset.jpg",
-  // Schools hero (kids-on-horseback at sunset) — now its own real file,
-  // decoupled from /images/home/schools-sunset.jpg (which is the EtonHouse
-  // photo used by the homepage "For Schools" CTA band).
+  // Schools hero — desktop: kids-on-horseback at sunset (landscape orientation
+  // fits the wide hero on desktop). Mobile: closer horse + EtonHouse sign
+  // photo, framed to keep both the horse and the school visible in a
+  // portrait viewport.
   "/images/schools/hero.jpg":
     "/images/schools/hero.jpg",
+  "/images/schools/hero-mobile.jpg":
+    "/images/schools/hero-mobile.jpg",
   "/images/schools/saudi/hero.jpg":
     "https://images.unsplash.com/photo-1542401886-65d6c61db217?w=2400&q=80",
   "/images/schools/international/hero.jpg":

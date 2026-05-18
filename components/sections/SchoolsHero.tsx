@@ -13,17 +13,25 @@ export function SchoolsHero() {
   return (
     <section className="relative isolate min-h-[70vh] overflow-hidden">
       {/* Background image */}
+      {/* Mobile background — horse + EtonHouse sign photo, framed so both
+          the horse and the school stay visible in a portrait viewport. */}
+      <Image
+        src={placeholderImages["/images/schools/hero-mobile.jpg"]}
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="-z-20 object-cover object-[55%_35%] md:hidden"
+      />
+      {/* Desktop background — kids-on-horseback at sunset, used at md+ where
+          the wider hero fits the original 16:9 framing. */}
       <Image
         src={placeholderImages["/images/schools/hero.jpg"]}
         alt=""
         fill
         priority
         sizes="100vw"
-        // Mobile: bias right + slightly lower so the girl and horse (right side
-        // of the source) stay in focus when the wide 16:9 image is cropped to a
-        // narrow portrait viewport.
-        // Desktop (md+): the full width fits, so center positioning is fine.
-        className="-z-20 object-cover object-[70%_40%] md:object-[center_18%]"
+        className="-z-20 hidden object-cover object-[center_18%] md:block"
       />
       {/* Gradient overlay — heavier at bottom so text stays legible */}
       <div
