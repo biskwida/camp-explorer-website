@@ -102,13 +102,12 @@ export function HomePreview() {
       >
         <Link
           href="/schools"
-          className="group relative isolate flex min-h-[420px] flex-col items-start gap-6 overflow-hidden rounded-sm border border-gold/20 p-8 transition-colors hover:border-gold/50 sm:min-h-[340px] sm:flex-row sm:items-center sm:p-10 [-webkit-tap-highlight-color:transparent]"
+          // Mobile: 4:5 portrait card matching the experience tiles above.
+          // Desktop (sm+): horizontal flex band with icon + text + CTA inline.
+          className="group relative isolate block aspect-[4/5] overflow-hidden rounded-sm border border-gold/20 transition-colors hover:border-gold/50 sm:flex sm:aspect-auto sm:min-h-[340px] sm:flex-row sm:items-center sm:gap-6 sm:p-10 [-webkit-tap-highlight-color:transparent]"
         >
-          {/* Mobile-only background — kids-on-horseback (vertical orientation
-              from the schools hero), cropped at 70%/40% to focus on the girl
-              + horse. Hidden once the band switches to its horizontal layout
-              at sm: breakpoint.
-              Drop replacement at /public/images/schools/hero.jpg. */}
+          {/* Mobile background — kids-on-horseback (from schools hero),
+              cropped at 70%/40% to focus on the girl + horse. */}
           <Image
             src="/images/schools/hero.jpg"
             alt=""
@@ -116,9 +115,7 @@ export function HomePreview() {
             sizes="100vw"
             className="-z-20 object-cover object-[70%_40%] transition-transform duration-700 group-hover:scale-[1.03] sm:hidden"
           />
-          {/* Desktop background — EtonHouse-horse photo, used once the band
-              becomes horizontal at sm:.
-              Drop replacement at /public/images/home/schools-sunset.jpg. */}
+          {/* Desktop background — EtonHouse-horse photo for the horizontal band. */}
           <Image
             src="/images/home/schools-sunset.jpg"
             alt=""
@@ -126,19 +123,39 @@ export function HomePreview() {
             sizes="(min-width: 1024px) 1100px, 100vw"
             className="-z-20 hidden object-cover transition-transform duration-700 group-hover:scale-[1.03] sm:block"
           />
-          {/* Overlay — on mobile, lighter top + darker bottom so the image
-              shows through while text at bottom stays readable. On desktop
-              (sm+), the band becomes horizontal with text on the left, so a
-              darker top-left → lighter bottom-right gradient works better. */}
+          {/* Overlay — mobile: matches experience tile gradient (transparent top → solid bottom for text).
+              Desktop: keeps the prior darker top-left → lighter bottom-right wash. */}
           <div
             aria-hidden="true"
-            className="absolute inset-0 -z-10 bg-gradient-to-t from-navy-deep/85 via-navy-deep/40 to-transparent sm:bg-gradient-to-br sm:from-navy-deep/90 sm:via-navy-deep/75 sm:to-navy-deep/55"
+            className="absolute inset-0 -z-10 bg-gradient-to-t from-navy-deep via-navy-deep/30 to-transparent sm:bg-gradient-to-br sm:from-navy-deep/90 sm:via-navy-deep/75 sm:to-navy-deep/55"
           />
 
-          <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-gold/40 bg-navy-deep/60 text-gold backdrop-blur-[2px]">
+          {/* ─── MOBILE-ONLY CONTENT ─────────────────────────────────── */}
+          {/* Graduation cap badge top-right (matches the slot where the
+              experience tiles show their ArrowUpRight icon — same shape,
+              different glyph, so this card reads as "the schools one"). */}
+          <span
+            aria-hidden="true"
+            className="absolute end-4 top-4 inline-flex h-9 w-9 items-center justify-center rounded-full border border-cream/20 bg-navy-deep/60 text-cream/85 backdrop-blur-[2px] transition-all group-hover:border-gold group-hover:bg-gold group-hover:text-navy-deep sm:hidden"
+          >
+            <GraduationCap className="h-4 w-4" />
+          </span>
+          {/* Bottom-left text block — kicker + title only (no body description),
+              matching the experience tiles' bottom text layout. */}
+          <div className="absolute inset-x-0 bottom-0 p-6 sm:hidden">
+            <p className="mb-2 text-[10px] font-semibold uppercase tracking-[0.25em] text-gold">
+              {t("schoolsKicker")}
+            </p>
+            <h3 className="font-display text-xl font-bold leading-tight text-cream">
+              {t("schoolsTitle")}
+            </h3>
+          </div>
+
+          {/* ─── DESKTOP-ONLY CONTENT ────────────────────────────────── */}
+          <div className="hidden h-14 w-14 shrink-0 items-center justify-center rounded-full border border-gold/40 bg-navy-deep/60 text-gold backdrop-blur-[2px] sm:flex">
             <GraduationCap className="h-6 w-6" />
           </div>
-          <div className="flex-1">
+          <div className="hidden flex-1 sm:block">
             <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.3em] text-gold">
               {t("schoolsKicker")}
             </p>
@@ -149,7 +166,7 @@ export function HomePreview() {
               {t("schoolsDescription")}
             </p>
           </div>
-          <span className="inline-flex items-center gap-2 self-start text-sm font-semibold uppercase tracking-wider text-gold transition-colors group-hover:text-gold-light sm:self-center">
+          <span className="hidden items-center gap-2 self-start text-sm font-semibold uppercase tracking-wider text-gold transition-colors group-hover:text-gold-light sm:inline-flex sm:self-center">
             {t("schoolsCta")}
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
           </span>
