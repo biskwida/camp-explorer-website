@@ -119,10 +119,13 @@ export function HomePreview() {
             sizes="(min-width: 1024px) 1100px, 100vw"
             className="-z-20 hidden object-cover transition-transform duration-700 group-hover:scale-[1.03] sm:block"
           />
-          {/* Overlay — strong enough for text legibility at every breakpoint */}
+          {/* Overlay — on mobile, lighter top + darker bottom so the image
+              shows through while text at bottom stays readable. On desktop
+              (sm+), the band becomes horizontal with text on the left, so a
+              darker top-left → lighter bottom-right gradient works better. */}
           <div
             aria-hidden="true"
-            className="absolute inset-0 -z-10 bg-gradient-to-br from-navy-deep/90 via-navy-deep/75 to-navy-deep/55"
+            className="absolute inset-0 -z-10 bg-gradient-to-t from-navy-deep/85 via-navy-deep/40 to-transparent sm:bg-gradient-to-br sm:from-navy-deep/90 sm:via-navy-deep/75 sm:to-navy-deep/55"
           />
 
           <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-gold/40 bg-navy-deep/60 text-gold backdrop-blur-[2px]">
