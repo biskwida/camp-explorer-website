@@ -19,7 +19,11 @@ export function SchoolsHero() {
         fill
         priority
         sizes="100vw"
-        className="-z-20 object-cover object-[center_18%]"
+        // Mobile: bias right + slightly lower so the girl and horse (right side
+        // of the source) stay in focus when the wide 16:9 image is cropped to a
+        // narrow portrait viewport.
+        // Desktop (md+): the full width fits, so center positioning is fine.
+        className="-z-20 object-cover object-[70%_40%] md:object-[center_18%]"
       />
       {/* Gradient overlay — heavier at bottom so text stays legible */}
       <div
