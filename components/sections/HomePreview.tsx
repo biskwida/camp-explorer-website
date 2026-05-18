@@ -19,7 +19,10 @@ export function HomePreview() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.6 }}
-        className="max-w-3xl"
+        // Mobile: left-aligned, normal block (default).
+        // Desktop (md+): centered horizontally + text centered, matching the
+        // breakpoint where the experience grid below switches to 2-column.
+        className="max-w-3xl md:mx-auto md:text-center"
       >
         <p className="mb-4 text-xs font-semibold uppercase tracking-[0.4em] text-gold">
           {t("kicker")}
