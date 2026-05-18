@@ -97,13 +97,27 @@ export function HomePreview() {
           href="/schools"
           className="group relative isolate flex min-h-[420px] flex-col items-start gap-6 overflow-hidden rounded-sm border border-gold/20 p-8 transition-colors hover:border-gold/50 sm:min-h-[340px] sm:flex-row sm:items-center sm:p-10"
         >
-          {/* Sunset background — drop a new file at /public/images/home/schools-sunset.jpg to swap */}
+          {/* Mobile-only background — kids-on-horseback (vertical orientation
+              from the schools hero), cropped at 70%/40% to focus on the girl
+              + horse. Hidden once the band switches to its horizontal layout
+              at sm: breakpoint.
+              Drop replacement at /public/images/schools/hero.jpg. */}
+          <Image
+            src="/images/schools/hero.jpg"
+            alt=""
+            fill
+            sizes="100vw"
+            className="-z-20 object-cover object-[70%_40%] transition-transform duration-700 group-hover:scale-[1.03] sm:hidden"
+          />
+          {/* Desktop background — EtonHouse-horse photo, used once the band
+              becomes horizontal at sm:.
+              Drop replacement at /public/images/home/schools-sunset.jpg. */}
           <Image
             src="/images/home/schools-sunset.jpg"
             alt=""
             fill
             sizes="(min-width: 1024px) 1100px, 100vw"
-            className="-z-20 object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+            className="-z-20 hidden object-cover transition-transform duration-700 group-hover:scale-[1.03] sm:block"
           />
           {/* Overlay — strong enough for text legibility at every breakpoint */}
           <div
