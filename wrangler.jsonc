@@ -11,6 +11,11 @@
   "observability": {
     "enabled": true
   },
+  // Canonical origin used at build time for SEO metadata (canonicals, sitemap,
+  // robots, OG URLs, JSON-LD). Apex is canonical; www serves the same Worker.
+  "vars": {
+    "NEXT_PUBLIC_SITE_URL": "https://campexplorersa.com"
+  },
   // Keep the workers.dev URL alive as a permanent staging/preview URL
   // (camp-explorer-website.tanya-topacharova.workers.dev)
   "workers_dev": true,

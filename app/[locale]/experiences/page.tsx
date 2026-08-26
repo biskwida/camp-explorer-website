@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageAlternates } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ExperiencesGrid } from "@/components/sections/ExperiencesGrid";
 import { ExperiencesHero } from "@/components/sections/ExperiencesHero";
@@ -16,6 +17,7 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
+    alternates: pageAlternates(locale, "/experiences"),
   };
 }
 

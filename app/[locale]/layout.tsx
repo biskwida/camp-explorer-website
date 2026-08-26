@@ -4,6 +4,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing, isRtl } from "@/lib/i18n/routing";
+import { BASE_URL } from "@/lib/seo";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import "../globals.css";
@@ -35,9 +36,6 @@ export const viewport: Viewport = {
   themeColor: "#06090e",
 };
 
-const BASE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ?? "https://campexplorer.sa";
-
 export async function generateMetadata({
   params,
 }: {
@@ -46,8 +44,6 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "siteMetadata" });
 
-  const otherLocale = locale === "en" ? "ar" : "en";
-
   return {
     title: {
       default: t("title"),
@@ -55,14 +51,9 @@ export async function generateMetadata({
     },
     description: t("description"),
     metadataBase: new URL(BASE_URL),
-    alternates: {
-      canonical: `${BASE_URL}/${locale}`,
-      languages: {
-        en: `${BASE_URL}/en`,
-        ar: `${BASE_URL}/ar`,
-        "x-default": `${BASE_URL}/en`,
-      },
-    },
+    // No `alternates` here: metadata merges shallowly, so a layout-level
+    // canonical would mark every subpage as a duplicate of the homepage.
+    // Each page declares its own via pageAlternates().
     openGraph: {
       type: "website",
       siteName: "Camp Explorer",

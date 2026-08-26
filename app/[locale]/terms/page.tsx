@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageAlternates } from "@/lib/seo";
 import { setRequestLocale } from "next-intl/server";
 import React from "react";
 
@@ -16,6 +17,7 @@ export async function generateMetadata({
     description: isAr
       ? "الشروط والأحكام الخاصة ببرامج كامب إكسبلورر والتسجيل والمشاركة."
       : "Camp Explorer's terms and conditions covering programme registration, participation, and conduct.",
+    alternates: pageAlternates(locale, "/terms"),
   };
 }
 

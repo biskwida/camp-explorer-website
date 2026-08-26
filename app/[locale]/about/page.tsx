@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageAlternates } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { AboutHero } from "@/components/sections/AboutHero";
 import { AboutMission } from "@/components/sections/AboutMission";
@@ -16,6 +17,7 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
+    alternates: pageAlternates(locale, "/about"),
   };
 }
 

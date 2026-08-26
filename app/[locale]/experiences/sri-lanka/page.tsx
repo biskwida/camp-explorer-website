@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { pageAlternates } from "@/lib/seo";
+import { ExperienceJsonLd } from "@/components/ExperienceJsonLd";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ExperienceActivities } from "@/components/sections/ExperienceActivities";
 import { ExperienceHero } from "@/components/sections/ExperienceHero";
@@ -20,6 +22,7 @@ export async function generateMetadata({
   return {
     title: tHero("title"),
     description: tMeta("description"),
+    alternates: pageAlternates(locale, "/experiences/sri-lanka"),
   };
 }
 
@@ -33,6 +36,7 @@ export default async function SriLankaPage({
 
   return (
     <main>
+      <ExperienceJsonLd slug="sri-lanka" locale={locale} />
       <ExperienceHero slug="sri-lanka" />
       <ExperienceOverview slug="sri-lanka" />
       <ExperienceActivities slug="sri-lanka" />

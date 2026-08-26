@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageAlternates } from "@/lib/seo";
 import { setRequestLocale } from "next-intl/server";
 import React from "react";
 
@@ -16,6 +17,7 @@ export async function generateMetadata({
     description: isAr
       ? "سياسة الخصوصية وحماية البيانات الشخصية لكامب إكسبلورر وفق نظام حماية البيانات الشخصية السعودي."
       : "Camp Explorer's privacy policy and personal data protection information under Saudi PDPL.",
+    alternates: pageAlternates(locale, "/privacy"),
   };
 }
 

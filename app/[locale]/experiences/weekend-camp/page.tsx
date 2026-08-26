@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { pageAlternates } from "@/lib/seo";
+import { ExperienceJsonLd } from "@/components/ExperienceJsonLd";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ExperienceActivities } from "@/components/sections/ExperienceActivities";
 import { ExperienceHero } from "@/components/sections/ExperienceHero";
@@ -20,6 +22,7 @@ export async function generateMetadata({
   return {
     title: tHero("title"),
     description: tMeta("description"),
+    alternates: pageAlternates(locale, "/experiences/weekend-camp"),
   };
 }
 
@@ -33,6 +36,7 @@ export default async function WeekendCampPage({
 
   return (
     <main>
+      <ExperienceJsonLd slug="weekend-camp" locale={locale} />
       <ExperienceHero slug="weekend-camp" />
       <ExperienceOverview slug="weekend-camp" />
       <ExperienceLocalHighlights slug="weekend-camp" />

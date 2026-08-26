@@ -64,7 +64,7 @@ export function HomePreview() {
             >
               <Image
                 src={placeholderImages[exp.cardImage]}
-                alt=""
+                alt={exp.cardImageAlt?.[locale] ?? ""}
                 fill
                 sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-105"

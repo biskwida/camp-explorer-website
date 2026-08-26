@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageAlternates } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ExperienceActivities } from "@/components/sections/ExperienceActivities";
@@ -28,6 +29,7 @@ export async function generateMetadata({
   return {
     title: tHero("title"),
     description: tMeta("description"),
+    alternates: pageAlternates(locale, "/experiences/cambodia"),
   };
 }
 

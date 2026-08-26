@@ -79,7 +79,7 @@ export function SchoolsInternational() {
               >
                 <Image
                   src={placeholderImages[exp.cardImage] ?? exp.cardImage}
-                  alt=""
+                  alt={exp.cardImageAlt?.[locale] ?? ""}
                   fill
                   sizes="(min-width: 1024px) 50vw, 100vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
