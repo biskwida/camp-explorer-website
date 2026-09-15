@@ -38,10 +38,19 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       // Consolidate www onto the apex domain so search engines see one host.
+      // The bare root needs its own rule: OpenNext's translation of the
+      // ":path*" wildcard mangles the empty match into a literal "/:path*"
+      // (broke the Instagram bio link, which points at the www root).
       {
-        source: "/:path*",
+        source: "/",
         has: [{ type: "host", value: "www.campexplorersa.com" }],
-        destination: "https://campexplorersa.com/:path*",
+        destination: "https://campexplorersa.com/",
+        permanent: true,
+      },
+      {
+        source: "/:path+",
+        has: [{ type: "host", value: "www.campexplorersa.com" }],
+        destination: "https://campexplorersa.com/:path+",
         permanent: true,
       },
     ];
