@@ -35,11 +35,29 @@ const nextConfig: NextConfig = {
     // softness from lossy JPEG re-encoding would be visible.
     qualities: [75, 100],
   },
+  async redirects() {
+    return [
+      // Consolidate www onto the apex domain so search engines see one host.
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.campexplorersa.com" }],
+        destination: "https://campexplorersa.com/:path*",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
         source: "/(.*)",
         headers: securityHeaders,
+      },
+      // Any host other than the canonical apex (test subdomain, workers.dev,
+      // tunnels, localhost) is staging: tell crawlers not to index it.
+      {
+        source: "/(.*)",
+        missing: [{ type: "host", value: "campexplorersa.com" }],
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
       },
     ];
   },
