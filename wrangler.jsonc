@@ -16,6 +16,14 @@
   "vars": {
     "NEXT_PUBLIC_SITE_URL": "https://campexplorersa.com"
   },
+  // Incremental cache for OpenNext (prerendered/ISR pages) — see open-next.config.ts.
+  // Serves cached renders instead of re-rendering every request (cuts CPU per request).
+  "kv_namespaces": [
+    {
+      "binding": "NEXT_INC_CACHE_KV",
+      "id": "1dc925613ad8485f9da93c7a714f3ad9"
+    }
+  ],
   // Keep the workers.dev URL alive as a permanent staging/preview URL
   // (camp-explorer-website.tanya-topacharova.workers.dev)
   "workers_dev": true,
