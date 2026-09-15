@@ -54,9 +54,11 @@ const nextConfig: NextConfig = {
       },
       // Any host other than the canonical apex (test subdomain, workers.dev,
       // tunnels, localhost) is staging: tell crawlers not to index it.
+      // The value is a regex — unanchored it would substring-match
+      // test.campexplorersa.com too, so anchor it to the exact apex host.
       {
         source: "/(.*)",
-        missing: [{ type: "host", value: "campexplorersa.com" }],
+        missing: [{ type: "host", value: "^campexplorersa\\.com$" }],
         headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
       },
     ];
