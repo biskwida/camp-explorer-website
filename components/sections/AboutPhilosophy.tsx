@@ -21,7 +21,7 @@ export function AboutPhilosophy() {
           Drop a new file at /public/images/about/camel-sunset.jpg to swap. */}
       <Image
         src="/images/about/camel-sunset.jpg"
-        alt=""
+        alt={t("imageAlt")}
         fill
         sizes="100vw"
         className="-z-20 object-cover object-center"

@@ -53,7 +53,7 @@ export function ExperienceActivities({ slug }: Props) {
                 <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-navy-deep via-navy to-gold/20">
                   <Image
                     src={placeholderImages[a.image] ?? a.image}
-                    alt=""
+                    alt={copy?.title ?? ""}
                     fill
                     sizes="(min-width: 768px) 33vw, 100vw"
                     className="object-cover"

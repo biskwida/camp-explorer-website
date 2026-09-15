@@ -12,6 +12,7 @@ export type Experience = {
   cardImageAlt?: { en: string; ar: string };
   cardDescription?: { en: string; ar: string };
   heroImage: string;
+  heroImageAlt?: { en: string; ar: string };
   category: "international" | "local";
   kicker: { en: string; ar: string };
   title: { en: string; ar: string };
@@ -42,6 +43,10 @@ export const experiences: Experience[] = [
       ar: "حماية الحياة البرية، والتدريس المجتمعي، ومغامرة ساحلية على مدى 10 أيام لا تُنسى.",
     },
     heroImage: "/images/experiences/sri-lanka/hero.jpg",
+    heroImageAlt: {
+      en: "Rescued sea turtles surfacing in a rehabilitation pool in Sri Lanka",
+      ar: "سلاحف بحرية مُنقذة تطفو على سطح حوض إعادة التأهيل في سريلانكا",
+    },
     category: "international",
     kicker: { en: "International Expedition", ar: "رحلة دولية" },
     title: {
@@ -155,6 +160,10 @@ export const experiences: Experience[] = [
       ar: "قيادة المغامرة في الهواء الطلق للمراهقين والعائلات، قريبًا من المنزل في المملكة العربية السعودية.",
     },
     heroImage: "/images/experiences/weekend-camp/hero.jpg",
+    heroImageAlt: {
+      en: "A horse standing in front of a traditional striped Bedouin tent at sunset in the Saudi desert",
+      ar: "حصان يقف أمام خيمة بدوية تقليدية مخططة عند الغروب في الصحراء السعودية",
+    },
     category: "local",
     kicker: { en: "Local Adventure", ar: "مغامرة محلية" },
     title: {

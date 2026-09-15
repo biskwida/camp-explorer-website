@@ -17,7 +17,7 @@ export function HomeHero() {
       {/* Mobile: shift focal point right so the climber is visible. Desktop: center. */}
       <Image
         src="/images/home/hero.jpg"
-        alt=""
+        alt={t("imageAlt")}
         fill
         priority
         sizes="100vw"

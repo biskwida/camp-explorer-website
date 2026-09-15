@@ -35,7 +35,8 @@
       "description": "We create experiences beyond the classroom — into the real world through adventure, culture, and hands-on learning.",
       "ctaPrimary": "Explore Experiences",
       "ctaSecondary": "Register Your Interest",
-      "scrollHint": "Scroll to explore"
+      "scrollHint": "Scroll to explore",
+      "imageAlt": "A child wearing a headscarf walking barefoot across red desert dunes under a blue sky in Saudi Arabia"
     },
     "preview": {
       "kicker": "OUR EXPERIENCES",
@@ -48,7 +49,8 @@
       "weekendKicker": "WEEKEND CAMP",
       "weekendTitle": "Experiences for teens and families",
       "weekendDescription": "Short, immersive weekend experiences in Saudi nature — built for connection, confidence, and lasting memories.",
-      "weekendCta": "Explore weekend camp"
+      "weekendCta": "Explore weekend camp",
+      "schoolsImageAlt": "A grey horse wearing a green Camp Explorer blanket standing outside EtonHouse International School"
     },
     "abdul": {
       "kicker": "LED BY",
@@ -99,7 +101,8 @@
         "develop": "Develop independence",
         "encourage": "Encourage responsibility",
         "create": "Create awareness of the world"
-      }
+      },
+      "imageAlt": "Silhouette of a camel and its handler facing each other at sunset in the desert"
     },
     "founder": {
       "kicker": "MEET THE FOUNDER",
@@ -539,7 +542,8 @@
       "kicker": "For Schools",
       "headline": "Beyond the classroom",
       "headlineAccent": "Into the real world",
-      "subhead": "We build experiences that move learning out of the classroom and into environments where students grow through doing — not just watching."
+      "subhead": "We build experiences that move learning out of the classroom and into environments where students grow through doing — not just watching.",
+      "imageAlt": "Children meeting horses during a school visit — a boy rides a pony led by handlers in a schoolyard at sunset"
     },
     "local": {
       "kicker": "Local School Programs",
@@ -554,13 +558,29 @@
         "Reflection and mindfulness sessions"
       ],
       "formats": [
-        { "label": "Day experience", "desc": "A full day of structured activities — no overnight required." },
-        { "label": "Overnight camp", "desc": "One or two nights to deepen the immersive experience." },
-        { "label": "Multi-day program", "desc": "3–5 day programs with a full arc of learning and adventure." },
-        { "label": "Custom program", "desc": "Built entirely around your school's objectives and group size." }
+        {
+          "label": "Day experience",
+          "desc": "A full day of structured activities — no overnight required."
+        },
+        {
+          "label": "Overnight camp",
+          "desc": "One or two nights to deepen the immersive experience."
+        },
+        {
+          "label": "Multi-day program",
+          "desc": "3–5 day programs with a full arc of learning and adventure."
+        },
+        {
+          "label": "Custom program",
+          "desc": "Built entirely around your school's objectives and group size."
+        }
       ],
       "whoKicker": "Who It's For",
-      "whoItems": ["Primary schools", "Secondary schools", "Student groups & youth programs"],
+      "whoItems": [
+        "Primary schools",
+        "Secondary schools",
+        "Student groups & youth programs"
+      ],
       "formatskicker": "Program Formats",
       "cta": "Register your interest"
     },
@@ -621,9 +641,21 @@
     "next": {
       "kicker": "What happens next",
       "steps": [
-        { "n": "01", "title": "We review your form", "desc": "Our team reads every submission. We'll check availability and match you to the right program." },
-        { "n": "02", "title": "We get in touch", "desc": "Expect a call or WhatsApp message from us to talk through the details." },
-        { "n": "03", "title": "You start exploring", "desc": "Once confirmed, we handle the logistics. You focus on getting ready for the adventure." }
+        {
+          "n": "01",
+          "title": "We review your form",
+          "desc": "Our team reads every submission. We'll check availability and match you to the right program."
+        },
+        {
+          "n": "02",
+          "title": "We get in touch",
+          "desc": "Expect a call or WhatsApp message from us to talk through the details."
+        },
+        {
+          "n": "03",
+          "title": "You start exploring",
+          "desc": "Once confirmed, we handle the logistics. You focus on getting ready for the adventure."
+        }
       ],
       "closingNote": "Still have questions? Reach out to us and we will be there for you"
     },
@@ -651,7 +683,9 @@
       "title": "Choose your adventure",
       "intro": "Immersive international and local experiences for explorers to build confidence, awareness, and a lifelong sense of adventure."
     },
-    "grid": { "label": "All experiences" },
+    "grid": {
+      "label": "All experiences"
+    },
     "card": {
       "cta": "Explore experience"
     }

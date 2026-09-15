@@ -15,7 +15,7 @@ export function SchoolsHero() {
       {/* Background image */}
       <Image
         src={placeholderImages["/images/schools/hero.jpg"]}
-        alt=""
+        alt={t("imageAlt")}
         fill
         priority
         sizes="100vw"

@@ -2,16 +2,18 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import { experiences } from "@/lib/content/experiences";
 import { iconMap } from "@/lib/content/iconMap";
 import type { ExperienceSlug } from "@/lib/content/experiences";
+import type { Locale } from "@/lib/i18n/routing";
 
 type Props = { slug: ExperienceSlug };
 
 export function ExperienceHero({ slug }: Props) {
   const t = useTranslations(`experiences.${slug}.hero`);
+  const locale = useLocale() as Locale;
   const exp = experiences.find((e) => e.slug === slug);
   if (!exp || !exp.meta) return null;
 
@@ -21,7 +23,7 @@ export function ExperienceHero({ slug }: Props) {
     <section className="relative isolate flex min-h-[80dvh] items-end overflow-hidden">
       <Image
         src={exp.heroImage}
-        alt=""
+        alt={exp.heroImageAlt?.[locale] ?? ""}
         fill
         priority
         sizes="100vw"

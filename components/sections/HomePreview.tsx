@@ -118,7 +118,7 @@ export function HomePreview() {
               between this CTA and the Schools page hero. */}
           <Image
             src="/images/home/schools-mobile.jpg"
-            alt=""
+            alt={t("schoolsImageAlt")}
             fill
             sizes="100vw"
             className="-z-20 object-cover transition-transform duration-700 group-hover:scale-[1.03] sm:hidden"
@@ -126,7 +126,7 @@ export function HomePreview() {
           {/* Desktop background — EtonHouse-horse photo for the horizontal band. */}
           <Image
             src="/images/home/schools-sunset.jpg"
-            alt=""
+            alt={t("schoolsImageAlt")}
             fill
             sizes="(min-width: 1024px) 1100px, 100vw"
             className="-z-20 hidden object-cover transition-transform duration-700 group-hover:scale-[1.03] sm:block"
